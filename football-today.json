@@ -1,37 +1,47 @@
 {
-  "generated": "2026-10-31T23:16:58+01:00",
-  "date": "2026-10-31",
+  "generated": "2026-10-31T23:10:00+01:00",
+  "date": "2026-11-01",
   "timezone": "Europe/Berlin",
   "matches": [
     {
-      "kickoff": "2026-10-31T22:36:58+01:00",
-      "home": "Barcelona",
-      "away": "Atletico Madrid",
-      "competition": "La Liga (TEST)",
+      "kickoff": "2026-11-01T16:15:00+01:00",
+      "home": "Racing Santander",
+      "away": "Real Madrid",
+      "competition": "La Liga",
       "app": "FanCode",
       "package": "com.fancode.tv",
-      "big": true,
-      "source": "test"
+      "big": false,
+      "source": "https://www.sportinglife.com/football/fixtures-results/tomorrow"
     },
     {
-      "kickoff": "2026-10-31T23:21:58+01:00",
+      "kickoff": "2026-11-01T17:30:00+01:00",
       "home": "Liverpool",
       "away": "Arsenal",
-      "competition": "Premier League (TEST)",
+      "competition": "Premier League",
       "app": "JioHotstar",
       "package": "in.startv.hotstar",
       "big": true,
-      "source": "test"
+      "source": "https://www.sportinglife.com/football/fixtures-results/tomorrow"
     },
     {
-      "kickoff": "2026-10-31T20:16:58+01:00",
-      "home": "Bayern Munich",
-      "away": "RB Leipzig",
-      "competition": "Bundesliga (TEST)",
+      "kickoff": "2026-11-01T17:30:00+01:00",
+      "home": "Eintracht Frankfurt",
+      "away": "Hamburger SV",
+      "competition": "Bundesliga",
       "app": "Zee5",
       "package": "com.zee5.amazon",
       "big": false,
-      "source": "test"
+      "source": "https://www.sportinglife.com/football/fixtures-results/tomorrow"
+    },
+    {
+      "kickoff": "2026-11-01T21:00:00+01:00",
+      "home": "Athletic Bilbao",
+      "away": "Real Sociedad",
+      "competition": "La Liga",
+      "app": "FanCode",
+      "package": "com.fancode.tv",
+      "big": true,
+      "source": "https://www.sportinglife.com/football/fixtures-results/tomorrow"
     }
   ]
 }
