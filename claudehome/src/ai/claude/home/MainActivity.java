@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
     static final String SILK = "com.amazon.cloud9";
     static final String LOUNGE_KEY = "claude.lounge";
     static final String[] FAVOURITES = { "in.startv.hotstar", "com.onemainstream.sonyliv.android", "com.fancode.tv",
-            "com.netflix.ninja", "com.amazon.firetv.youtube", LOUNGE_KEY };
+            "com.netflix.ninja", "com.amazon.firetv.youtube", "com.spotify.tv.android", "com.zee5.amazon", LOUNGE_KEY, "com.amazon.tv.launcher" };
 
     static class Tile {
         String key, label; Drawable icon; Intent intent; int uses;
@@ -33,6 +33,7 @@ public class MainActivity extends Activity {
     final Handler handler = new Handler();
     SharedPreferences prefs;
     TextView clock; GridView grid; TileAdapter adapter;
+    TextView[] tabs; View[] pages; int tab = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,13 @@ public class MainActivity extends Activity {
         prefs = getSharedPreferences("usage", MODE_PRIVATE);
         clock = findViewById(R.id.clock);
         grid = findViewById(R.id.grid);
+        tabs = new TextView[]{ findViewById(R.id.tabForYou), findViewById(R.id.tabFootball), findViewById(R.id.tabApps) };
+        pages = new View[]{ findViewById(R.id.pageForYou), findViewById(R.id.pageFootball), grid };
+        for (int i = 0; i < tabs.length; i++) {
+            final int idx = i;
+            tabs[i].setOnClickListener(v -> showTab(idx));
+            tabs[i].setOnFocusChangeListener((v, f) -> { if (f) showTab(idx); });
+        }
         buildTiles();
         adapter = new TileAdapter();
         grid.setAdapter(adapter);
@@ -54,23 +62,29 @@ public class MainActivity extends Activity {
             }
             public void onNothingSelected(AdapterView<?> p) {}
         });
-        buildForYou();
-        grid.setSelection(0);
-        grid.requestFocus();
+        buildDock();
+        showTab(0);
+        Posters.load(this, findViewById(R.id.heroRow), findViewById(R.id.heroTitle));
         tick();
+        handler.postDelayed(() -> { View first = ((LinearLayout) findViewById(R.id.heroRow)).getChildAt(0); if (first != null) first.requestFocus(); else findViewById(R.id.tabForYou).requestFocus(); }, 600);
+    }
+
+    void showTab(int idx) {
+        tab = idx;
+        for (int i = 0; i < tabs.length; i++) { tabs[i].setSelected(i == idx); pages[i].setVisibility(i == idx ? View.VISIBLE : View.GONE); }
+        findViewById(R.id.dockScroll).setVisibility(idx == 2 ? View.GONE : View.VISIBLE);
     }
 
     @Override protected void onResume() {
         super.onResume();
         Football.load(this, findViewById(R.id.footballRow), findViewById(R.id.footballTitle), findViewById(R.id.footballScroll));
         sortTiles(); if (adapter != null) adapter.notifyDataSetChanged();
-        buildForYou();
+        buildDock();
     }
 
     void tick() {
         int h = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
-        String greet = h < 12 ? "Good morning" : h < 18 ? "Good afternoon" : "Good evening";
-        ((TextView) findViewById(R.id.greeting)).setText(greet);
+        ((TextView) findViewById(R.id.greeting)).setText(h < 12 ? "Good morning" : h < 18 ? "Good afternoon" : "Good evening");
         clock.setText(new SimpleDateFormat("EEE d MMM  HH:mm", Locale.ENGLISH).format(new Date()));
         updateAlert();
         handler.postDelayed(this::tick, 30000);
@@ -93,6 +107,14 @@ public class MainActivity extends Activity {
         }
     }
 
+    /** Called by Football after each render: mirror the row into the Football tab and hide the row on quiet days. */
+    void footballRendered(boolean hasMatches) {
+        LinearLayout src = findViewById(R.id.footballRow), dst = findViewById(R.id.footballRow2);
+        findViewById(R.id.footballTitle).setVisibility(hasMatches ? View.VISIBLE : View.GONE);
+        findViewById(R.id.footballScroll).setVisibility(hasMatches ? View.VISIBLE : View.GONE);
+        Football.render(this, dst, findViewById(R.id.footballTitle2), findViewById(R.id.footballScroll2), false);
+    }
+
     @Override protected void onDestroy() { handler.removeCallbacksAndMessages(null); super.onDestroy(); }
 
     void buildTiles() {
@@ -100,8 +122,7 @@ public class MainActivity extends Activity {
         PackageManager pm = getPackageManager();
         Intent lounge = new Intent(Intent.ACTION_VIEW, Uri.parse(LOUNGE_URL)).setPackage(SILK);
         if (pm.resolveActivity(lounge, 0) == null) lounge = new Intent(Intent.ACTION_VIEW, Uri.parse(LOUNGE_URL));
-        add(new Tile(LOUNGE_KEY, "Claude Lounge", getDrawable(R.drawable.ic_launcher), lounge));
-
+        add(new Tile(LOUNGE_KEY, "Claude Lounge", getDrawable(R.drawable.banner), lounge));
         for (String cat : new String[]{Intent.CATEGORY_LEANBACK_LAUNCHER, Intent.CATEGORY_LAUNCHER}) {
             Intent q = new Intent(Intent.ACTION_MAIN).addCategory(cat);
             for (ResolveInfo ri : pm.queryIntentActivities(q, 0)) {
@@ -126,27 +147,25 @@ public class MainActivity extends Activity {
     void sortTiles() {
         for (Tile t : tiles) t.uses = prefs.getInt("n." + t.key, 0);
         Collections.sort(tiles, (a, b) -> {
-            if (a.key.equals(LOUNGE_KEY)) return -1; if (b.key.equals(LOUNGE_KEY)) return 1;
             if (a.uses != b.uses) return b.uses - a.uses;
             return a.label.compareToIgnoreCase(b.label);
         });
     }
 
-    void buildForYou() {
-        LinearLayout row = findViewById(R.id.forYouRow);
+    void buildDock() {
+        LinearLayout row = findViewById(R.id.dockRow);
         row.removeAllViews();
         List<String> keys = new ArrayList<>();
-        String recent = prefs.getString("recent", "");
-        for (String k : recent.split(",")) if (!k.isEmpty() && byKey.containsKey(k) && !keys.contains(k)) keys.add(k);
+        for (String k : prefs.getString("recent", "").split(",")) if (!k.isEmpty() && byKey.containsKey(k) && !keys.contains(k)) keys.add(k);
         for (String k : FAVOURITES) if (byKey.containsKey(k) && !keys.contains(k)) keys.add(k);
-        if (keys.size() > 8) keys = keys.subList(0, 8);
+        if (keys.size() > 10) keys = keys.subList(0, 10);
         for (String k : keys) {
             Tile t = byKey.get(k);
-            View v = LayoutInflater.from(this).inflate(R.layout.tile_row, row, false);
+            View v = LayoutInflater.from(this).inflate(R.layout.dock_item, row, false);
             ((ImageView) v.findViewById(R.id.icon)).setImageDrawable(t.icon);
-            ((TextView) v.findViewById(R.id.label)).setText(t.label);
+            v.setContentDescription(t.label);
             v.setOnClickListener(x -> launch(t));
-            v.setOnFocusChangeListener((x, f) -> x.animate().scaleX(f ? 1.06f : 1f).scaleY(f ? 1.06f : 1f).setDuration(120).start());
+            v.setOnFocusChangeListener((x, f) -> x.animate().scaleX(f ? 1.12f : 1f).scaleY(f ? 1.12f : 1f).setDuration(140).start());
             row.addView(v);
         }
     }

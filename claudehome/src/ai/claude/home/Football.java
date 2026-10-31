@@ -75,7 +75,10 @@ public class Football {
         matches = list;
     }
 
-    static void render(Activity a, LinearLayout row, View title, View scroll) {
+    static void render(Activity a, LinearLayout row, View title, View scroll) { render(a, row, title, scroll, true); }
+
+    static void render(Activity a, LinearLayout row, View title, View scroll, boolean notify) {
+        if (notify && a instanceof MainActivity) ((MainActivity) a).footballRendered(!matches.isEmpty());
         row.removeAllViews();
         String today = new SimpleDateFormat("yyyy-MM-dd", Locale.US).format(new Date());
         boolean stale = !today.equals(listDate);
