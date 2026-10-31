@@ -19,9 +19,10 @@ import java.util.*;
 public class MainActivity extends Activity {
     static final String LOUNGE_URL = "https://claude.ai/artifact/C7a9Le6NmwLNHvGgBMMcnV";
     static final String SILK = "com.amazon.cloud9";
+    static final String TVBRO = "com.phlox.tvwebbrowser";
     static final String LOUNGE_KEY = "claude.lounge";
     static final String[] FAVOURITES = { "in.startv.hotstar", "com.onemainstream.sonyliv.android", "com.fancode.tv",
-            "com.netflix.ninja", "com.amazon.firetv.youtube", "com.spotify.tv.android", "com.zee5.amazon", LOUNGE_KEY, "com.amazon.tv.launcher" };
+            "com.netflix.ninja", "com.amazon.firetv.youtube", "com.spotify.tv.android", "com.zee5.amazon", LOUNGE_KEY, TVBRO, "com.amazon.tv.launcher" };
 
     static class Tile {
         String key, label; Drawable icon; Intent intent; int uses;
@@ -120,7 +121,8 @@ public class MainActivity extends Activity {
     void buildTiles() {
         tiles.clear(); byKey.clear();
         PackageManager pm = getPackageManager();
-        Intent lounge = new Intent(Intent.ACTION_VIEW, Uri.parse(LOUNGE_URL)).setPackage(SILK);
+        Intent lounge = new Intent(Intent.ACTION_VIEW, Uri.parse(LOUNGE_URL)).setPackage(TVBRO);
+        if (pm.resolveActivity(lounge, 0) == null) lounge = new Intent(Intent.ACTION_VIEW, Uri.parse(LOUNGE_URL)).setPackage(SILK);
         if (pm.resolveActivity(lounge, 0) == null) lounge = new Intent(Intent.ACTION_VIEW, Uri.parse(LOUNGE_URL));
         add(new Tile(LOUNGE_KEY, "Claude Lounge", getDrawable(R.drawable.banner), lounge));
         for (String cat : new String[]{Intent.CATEGORY_LEANBACK_LAUNCHER, Intent.CATEGORY_LAUNCHER}) {

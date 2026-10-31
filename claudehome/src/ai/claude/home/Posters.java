@@ -82,7 +82,7 @@ public class Posters {
         try {
             if (it.url != null && !it.url.isEmpty()) {
                 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(it.url));
-                if (it.pkg != null && !it.pkg.isEmpty()) i.setPackage(it.pkg);
+                if (it.pkg != null && !it.pkg.isEmpty()) i.setPackage(it.pkg.equals("com.amazon.cloud9") && a.getPackageManager().getLaunchIntentForPackage("com.phlox.tvwebbrowser") != null ? "com.phlox.tvwebbrowser" : it.pkg);
                 if (a.getPackageManager().resolveActivity(i, 0) != null) { a.startActivity(i); return; }
             }
             if (it.pkg != null && !it.pkg.isEmpty()) {
