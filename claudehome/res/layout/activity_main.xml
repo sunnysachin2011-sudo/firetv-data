@@ -8,7 +8,7 @@
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
         <TextView android:id="@+id/tabForYou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="For you"
             android:textSize="20sp" android:textColor="@color/tab_text" android:background="@drawable/tab_bg" android:paddingLeft="22dp" android:paddingRight="22dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusDown="@+id/heroRow" />
-        <TextView android:id="@+id/tabFootball" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Football" android:layout_marginLeft="6dp"
+        <TextView android:id="@+id/tabFootball" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sport" android:layout_marginLeft="6dp"
             android:textSize="20sp" android:textColor="@color/tab_text" android:background="@drawable/tab_bg" android:paddingLeft="22dp" android:paddingRight="22dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:focusable="true" android:focusableInTouchMode="true" />
         <TextView android:id="@+id/tabApps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Apps" android:layout_marginLeft="6dp"
             android:textSize="20sp" android:textColor="@color/tab_text" android:background="@drawable/tab_bg" android:paddingLeft="22dp" android:paddingRight="22dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:focusable="true" android:focusableInTouchMode="true" />
@@ -34,7 +34,7 @@
             <HorizontalScrollView android:id="@+id/heroScroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:scrollbars="none" android:clipToPadding="false" android:paddingTop="8dp" android:paddingBottom="8dp" android:clipChildren="false">
                 <LinearLayout android:id="@+id/heroRow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:clipChildren="false" />
             </HorizontalScrollView>
-            <TextView android:id="@+id/footballTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Football today" android:textSize="14sp" android:textColor="@color/muted" />
+            <TextView android:id="@+id/footballTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Sport today" android:textSize="14sp" android:textColor="@color/muted" />
             <HorizontalScrollView android:id="@+id/footballScroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:scrollbars="none" android:clipToPadding="false" android:paddingTop="6dp" android:paddingBottom="6dp" android:clipChildren="false">
                 <LinearLayout android:id="@+id/footballRow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:clipChildren="false" />
             </HorizontalScrollView>
@@ -42,11 +42,11 @@
 
         <!-- FOOTBALL tab: same row, bigger context -->
         <LinearLayout android:id="@+id/pageFootball" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_vertical" android:visibility="gone">
-            <TextView android:id="@+id/footballTitle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Football" android:textSize="14sp" android:textColor="@color/muted" />
+            <TextView android:id="@+id/footballTitle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sport" android:textSize="14sp" android:textColor="@color/muted" />
             <HorizontalScrollView android:id="@+id/footballScroll2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:scrollbars="none" android:clipToPadding="false" android:paddingTop="8dp" android:paddingBottom="8dp" android:clipChildren="false">
                 <LinearLayout android:id="@+id/footballRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:clipChildren="false" />
             </HorizontalScrollView>
-            <TextView android:id="@+id/footballNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textSize="13sp" android:textColor="@color/muted" android:text="List updates every morning at 06:46. Select a match to open the app; the VPN switches by itself." />
+            <TextView android:id="@+id/footballNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textSize="13sp" android:textColor="@color/muted" android:text="Football and India cricket. List updates every morning at 06:46. Select a match to open the app; the VPN switches by itself." />
         </LinearLayout>
 
         <!-- APPS tab -->
