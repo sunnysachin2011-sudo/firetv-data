@@ -72,7 +72,25 @@ public class MainActivity extends Activity {
         String greet = h < 12 ? "Good morning" : h < 18 ? "Good afternoon" : "Good evening";
         ((TextView) findViewById(R.id.greeting)).setText(greet);
         clock.setText(new SimpleDateFormat("EEE d MMM  HH:mm", Locale.ENGLISH).format(new Date()));
+        updateAlert();
         handler.postDelayed(this::tick, 30000);
+    }
+
+    long lastRender = 0;
+    void updateAlert() {
+        View alert = findViewById(R.id.alert);
+        Football.Match m = Football.alertMatch();
+        if (m == null) { alert.setVisibility(View.GONE); }
+        else {
+            ((TextView) findViewById(R.id.alertText)).setText(Football.alertText(m));
+            alert.setOnClickListener(x -> Football.open(this, m));
+            if (alert.getVisibility() != View.VISIBLE) { alert.setVisibility(View.VISIBLE); alert.requestFocus(); }
+        }
+        long now = System.currentTimeMillis();
+        if (now - lastRender > 60000 && !Football.matches.isEmpty()) {
+            lastRender = now;
+            Football.render(this, findViewById(R.id.footballRow), findViewById(R.id.footballTitle), findViewById(R.id.footballScroll));
+        }
     }
 
     @Override protected void onDestroy() { handler.removeCallbacksAndMessages(null); super.onDestroy(); }

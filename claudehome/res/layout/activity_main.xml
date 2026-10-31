@@ -9,6 +9,15 @@
         <TextView android:id="@+id/clock" android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textSize="26sp" android:textColor="@color/muted" />
     </LinearLayout>
+    <LinearLayout android:id="@+id/alert" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:orientation="horizontal" android:gravity="center_vertical"
+        android:background="@drawable/banner_bg" android:padding="12dp" android:focusable="true" android:focusableInTouchMode="true"
+        android:visibility="gone">
+        <TextView android:id="@+id/alertText" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+            android:textSize="18sp" android:textColor="#1A1917" android:textStyle="bold" />
+        <TextView android:id="@+id/alertHint" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="14sp" android:textColor="#1A1917" android:text="Select to open" />
+    </LinearLayout>
     <TextView android:id="@+id/footballTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"
         android:text="Football today" android:textSize="13sp" android:textColor="@color/muted" />
     <HorizontalScrollView android:id="@+id/footballScroll" android:layout_width="match_parent" android:layout_height="wrap_content"

@@ -6,6 +6,7 @@
     <color name="accent">#CC785C</color>
     <color name="text">#F4F3EE</color>
     <color name="muted">#9C9A93</color>
+    <color name="live">#E5484D</color>
     <style name="ClaudeTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
         <item name="android:windowBackground">@color/bg</item>
         <item name="android:colorBackground">@color/bg</item>

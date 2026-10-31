@@ -7,7 +7,7 @@ if (Test-Path $B) { Remove-Item $B -Recurse -Force }; New-Item -ItemType Directo
 & "$BT\aapt2.exe" compile --dir "$P\res" -o "$B\res.zip"; if ($LASTEXITCODE) { throw "aapt2 compile failed" }
 & "$BT\aapt2.exe" link -o "$B\base.apk" -I $JAR --manifest "$P\AndroidManifest.xml" --java "$B\gen" "$B\res.zip" --auto-add-overlay; if ($LASTEXITCODE) { throw "aapt2 link failed" }
 $srcs = Get-ChildItem "$P\src","$B\gen" -Recurse -Filter *.java | ForEach-Object { $_.FullName }
-& javac --release 8 -cp $JAR -Xlint:-options -d "$B\classes" $srcs; if ($LASTEXITCODE) { throw "javac failed" }
+& javac --release 8 -encoding UTF-8 -cp $JAR -Xlint:-options -d "$B\classes" $srcs; if ($LASTEXITCODE) { throw "javac failed" }
 $cls = Get-ChildItem "$B\classes" -Recurse -Filter *.class | ForEach-Object { $_.FullName }
 & "$BT\d8.bat" --min-api 25 --lib $JAR --output "$B" $cls; if ($LASTEXITCODE) { throw "d8 failed" }
 Copy-Item "$B\base.apk" "$B\unsigned.zip"
