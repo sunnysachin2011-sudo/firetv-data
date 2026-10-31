@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#1A1917</color>
+    <color name="card">#262522</color>
+    <color name="cardFocus">#3A2E28</color>
+    <color name="accent">#CC785C</color>
+    <color name="text">#F4F3EE</color>
+    <color name="muted">#9C9A93</color>
+    <style name="ClaudeTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+</resources>

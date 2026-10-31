@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginRight="14dp"
+    android:orientation="vertical" android:background="@drawable/match_bg"
+    android:focusable="true" android:focusableInTouchMode="true" android:padding="14dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:id="@+id/mTime" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+            android:textSize="22sp" android:textStyle="bold" android:textColor="@color/accent" />
+        <TextView android:id="@+id/mBig" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="★" android:textSize="20sp" android:textColor="@color/accent" android:visibility="gone" />
+    </LinearLayout>
+    <TextView android:id="@+id/mTeams" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" android:textSize="16sp" android:textColor="@color/text" android:singleLine="true" android:ellipsize="end" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8dp">
+        <TextView android:id="@+id/mComp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+            android:textSize="13sp" android:textColor="@color/muted" />
+        <TextView android:id="@+id/mApp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="13sp" android:textColor="@color/text" />
+    </LinearLayout>
+</LinearLayout>
