@@ -1,0 +1,11 @@
+{
+  "title": "Tonight",
+  "generated": "2026-10-31T23:40:00+01:00",
+  "items": [
+    {"title": "Liverpool – Arsenal", "subtitle": "Sunday 17:30 · Premier League · JioHotstar", "image": "", "package": "in.startv.hotstar", "url": ""},
+    {"title": "Something new on Netflix", "subtitle": "Claude's pick arrives with the morning task", "image": "", "package": "com.netflix.ninja", "url": ""},
+    {"title": "Kabir bhajans", "subtitle": "Your YouTube uploads", "image": "", "package": "com.amazon.firetv.youtube", "url": ""},
+    {"title": "Claude Lounge", "subtitle": "Ask anything on the big screen", "image": "", "package": "com.amazon.cloud9", "url": "https://claude.ai/artifact/C7a9Le6NmwLNHvGgBMMcnV"},
+    {"title": "A TED talk", "subtitle": "15 minutes of ideas", "image": "", "package": "com.ted.android.tv", "url": ""}
+  ]
+}
