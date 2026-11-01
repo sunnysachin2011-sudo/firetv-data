@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
     TextView[] tabs; View[] pages; int tab = 0;
     Backdrop backdrop; Ambient ambient;
     Card heroCard; boolean resumed;
-    final Runnable idle = () -> { if (resumed) ambient.show(); };
+    final Runnable idle = () -> { if (resumed && !settingsOpen()) ambient.show(); };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -141,6 +141,10 @@ public class MainActivity extends Activity {
     @Override protected void onPause() { resumed = false; handler.removeCallbacks(idle); ambient.hide(); super.onPause(); }
 
     @Override public boolean dispatchKeyEvent(KeyEvent e) {
+        if (settingsOpen() && e.getKeyCode() == KeyEvent.KEYCODE_BACK) {
+            if (e.getAction() == KeyEvent.ACTION_UP) closeSettings();
+            return true;
+        }
         if (ambient.shown()) {
             if (e.getAction() == KeyEvent.ACTION_UP) { ambient.hide(); resetIdle(); }
             return true;
@@ -348,36 +352,83 @@ public class MainActivity extends Activity {
 
     // ---------- settings ----------
 
+    // ---------- settings panel ----------
+
+    boolean settingsOpen() { return findViewById(R.id.settings).getVisibility() == View.VISIBLE; }
+
     void openSettings() {
+        View box = findViewById(R.id.settings), panel = findViewById(R.id.setPanel), scrim = findViewById(R.id.setScrim);
+        ((TextView) findViewById(R.id.setTitle)).setText(L.t("s.title"));
+        ((TextView) findViewById(R.id.setHint)).setText(L.t("s.hint"));
+        LinearLayout rows = findViewById(R.id.setRows);
+        rows.removeAllViews();
         String[] langs = { "en", "hi", "de" };
-        String[] langNames = { "Language: English", "भाषा: हिन्दी", "Sprache: Deutsch" };
-        String[] walls = { L.t("s.photo"), L.t("s.dark") };
-        String[] idles = { L.t("s.idle5"), L.t("s.idle15"), L.t("s.idleoff") };
-        List<String> items = new ArrayList<>();
+        View first = addRow(rows, L.t("s.lang"), new String[]{ "English", "हिन्दी", "Deutsch" }, Arrays.asList(langs).indexOf(L.lang), (i, chips) -> {
+            if (langs[i].equals(L.lang)) return;
+            settings.edit().putString("lang", langs[i]).apply();
+            Motion.curtain(this, this::recreate);
+        });
         boolean photo = settings.getString("wallpaper", "photo").equals("photo");
-        int idle = settings.getInt("idle", 0);
-        for (int i = 0; i < 3; i++) items.add((langs[i].equals(L.lang) ? "●  " : "○  ") + langNames[i]);
-        for (int i = 0; i < 2; i++) items.add(((i == 0) == photo ? "●  " : "○  ") + walls[i]);
-        for (int i = 0; i < 3; i++) items.add((i == idle ? "●  " : "○  ") + idles[i]);
-        new AlertDialog.Builder(this, android.R.style.Theme_DeviceDefault_Dialog_Alert)
-                .setTitle("Claude Home")
-                .setItems(items.toArray(new String[0]), (d, which) -> {
-                    if (which < 3) {
-                        if (!langs[which].equals(L.lang)) {
-                            settings.edit().putString("lang", langs[which]).apply();
-                            Motion.curtain(this, this::recreate);
-                        }
-                    } else if (which < 5) {
-                        String w = which == 3 ? "photo" : "dark";
-                        settings.edit().putString("wallpaper", w).apply();
-                        backdrop.loadWallpaper(w, null);
-                    } else {
-                        settings.edit().putInt("idle", which - 5).apply();
-                        resetIdle();
-                    }
-                })
-                .setNegativeButton(L.t("s.close"), null)
-                .show();
+        addRow(rows, L.t("s.wall"), new String[]{ L.t("s.photoshort"), L.t("s.darkshort") }, photo ? 0 : 1, (i, chips) -> {
+            String w = i == 0 ? "photo" : "dark";
+            settings.edit().putString("wallpaper", w).apply();
+            backdrop.loadWallpaper(w, null);
+        });
+        addRow(rows, L.t("s.idle"), new String[]{ L.f("s.min", 5), L.f("s.min", 15), L.t("s.off") }, settings.getInt("idle", 0), (i, chips) -> {
+            settings.edit().putInt("idle", i).apply();
+            resetIdle();
+        });
+        Ui.apply(box);
+        ((TextView) findViewById(R.id.setTitle)).setTypeface(Ui.semibold);
+        ((ViewGroup) findViewById(R.id.main)).setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);
+        box.setVisibility(View.VISIBLE);
+        int w = Ui.dp(this, 500);
+        if (Motion.on()) {
+            scrim.setAlpha(0f); scrim.animate().alpha(1f).setDuration(260).start();
+            panel.setTranslationX(w); panel.animate().translationX(0).setDuration(380).setInterpolator(Motion.EASE_OUT).start();
+            Motion.stagger(rows, Ui.dp(this, 18), 140);
+        }
+        first.requestFocus();
+    }
+
+    interface Pick { void on(int i, List<View> chips); }
+
+    /** One labelled row of pill chips; returns the selected chip (for first focus). */
+    View addRow(LinearLayout rows, String label, String[] names, int sel, Pick pick) {
+        View row = LayoutInflater.from(this).inflate(R.layout.set_row, rows, false);
+        ((TextView) row.findViewById(R.id.rowLabel)).setText(label);
+        LinearLayout chipsBox = row.findViewById(R.id.rowChips);
+        List<View> chips = new ArrayList<>();
+        View selected = null;
+        for (int i = 0; i < names.length; i++) {
+            TextView c = (TextView) LayoutInflater.from(this).inflate(R.layout.set_chip, chipsBox, false);
+            c.setText((i == sel ? "✓  " : "") + names[i]);
+            c.setSelected(i == sel);
+            final int idx = i;
+            c.setOnClickListener(x -> {
+                for (int k = 0; k < chips.size(); k++) {
+                    TextView o = (TextView) chips.get(k);
+                    o.setSelected(k == idx);
+                    o.setText((k == idx ? "✓  " : "") + names[k]);
+                }
+                if (Motion.on()) x.animate().scaleX(0.94f).scaleY(0.94f).setDuration(70).withEndAction(() -> x.animate().scaleX(1.06f).scaleY(1.06f).setDuration(160).setInterpolator(new android.view.animation.OvershootInterpolator(2f)).start()).start();
+                pick.on(idx, chips);
+            });
+            c.setOnFocusChangeListener((x, f) -> x.animate().scaleX(f ? 1.06f : 1f).scaleY(f ? 1.06f : 1f).setDuration(160).setInterpolator(Motion.EASE_OUT).start());
+            chips.add(c); chipsBox.addView(c);
+            if (i == sel) selected = c;
+        }
+        rows.addView(row);
+        return selected != null ? selected : chips.get(0);
+    }
+
+    void closeSettings() {
+        View box = findViewById(R.id.settings), panel = findViewById(R.id.setPanel), scrim = findViewById(R.id.setScrim);
+        ((ViewGroup) findViewById(R.id.main)).setDescendantFocusability(ViewGroup.FOCUS_AFTER_DESCENDANTS);
+        Runnable done = () -> { box.setVisibility(View.GONE); panel.setTranslationX(0); scrim.setAlpha(1f); findViewById(R.id.gear).requestFocus(); };
+        if (!Motion.on()) { done.run(); return; }
+        scrim.animate().alpha(0f).setDuration(220).start();
+        panel.animate().translationX(Ui.dp(this, 500)).setDuration(240).setInterpolator(Motion.EASE_IN).withEndAction(done).start();
     }
 
     @Override protected void onDestroy() { handler.removeCallbacksAndMessages(null); super.onDestroy(); }

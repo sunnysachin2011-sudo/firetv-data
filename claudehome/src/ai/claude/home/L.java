@@ -72,6 +72,15 @@ public class L {
         p("firetvhome", "Fire TV Home", "Fire TV होम", "Fire TV Start");
         p("cannotopen", "Cannot open %s", "%s नहीं खुल सका", "%s kann nicht geöffnet werden");
         p("nothingyet", "Nothing to open yet", "अभी खोलने को कुछ नहीं", "Noch nichts zum Öffnen");
+        p("s.title", "Settings", "सेटिंग्स", "Einstellungen");
+        p("s.lang", "Language", "भाषा", "Sprache");
+        p("s.wall", "Background", "पृष्ठभूमि", "Hintergrund");
+        p("s.idle", "Idle screen", "आराम स्क्रीन", "Ruhebildschirm");
+        p("s.photoshort", "Photo of the day", "आज की फ़ोटो", "Foto des Tages");
+        p("s.darkshort", "Dark", "गहरा", "Dunkel");
+        p("s.min", "%d min", "%d मिनट", "%d Min.");
+        p("s.off", "Off", "बंद", "Aus");
+        p("s.hint", "Back closes  ·  OK chooses", "Back से बंद  ·  OK से चुनें", "Zurück schließt  ·  OK wählt");
         p("tonight", "Tonight", "आज रात", "Heute Abend");
     }
 

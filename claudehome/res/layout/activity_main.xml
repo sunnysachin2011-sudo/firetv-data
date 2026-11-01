@@ -10,7 +10,7 @@
     <View android:id="@+id/scrimL" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/scrim_left" />
     <View android:id="@+id/scrimB" android:layout_width="match_parent" android:layout_height="320dp" android:layout_gravity="bottom" android:background="@drawable/scrim_bottom" />
 
-    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+    <LinearLayout android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
         android:paddingLeft="52dp" android:paddingRight="52dp" android:paddingTop="20dp">
 
         <!-- header -->
@@ -86,6 +86,20 @@
         <TextView android:id="@+id/alertText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="15sp" android:textColor="#FF0B0D14" />
         <TextView android:id="@+id/alertHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:textSize="12sp" android:textColor="#990B0D14" android:text="OK to open" />
     </LinearLayout>
+
+
+    <!-- settings panel -->
+    <FrameLayout android:id="@+id/settings" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+        <View android:id="@+id/setScrim" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#99000000" />
+        <LinearLayout android:id="@+id/setPanel" android:layout_width="500dp" android:layout_height="match_parent" android:layout_gravity="right"
+            android:orientation="vertical" android:background="@drawable/panel_glass" android:paddingLeft="40dp" android:paddingRight="32dp" android:paddingTop="40dp" android:paddingBottom="28dp">
+            <TextView android:id="@+id/setTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="32sp" android:textColor="#FFFFFFFF" />
+            <TextView android:id="@+id/setSub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:textSize="13sp" android:textColor="#80FFFFFF" android:text="Claude Home 1.1" />
+            <LinearLayout android:id="@+id/setRows" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="22dp" />
+            <View android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1" />
+            <TextView android:id="@+id/setHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="13sp" android:textColor="#80FFFFFF" />
+        </LinearLayout>
+    </FrameLayout>
 
     <!-- ambient (idle) screen -->
     <FrameLayout android:id="@+id/ambient" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone" android:background="#FF0B0D14" android:focusable="true" android:focusableInTouchMode="true">
