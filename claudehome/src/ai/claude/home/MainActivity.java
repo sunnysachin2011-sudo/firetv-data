@@ -123,7 +123,7 @@ public class MainActivity extends Activity {
         if (idx == 2) { Motion.stagger(findViewById(R.id.newsRow), Ui.dp(this, 24), 120); backdrop.tint(0xFF6E7BFF); }
     }
 
-    @Override protected void onNewIntent(Intent i) { super.onNewIntent(i); setIntent(i); }
+    @Override protected void onNewIntent(Intent i) { super.onNewIntent(i); setIntent(i); if (resumed && i.getBooleanExtra("ambient", false)) { i.removeExtra("ambient"); handler.postDelayed(ambient::show, 800); } }
 
     @Override protected void onResume() {
         super.onResume();
