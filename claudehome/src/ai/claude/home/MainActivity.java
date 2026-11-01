@@ -391,7 +391,12 @@ public class MainActivity extends Activity {
             settings.edit().putInt("idle", i).apply();
             resetIdle();
         });
-        ((TextView) findViewById(R.id.setSub)).setText("Claude Home 1.3");
+        addRow(rows, L.t("s.pic"), new String[]{ L.t("s.picstart"), L.t("s.picpat") }, -1, (i, chips) -> {
+            closeSettingsNow();
+            findViewById(R.id.gear).requestFocus();
+            startActivity(new Intent(this, PictureActivity.class).putExtra("mode", i == 0 ? "wizard" : "patterns"));
+        });
+        ((TextView) findViewById(R.id.setSub)).setText("Claude Home 1.4");
         showPanel(first);
     }
 
