@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="bg">#1A1917</color>
+    <color name="bgA">#0B0D14</color>
     <color name="card">#262522</color>
     <color name="cardFocus">#3A2E28</color>
-    <color name="accent">#CC785C</color>
+    <color name="accent">#9FC1FF</color>
     <color name="text">#F4F3EE</color>
     <color name="muted">#9C9A93</color>
     <color name="live">#E5484D</color>
     <style name="ClaudeTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
-        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:windowBackground">@color/bgA</item>
         <item name="android:colorBackground">@color/bg</item>
         <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="Tab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/tab_text</item>
+        <item name="android:background">@drawable/tab_glass</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
     </style>
 </resources>

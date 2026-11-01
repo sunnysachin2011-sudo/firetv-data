@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="118dp" android:layout_height="66dp" android:layout_marginRight="12dp"
-    android:background="@drawable/glass_bg" android:focusable="true" android:focusableInTouchMode="true" android:padding="8dp">
-    <ImageView android:id="@+id/icon" android:layout_width="match_parent" android:layout_height="match_parent"
-        android:scaleType="fitCenter" />
+    android:layout_width="96dp" android:layout_height="54dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp"
+    android:background="@drawable/dock_icon" android:focusable="true" android:focusableInTouchMode="true" android:padding="6dp">
+    <ImageView android:id="@+id/icon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
 </FrameLayout>

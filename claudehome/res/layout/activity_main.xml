@@ -1,61 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical" android:background="@drawable/bg_gradient"
-    android:paddingLeft="56dp" android:paddingRight="56dp" android:paddingTop="18dp">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FF0B0D14">
 
-    <!-- header: tabs + clock -->
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
-        <TextView android:id="@+id/tabForYou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="For you"
-            android:textSize="20sp" android:textColor="@color/tab_text" android:background="@drawable/tab_bg" android:paddingLeft="22dp" android:paddingRight="22dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusDown="@+id/heroRow" />
-        <TextView android:id="@+id/tabFootball" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sport" android:layout_marginLeft="6dp"
-            android:textSize="20sp" android:textColor="@color/tab_text" android:background="@drawable/tab_bg" android:paddingLeft="22dp" android:paddingRight="22dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:focusable="true" android:focusableInTouchMode="true" />
-        <TextView android:id="@+id/tabApps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Apps" android:layout_marginLeft="6dp"
-            android:textSize="20sp" android:textColor="@color/tab_text" android:background="@drawable/tab_bg" android:paddingLeft="22dp" android:paddingRight="22dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:focusable="true" android:focusableInTouchMode="true" />
-        <View android:layout_width="0dp" android:layout_weight="1" android:layout_height="1dp" />
-        <TextView android:id="@+id/greeting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:textColor="@color/muted" android:layout_marginRight="18dp" />
-        <TextView android:id="@+id/clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="22sp" android:textColor="@color/text" />
-    </LinearLayout>
+    <!-- backdrop: two images for crossfade, a colour tint, two scrims -->
+    <ImageView android:id="@+id/backA" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:alpha="0" />
+    <ImageView android:id="@+id/backB" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:alpha="0" />
+    <View android:id="@+id/tintA" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@+id/tintB" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0" />
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/scrim_left" />
+    <View android:layout_width="match_parent" android:layout_height="320dp" android:layout_gravity="bottom" android:background="@drawable/scrim_bottom" />
 
-    <!-- kick-off / live banner -->
-    <LinearLayout android:id="@+id/alert" android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:layout_marginTop="14dp" android:orientation="horizontal" android:gravity="center_vertical"
-        android:background="@drawable/banner_bg" android:padding="12dp" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone">
-        <TextView android:id="@+id/alertText" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textSize="18sp" android:textColor="#1A1917" android:textStyle="bold" />
-        <TextView android:id="@+id/alertHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#1A1917" android:text="Select to open" />
-    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+        android:paddingLeft="52dp" android:paddingRight="52dp" android:paddingTop="20dp">
 
-    <!-- content area -->
-    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="10dp">
-
-        <!-- FOR YOU: posters + football (match days) -->
-        <LinearLayout android:id="@+id/pageForYou" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_vertical">
-            <TextView android:id="@+id/heroTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tonight" android:textSize="14sp" android:textColor="@color/muted" />
-            <HorizontalScrollView android:id="@+id/heroScroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:scrollbars="none" android:clipToPadding="false" android:paddingTop="8dp" android:paddingBottom="8dp" android:clipChildren="false">
-                <LinearLayout android:id="@+id/heroRow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:clipChildren="false" />
-            </HorizontalScrollView>
-            <TextView android:id="@+id/footballTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Sport today" android:textSize="14sp" android:textColor="@color/muted" />
-            <HorizontalScrollView android:id="@+id/footballScroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:scrollbars="none" android:clipToPadding="false" android:paddingTop="6dp" android:paddingBottom="6dp" android:clipChildren="false">
-                <LinearLayout android:id="@+id/footballRow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:clipChildren="false" />
-            </HorizontalScrollView>
+        <!-- header -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/tabForYou" style="@style/Tab" android:text="For you" android:nextFocusDown="@+id/heroRow" />
+            <TextView android:id="@+id/tabFootball" style="@style/Tab" android:text="Sport" android:layout_marginLeft="4dp" />
+            <TextView android:id="@+id/tabApps" style="@style/Tab" android:text="Apps" android:layout_marginLeft="4dp" />
+            <View android:layout_width="0dp" android:layout_weight="1" android:layout_height="1dp" />
+            <TextView android:id="@+id/greeting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="#B3FFFFFF" android:layout_marginRight="16dp" />
+            <TextView android:id="@+id/clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="22sp" android:textColor="#FFFFFFFF" android:layout_marginRight="10dp" />
+            <TextView android:id="@+id/gear" style="@style/Tab" android:text="⚙" android:textSize="20sp" android:paddingLeft="14dp" android:paddingRight="14dp" android:contentDescription="Settings" />
         </LinearLayout>
 
-        <!-- FOOTBALL tab: same row, bigger context -->
-        <LinearLayout android:id="@+id/pageFootball" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_vertical" android:visibility="gone">
-            <TextView android:id="@+id/footballTitle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sport" android:textSize="14sp" android:textColor="@color/muted" />
-            <HorizontalScrollView android:id="@+id/footballScroll2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:scrollbars="none" android:clipToPadding="false" android:paddingTop="8dp" android:paddingBottom="8dp" android:clipChildren="false">
-                <LinearLayout android:id="@+id/footballRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:clipChildren="false" />
-            </HorizontalScrollView>
-            <TextView android:id="@+id/footballNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textSize="13sp" android:textColor="@color/muted" android:text="Football and India cricket. List updates every morning at 06:46. Select a match to open the app; the VPN switches by itself." />
-        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
 
-        <!-- APPS tab -->
-        <GridView android:id="@+id/grid" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone"
-            android:numColumns="7" android:horizontalSpacing="10dp" android:verticalSpacing="10dp" android:clipToPadding="false" android:paddingTop="8dp" android:paddingBottom="24dp" android:listSelector="@android:color/transparent" />
+            <!-- FOR YOU: hero text + one row -->
+            <LinearLayout android:id="@+id/pageForYou" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+                <LinearLayout android:id="@+id/heroText" android:layout_width="460dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="34dp">
+                    <TextView android:id="@+id/heroEyebrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="13sp" android:textColor="#FF9FC1FF" android:letterSpacing="0.15" android:textAllCaps="true" />
+                    <TextView android:id="@+id/heroTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textSize="44sp" android:textColor="#FFFFFFFF" android:lineSpacingMultiplier="0.95" android:maxLines="2" android:ellipsize="end" />
+                    <TextView android:id="@+id/heroSub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textSize="16sp" android:textColor="#C8FFFFFF" android:maxLines="2" android:ellipsize="end" />
+                    <TextView android:id="@+id/heroAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:background="@drawable/pill_white" android:paddingLeft="18dp" android:paddingRight="18dp" android:paddingTop="7dp" android:paddingBottom="7dp" android:textSize="15sp" android:textColor="#FF0B0D14" />
+                </LinearLayout>
+                <View android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1" />
+                <HorizontalScrollView android:id="@+id/heroScroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none" android:clipToPadding="false" android:clipChildren="false" android:paddingTop="12dp" android:paddingBottom="12dp" android:paddingLeft="6dp">
+                    <LinearLayout android:id="@+id/heroRow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:clipChildren="false" />
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <!-- SPORT tab -->
+            <LinearLayout android:id="@+id/pageFootball" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_vertical" android:visibility="gone">
+                <TextView android:id="@+id/footballTitle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sport" android:textSize="14sp" android:textColor="#B3FFFFFF" />
+                <HorizontalScrollView android:id="@+id/footballScroll2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:scrollbars="none" android:clipToPadding="false" android:paddingTop="10dp" android:paddingBottom="10dp" android:paddingLeft="6dp" android:clipChildren="false">
+                    <LinearLayout android:id="@+id/footballRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:clipChildren="false" />
+                </HorizontalScrollView>
+                <TextView android:id="@+id/footballNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textSize="13sp" android:textColor="#99FFFFFF" android:text="Football and men's cricket. New list every morning at 06:46." />
+            </LinearLayout>
+
+            <!-- APPS tab -->
+            <GridView android:id="@+id/grid" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone"
+                android:numColumns="7" android:horizontalSpacing="10dp" android:verticalSpacing="10dp" android:clipToPadding="false" android:paddingTop="16dp" android:paddingBottom="24dp" android:listSelector="@android:color/transparent" />
+        </FrameLayout>
+
+        <!-- dock -->
+        <HorizontalScrollView android:id="@+id/dockScroll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp" android:layout_marginBottom="16dp" android:scrollbars="none" android:background="@drawable/dock_bar" android:padding="6dp" android:clipToPadding="false" android:clipChildren="false">
+            <LinearLayout android:id="@+id/dockRow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:clipChildren="false" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <!-- kick-off banner -->
+    <LinearLayout android:id="@+id/alert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="top|right"
+        android:layout_marginTop="68dp" android:layout_marginRight="52dp" android:orientation="horizontal" android:gravity="center_vertical"
+        android:background="@drawable/banner_glass" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="8dp" android:paddingBottom="8dp"
+        android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone">
+        <TextView android:id="@+id/alertText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="15sp" android:textColor="#FF0B0D14" />
+        <TextView android:id="@+id/alertHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:textSize="12sp" android:textColor="#990B0D14" android:text="OK to open" />
+    </LinearLayout>
+
+    <!-- ambient (idle) screen -->
+    <FrameLayout android:id="@+id/ambient" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone" android:background="#FF0B0D14" android:focusable="true" android:focusableInTouchMode="true">
+        <ImageView android:id="@+id/ambBack" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/scrim_bottom" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|left" android:orientation="vertical" android:layout_marginLeft="60dp" android:layout_marginBottom="48dp">
+            <TextView android:id="@+id/ambClock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="96sp" android:textColor="#FFFFFFFF" />
+            <TextView android:id="@+id/ambDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20sp" android:textColor="#D9FFFFFF" />
+            <TextView android:id="@+id/ambNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:textSize="18sp" android:textColor="#FFFFFFFF" />
+            <TextView android:id="@+id/ambCal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textSize="18sp" android:textColor="#D9FFFFFF" android:visibility="gone" />
+        </LinearLayout>
+        <TextView android:id="@+id/ambWeather" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="top|right" android:layout_marginTop="36dp" android:layout_marginRight="60dp" android:textSize="28sp" android:textColor="#FFFFFFFF" />
+        <TextView android:id="@+id/ambCredit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|right" android:layout_marginRight="60dp" android:layout_marginBottom="52dp" android:maxWidth="360dp" android:gravity="right" android:textSize="12sp" android:textColor="#99FFFFFF" />
     </FrameLayout>
-
-    <!-- dock -->
-    <HorizontalScrollView android:id="@+id/dockScroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:scrollbars="none" android:clipToPadding="false" android:paddingTop="8dp" android:paddingBottom="8dp" android:clipChildren="false">
-        <LinearLayout android:id="@+id/dockRow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:clipChildren="false" />
-    </HorizontalScrollView>
-</LinearLayout>
+</FrameLayout>

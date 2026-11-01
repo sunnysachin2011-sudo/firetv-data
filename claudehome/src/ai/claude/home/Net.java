@@ -10,7 +10,7 @@ public class Net {
     static String text(Context ctx, String url, String cacheName) {
         File cache = new File(ctx.getCacheDir(), cacheName);
         try {
-            HttpURLConnection c = (HttpURLConnection) new URL(url + "?t=" + System.currentTimeMillis()).openConnection();
+            HttpURLConnection c = (HttpURLConnection) new URL(url + (url.contains("?") ? "&t=" : "?t=") + System.currentTimeMillis()).openConnection();
             c.setConnectTimeout(6000); c.setReadTimeout(6000);
             try (InputStream in = c.getInputStream(); ByteArrayOutputStream out = new ByteArrayOutputStream()) {
                 byte[] b = new byte[4096]; int n; while ((n = in.read(b)) > 0) out.write(b, 0, n);

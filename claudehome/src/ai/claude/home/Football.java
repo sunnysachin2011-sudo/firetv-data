@@ -98,13 +98,13 @@ public class Football {
             return Long.compare(x.kick, y.kick);
         });
         for (Match m : ordered) {
-            View v = LayoutInflater.from(a).inflate(R.layout.match_card, row, false);
+            View v = LayoutInflater.from(a).inflate(R.layout.match_card, row, false); Ui.apply(v);
             TextView tvTime = v.findViewById(R.id.mTime);
             boolean live = m.live(now), over = now >= m.kick + m.dur;
             String t = m.kick > 0 ? outF.format(new Date(m.kick)) : "";
             if (live) {
-                long left = Math.max(1, (m.kick + MATCH_MS - now) / 60000);
-                tvTime.setText("● LIVE   ends in ~" + left + " min");
+                long left = Math.max(1, (m.kick + m.dur - now) / 60000);
+                tvTime.setText(left > 90 ? "● LIVE   ends ~" + outF.format(new Date(m.kick + m.dur)) : "● LIVE   ends in ~" + left + " min");
                 tvTime.setTextColor(a.getColor(R.color.live));
             } else if (over) { tvTime.setText(t + "   finished"); tvTime.setTextColor(a.getColor(R.color.muted)); v.setAlpha(0.55f); }
             else tvTime.setText(t);
