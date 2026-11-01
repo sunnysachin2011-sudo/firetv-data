@@ -1,0 +1,24 @@
+{
+ "date": "2026-11-01",
+ "generated": "2026-11-01T13:15:00+01:00",
+ "news": [
+  {
+   "region": "India",
+   "headline": "Thousands march in Delhi against the election chief",
+   "summary": "Rahul Gandhi led a march demanding Chief Election Commissioner Gyanesh Kumar resign over voter-list cuts of more than 130 million names. The Election Commission denies bias.",
+   "source": "https://yahoo.com/news/world/articles/thousands-rally-delhi-demand-india-112608066.html"
+  },
+  {
+   "region": "Germany",
+   "headline": "Youth cost-of-living protests turn violent",
+   "summary": "Tens of thousands joined Gen Z-led rallies in more than 30 cities on Saturday. Shops were looted in Frankfurt, with clashes in Berlin, Cologne and Hamburg.",
+   "source": "https://www.cbsnews.com/news/germany-protest-frankfurt-looting-violence/"
+  },
+  {
+   "region": "World",
+   "headline": "Four tankers on fire in the Strait of Hormuz",
+   "summary": "Iran's Revolutionary Guards said four tankers caught fire after hitting mines. A UK agency reported one tanker hit by an unknown projectile. Reuters could not verify Iran's claim.",
+   "source": "https://gcaptain.com/irans-irgc-navy-says-four-tankers-catch-fire-in-strait-of-hormuz/"
+  }
+ ]
+}

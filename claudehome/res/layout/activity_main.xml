@@ -28,10 +28,10 @@
 
             <!-- FOR YOU: hero text + one row -->
             <LinearLayout android:id="@+id/pageForYou" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
-                <LinearLayout android:id="@+id/heroText" android:layout_width="460dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="34dp">
+                <LinearLayout android:id="@+id/heroText" android:layout_width="560dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="22dp">
                     <TextView android:id="@+id/heroEyebrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="13sp" android:textColor="#FF9FC1FF" android:letterSpacing="0.15" android:textAllCaps="true" />
-                    <TextView android:id="@+id/heroTitle" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="6dp" android:textSize="44sp" android:textColor="#FFFFFFFF" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="26sp" android:autoSizeMaxTextSize="44sp" android:gravity="center_vertical" />
-                    <TextView android:id="@+id/heroSub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textSize="16sp" android:textColor="#C8FFFFFF" android:maxLines="1" android:ellipsize="end" />
+                    <TextView android:id="@+id/heroTitle" android:layout_width="match_parent" android:layout_height="104dp" android:layout_marginTop="6dp" android:textSize="44sp" android:textColor="#FFFFFFFF" android:maxLines="2" android:lineSpacingMultiplier="0.92" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="26sp" android:autoSizeMaxTextSize="44sp" android:gravity="center_vertical" />
+                    <TextView android:id="@+id/heroSub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textSize="16sp" android:textColor="#C8FFFFFF" android:maxLines="2" android:ellipsize="end" />
                     <TextView android:id="@+id/heroAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:background="@drawable/pill_white" android:paddingLeft="18dp" android:paddingRight="18dp" android:paddingTop="7dp" android:paddingBottom="7dp" android:textSize="15sp" android:textColor="#FF0B0D14" />
                 </LinearLayout>
                 <View android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1" />

@@ -88,6 +88,7 @@ public class MainActivity extends Activity {
         backdrop.tint(0xFF2D5BFF);
         backdrop.loadWallpaper(settings.getString("wallpaper", "photo"), null);
         Posters.load(this, this::buildForYou);
+        News.load(this, this::buildForYou);
         buildForYou();
         tick();
         handler.postDelayed(() -> { View first = ((LinearLayout) findViewById(R.id.heroRow)).getChildAt(0); if (first != null) first.requestFocus(); else tabs[0].requestFocus(); }, 700);
@@ -108,6 +109,7 @@ public class MainActivity extends Activity {
         sortTiles(); if (adapter != null) adapter.notifyDataSetChanged();
         buildDock();
         backdrop.loadWallpaper(settings.getString("wallpaper", "photo"), null);
+        News.load(this, this::buildForYou);
         resetIdle();
         if (getIntent().getBooleanExtra("ambient", false)) { getIntent().removeExtra("ambient"); handler.postDelayed(ambient::show, 1500); }
     }
@@ -198,6 +200,15 @@ public class MainActivity extends Activity {
             c.action = m.pkg.isEmpty() ? "Not on your apps" : "▶  " + m.app;
             c.tint = tintFor(m.pkg);
             c.open = () -> Football.open(this, m);
+            out.add(c);
+        }
+        String today = new SimpleDateFormat("yyyy-MM-dd", Locale.US).format(new Date());
+        if (today.equals(News.date)) for (News.Story st : News.stories) {
+            Card c = new Card();
+            c.top = st.region + " · Top story"; c.title = st.headline; c.sub = "";
+            c.eyebrow = "Top story · " + st.region; c.heroTitle = st.headline; c.heroSub = st.summary;
+            c.action = "▶  Ask Claude about it"; c.tint = 0xFF6E7BFF;
+            c.open = () -> { Tile t = byKey.get(LOUNGE_KEY); if (t != null) launch(t); };
             out.add(c);
         }
         for (Posters.Item it : Posters.items) {
