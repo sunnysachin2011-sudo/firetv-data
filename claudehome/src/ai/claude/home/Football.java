@@ -84,8 +84,8 @@ public class Football {
         row.removeAllViews();
         String today = new SimpleDateFormat("yyyy-MM-dd", Locale.US).format(new Date());
         boolean stale = !today.equals(listDate);
-        if (matches.isEmpty()) { empty(title, scroll, listDate.isEmpty() ? "Sport list not available" : stale ? "No list for today yet" : "No matches today"); return; }
-        ((TextView) title).setText(stale ? "Sport  (list from " + listDate + ")" : "Sport today");
+        if (matches.isEmpty()) { empty(title, scroll, listDate.isEmpty() ? L.t("nosport") : stale ? L.t("nolist") : L.t("nomatches")); return; }
+        ((TextView) title).setText(stale ? L.f("sportfrom", listDate) : L.t("sporttoday"));
         SimpleDateFormat outF = new SimpleDateFormat("HH:mm", Locale.US);
         outF.setTimeZone(TimeZone.getTimeZone("Europe/Berlin"));
         long now = System.currentTimeMillis();
@@ -104,16 +104,16 @@ public class Football {
             String t = m.kick > 0 ? outF.format(new Date(m.kick)) : "";
             if (live) {
                 long left = Math.max(1, (m.kick + m.dur - now) / 60000);
-                tvTime.setText(left > 90 ? "● LIVE   ends ~" + outF.format(new Date(m.kick + m.dur)) : "● LIVE   ends in ~" + left + " min");
+                tvTime.setText("● " + L.t("live") + "   " + (left > 90 ? L.f("ends", outF.format(new Date(m.kick + m.dur))) : L.f("endsin", left)));
                 tvTime.setTextColor(a.getColor(R.color.live));
-            } else if (over) { tvTime.setText(t + "   finished"); tvTime.setTextColor(a.getColor(R.color.muted)); v.setAlpha(0.55f); }
+            } else if (over) { tvTime.setText(t + "   " + L.t("finished")); tvTime.setTextColor(a.getColor(R.color.muted)); v.setAlpha(0.55f); }
             else tvTime.setText(t);
             ((TextView) v.findViewById(R.id.mTeams)).setText(m.teams());
             ((TextView) v.findViewById(R.id.mComp)).setText((m.sport.equals("cricket") ? "\uD83C\uDFCF " : "\u26BD ") + m.comp);
             TextView tvApp = v.findViewById(R.id.mApp);
             tvApp.setText(m.app); if (m.pkg.isEmpty()) tvApp.setAlpha(0.5f);
             if (m.big) v.findViewById(R.id.mBig).setVisibility(View.VISIBLE);
-            v.setOnClickListener(x -> open(a, m));
+            v.setOnClickListener(x -> Motion.zoomLaunch(a, x, MainActivity.tintFor(m.pkg), () -> open(a, m)));
             v.setOnFocusChangeListener((x, f) -> x.animate().scaleX(f ? 1.05f : 1f).scaleY(f ? 1.05f : 1f).setDuration(120).start());
             row.addView(v);
         }
@@ -121,10 +121,10 @@ public class Football {
     }
 
     static void open(Activity a, Match m) {
-        if (m.pkg.isEmpty()) { Toast.makeText(a, "Not in your apps", Toast.LENGTH_SHORT).show(); return; }
+        if (m.pkg.isEmpty()) { Toast.makeText(a, L.t("notapps"), Toast.LENGTH_SHORT).show(); return; }
         Intent li = a.getPackageManager().getLeanbackLaunchIntentForPackage(m.pkg);
         if (li == null) li = a.getPackageManager().getLaunchIntentForPackage(m.pkg);
-        if (li == null) { Toast.makeText(a, m.app + " not installed", Toast.LENGTH_SHORT).show(); return; }
+        if (li == null) { Toast.makeText(a, L.f("notinstalled", m.app), Toast.LENGTH_SHORT).show(); return; }
         a.startActivity(li);
     }
 
@@ -138,9 +138,9 @@ public class Football {
 
     static String alertText(Match m) {
         long now = System.currentTimeMillis();
-        if (m.live(now)) return m.home + " – " + m.away + " is live on " + m.app;
+        if (m.live(now)) return L.f("alertlive", m.home + " – " + m.away, m.app);
         long min = Math.max(1, (m.kick - now) / 60000);
-        return m.home + " – " + m.away + " starts in " + min + " min on " + m.app;
+        return L.f("alertsoon", m.home + " – " + m.away, min, m.app);
     }
 
     static void empty(View title, View scroll, String msg) {

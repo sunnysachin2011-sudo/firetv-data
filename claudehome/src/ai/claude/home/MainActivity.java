@@ -56,6 +56,7 @@ public class MainActivity extends Activity {
         Ui.apply(findViewById(R.id.root));
         prefs = getSharedPreferences("usage", MODE_PRIVATE);
         settings = getSharedPreferences("settings", MODE_PRIVATE);
+        L.lang = settings.getString("lang", "en");
         backdrop = new Backdrop(this);
         ambient = new Ambient(this);
         ((TextView) findViewById(R.id.heroTitle)).setTypeface(Ui.semibold);
@@ -71,10 +72,11 @@ public class MainActivity extends Activity {
             tabs[i].setOnFocusChangeListener((v, f) -> { if (f) showTab(idx); });
         }
         findViewById(R.id.gear).setOnClickListener(v -> openSettings());
+        applyTexts();
         buildTiles();
         adapter = new TileAdapter();
         grid.setAdapter(adapter);
-        grid.setOnItemClickListener((p, v, pos, id) -> launch(tiles.get(pos)));
+        grid.setOnItemClickListener((p, v, pos, id) -> { Tile t = tiles.get(pos); Motion.zoomLaunch(this, v, tintFor(t.key), () -> launch(t)); });
         grid.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             View last;
             public void onItemSelected(AdapterView<?> p, View v, int pos, long id) {
@@ -95,10 +97,19 @@ public class MainActivity extends Activity {
         handler.postDelayed(() -> { View first = ((LinearLayout) findViewById(R.id.heroRow)).getChildAt(0); if (first != null) first.requestFocus(); else tabs[0].requestFocus(); }, 700);
     }
 
+    void applyTexts() {
+        String[] keys = { "tab.foryou", "tab.sport", "tab.news", "tab.apps" };
+        for (int i = 0; i < tabs.length; i++) tabs[i].setText(L.t(keys[i]));
+        ((TextView) findViewById(R.id.footballNote)).setText(L.t("sportnote"));
+        ((TextView) findViewById(R.id.newsNote)).setText(L.t("newsnote"));
+        ((TextView) findViewById(R.id.alertHint)).setText(L.t("oktoopen"));
+    }
+
     void showTab(int idx) {
         int from = tab;
         tab = idx;
         for (int i = 0; i < tabs.length; i++) tabs[i].setSelected(i == idx);
+        Motion.movePill(findViewById(R.id.tabPill), tabs[idx], from != idx);
         View dock = findViewById(R.id.dockScroll);
         boolean dockOn = idx != 3;
         if (dockOn != (dock.getVisibility() == View.VISIBLE)) Motion.fade(dock, dockOn);
@@ -117,6 +128,7 @@ public class MainActivity extends Activity {
     @Override protected void onResume() {
         super.onResume();
         resumed = true;
+        Motion.uncover();
         Football.load(this, findViewById(R.id.footballRow2), findViewById(R.id.footballTitle2), findViewById(R.id.footballScroll2));
         sortTiles(); if (adapter != null) adapter.notifyDataSetChanged();
         buildDock();
@@ -145,8 +157,8 @@ public class MainActivity extends Activity {
 
     void tick() {
         int h = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
-        ((TextView) findViewById(R.id.greeting)).setText(h < 12 ? "Good morning" : h < 18 ? "Good afternoon" : "Good evening");
-        clock.setText(new SimpleDateFormat("EEE d MMM  HH:mm", Locale.ENGLISH).format(new Date()));
+        ((TextView) findViewById(R.id.greeting)).setText(L.t(h < 12 ? "greet.m" : h < 18 ? "greet.a" : "greet.e"));
+        clock.setText(new SimpleDateFormat("EEE d MMM  HH:mm", L.dateLocale()).format(new Date()));
         updateAlert();
         if (ambient.shown()) ambient.update();
         handler.postDelayed(this::tick, 30000);
@@ -184,17 +196,17 @@ public class MainActivity extends Activity {
         row.removeAllViews();
         String today = new SimpleDateFormat("yyyy-MM-dd", Locale.US).format(new Date());
         boolean fresh = today.equals(News.date);
-        ((TextView) findViewById(R.id.newsEyebrow)).setText(News.stories.isEmpty() ? "Top stories" : fresh ? "Top stories · " + new SimpleDateFormat("EEE d MMM", Locale.ENGLISH).format(new Date()) : "Top stories · from " + News.date);
-        ((TextView) findViewById(R.id.newsTitle)).setText(News.stories.isEmpty() ? "No stories yet" : "India, Germany, World");
+        ((TextView) findViewById(R.id.newsEyebrow)).setText(News.stories.isEmpty() ? L.t("topstories") : L.t("topstories") + " · " + (fresh ? new SimpleDateFormat("EEE d MMM", L.dateLocale()).format(new Date()) : L.f("from", News.date)));
+        ((TextView) findViewById(R.id.newsTitle)).setText(News.stories.isEmpty() ? L.t("nostories") : L.t("ingw"));
         for (News.Story st : News.stories) {
             View v = LayoutInflater.from(this).inflate(R.layout.news_card, row, false);
             Ui.apply(v);
             int tint = regionTint(st.region);
             v.findViewById(R.id.nBar).setBackgroundColor(tint);
-            ((TextView) v.findViewById(R.id.nRegion)).setText(st.region);
-            TextView h = v.findViewById(R.id.nHead); h.setText(st.headline); h.setTypeface(Ui.semibold);
-            ((TextView) v.findViewById(R.id.nSum)).setText(st.summary);
-            v.setOnClickListener(x -> { Tile t = byKey.get(LOUNGE_KEY); if (t != null) launch(t); });
+            ((TextView) v.findViewById(R.id.nRegion)).setText(L.t(st.region));
+            TextView h = v.findViewById(R.id.nHead); h.setText(st.h()); h.setTypeface(Ui.semibold);
+            ((TextView) v.findViewById(R.id.nSum)).setText(st.s());
+            v.setOnClickListener(x -> { Tile t = byKey.get(LOUNGE_KEY); if (t != null) Motion.zoomLaunch(this, x, tint, () -> launch(t)); });
             v.setOnFocusChangeListener((x, f) -> {
                 Motion.focus(x, f, Ui.dp(this, 10));
                 if (f) backdrop.tint(tint);
@@ -216,7 +228,7 @@ public class MainActivity extends Activity {
             case "com.amazon.firetv.youtube": return 0xFFE62117;
             case "com.zee5.amazon": return 0xFF8230C6;
             case "com.spotify.tv.android": return 0xFF1DB954;
-            case "com.amazon.cloud9": case TVBRO: return 0xFFD97757;
+            case "com.amazon.cloud9": case TVBRO: case LOUNGE_KEY: return 0xFFD97757;
             default: return 0xFF2D5BFF;
         }
     }
@@ -232,25 +244,26 @@ public class MainActivity extends Activity {
             if (out.size() >= 6) break;
             Card c = new Card();
             boolean live = m.live(now);
-            String sport = m.sport.equals("cricket") ? "Cricket" : "Football";
+            String sport = L.t(m.sport.equals("cricket") ? "cricket" : "football");
             c.live = live; c.big = m.big;
-            c.top = live ? "LIVE · " + shortComp(m.comp) : hm.format(new Date(m.kick)) + " · " + shortComp(m.comp);
+            c.top = live ? L.t("live") + " · " + shortComp(m.comp) : hm.format(new Date(m.kick)) + " · " + shortComp(m.comp);
             c.title = m.home + " – " + m.away;
             c.sub = m.app;
-            c.eyebrow = (live ? "Live now · " : "Today " + hm.format(new Date(m.kick)) + " · ") + sport;
+            c.eyebrow = (live ? L.t("livenow") + " · " : L.t("today") + " " + hm.format(new Date(m.kick)) + " · ") + sport;
             c.heroTitle = m.home + " v " + m.away;
-            c.heroSub = firstPart(m.comp) + (live ? "  ·  ends ~" + hm.format(new Date(m.kick + m.dur)) : "  ·  " + until(m.kick - now));
-            c.action = m.pkg.isEmpty() ? "Not on your apps" : "▶  " + m.app;
+            c.heroSub = firstPart(m.comp) + (live ? "  ·  " + L.f("ends", hm.format(new Date(m.kick + m.dur))) : "  ·  " + until(m.kick - now));
+            c.action = m.pkg.isEmpty() ? L.t("notapps") : "▶  " + m.app;
             c.tint = tintFor(m.pkg);
             c.open = () -> Football.open(this, m);
             out.add(c);
         }
         for (Posters.Item it : Posters.items) {
             Card c = new Card();
-            c.top = Posters.heading; c.title = it.title; c.sub = it.sub;
-            c.eyebrow = Posters.heading; c.heroTitle = it.title; c.heroSub = it.sub;
+            String head = "Tonight".equals(Posters.heading) ? L.t("tonight") : Posters.heading;
+            c.top = head; c.title = it.title; c.sub = it.sub;
+            c.eyebrow = head; c.heroTitle = it.title; c.heroSub = it.sub;
             String app = appName(it.pkg);
-            c.action = it.url != null && it.url.equals(LOUNGE_URL) ? "▶  Open the Lounge" : app.isEmpty() ? "▶  Open" : "▶  " + app;
+            c.action = it.url != null && it.url.equals(LOUNGE_URL) ? "▶  " + L.t("openlounge") : app.isEmpty() ? "▶  " + L.t("open") : "▶  " + app;
             c.tint = it.url != null && it.url.equals(LOUNGE_URL) ? 0xFFD97757 : tintFor(it.pkg);
             c.poster = it;
             c.open = () -> Posters.open(this, it);
@@ -258,9 +271,9 @@ public class MainActivity extends Activity {
         }
         if (out.isEmpty()) {
             Card c = new Card();
-            c.top = "Claude"; c.title = "Claude Lounge"; c.sub = "Ask anything";
-            c.eyebrow = "Claude"; c.heroTitle = "Ask Claude anything"; c.heroSub = "On the big screen, from your sofa.";
-            c.action = "▶  Open the Lounge"; c.tint = 0xFFD97757;
+            c.top = "Claude"; c.title = L.t("lounge"); c.sub = L.t("askshort");
+            c.eyebrow = "Claude"; c.heroTitle = L.t("askany"); c.heroSub = L.t("asksub");
+            c.action = "▶  " + L.t("openlounge"); c.tint = 0xFFD97757;
             c.open = () -> { Tile t = byKey.get(LOUNGE_KEY); if (t != null) launch(t); };
             out.add(c);
         }
@@ -282,7 +295,7 @@ public class MainActivity extends Activity {
 
     static String until(long ms) {
         long min = Math.max(1, ms / 60000);
-        return min < 60 ? "starts in " + min + " min" : "starts in " + (min / 60) + " h " + (min % 60) + " min";
+        return min < 60 ? L.f("startsmin", min) : L.f("startsh", min / 60, min % 60);
     }
 
     String appName(String pkg) {
@@ -306,7 +319,7 @@ public class MainActivity extends Activity {
             ((TextView) v.findViewById(R.id.cSub)).setText(c.sub);
             if (c.live) { View dot = v.findViewById(R.id.cDot); dot.setVisibility(View.VISIBLE); Motion.pulse(dot); ((TextView) v.findViewById(R.id.cTop)).setTextColor(0xFFFF8A8E); }
             if (c.big) v.findViewById(R.id.cStar).setVisibility(View.VISIBLE);
-            v.setOnClickListener(x -> c.open.run());
+            v.setOnClickListener(x -> Motion.zoomLaunch(this, x, c.tint, c.open));
             v.setOnFocusChangeListener((x, f) -> {
                 Motion.focus(x, f, Ui.dp(this, 10));
                 if (f) setHero(c);
@@ -336,29 +349,34 @@ public class MainActivity extends Activity {
     // ---------- settings ----------
 
     void openSettings() {
-        String[] walls = { "Photo of the day", "Dark (no photo)" };
-        String[] idles = { "Idle screen after 5 min", "Idle screen after 15 min", "No idle screen" };
-        String[] items = new String[walls.length + idles.length];
-        System.arraycopy(walls, 0, items, 0, walls.length);
-        System.arraycopy(idles, 0, items, walls.length, idles.length);
+        String[] langs = { "en", "hi", "de" };
+        String[] langNames = { "Language: English", "भाषा: हिन्दी", "Sprache: Deutsch" };
+        String[] walls = { L.t("s.photo"), L.t("s.dark") };
+        String[] idles = { L.t("s.idle5"), L.t("s.idle15"), L.t("s.idleoff") };
+        List<String> items = new ArrayList<>();
         boolean photo = settings.getString("wallpaper", "photo").equals("photo");
         int idle = settings.getInt("idle", 0);
-        boolean[] checked = new boolean[items.length];
-        checked[photo ? 0 : 1] = true; checked[walls.length + idle] = true;
-        for (int i = 0; i < items.length; i++) items[i] = (checked[i] ? "●  " : "○  ") + items[i];
+        for (int i = 0; i < 3; i++) items.add((langs[i].equals(L.lang) ? "●  " : "○  ") + langNames[i]);
+        for (int i = 0; i < 2; i++) items.add(((i == 0) == photo ? "●  " : "○  ") + walls[i]);
+        for (int i = 0; i < 3; i++) items.add((i == idle ? "●  " : "○  ") + idles[i]);
         new AlertDialog.Builder(this, android.R.style.Theme_DeviceDefault_Dialog_Alert)
                 .setTitle("Claude Home")
-                .setItems(items, (d, which) -> {
-                    if (which < walls.length) {
-                        String w = which == 0 ? "photo" : "dark";
+                .setItems(items.toArray(new String[0]), (d, which) -> {
+                    if (which < 3) {
+                        if (!langs[which].equals(L.lang)) {
+                            settings.edit().putString("lang", langs[which]).apply();
+                            Motion.curtain(this, this::recreate);
+                        }
+                    } else if (which < 5) {
+                        String w = which == 3 ? "photo" : "dark";
                         settings.edit().putString("wallpaper", w).apply();
                         backdrop.loadWallpaper(w, null);
                     } else {
-                        settings.edit().putInt("idle", which - walls.length).apply();
+                        settings.edit().putInt("idle", which - 5).apply();
                         resetIdle();
                     }
                 })
-                .setNegativeButton("Close", null)
+                .setNegativeButton(L.t("s.close"), null)
                 .show();
     }
 
@@ -372,7 +390,7 @@ public class MainActivity extends Activity {
         Intent lounge = new Intent(Intent.ACTION_VIEW, Uri.parse(LOUNGE_URL)).setPackage(TVBRO);
         if (pm.resolveActivity(lounge, 0) == null) lounge = new Intent(Intent.ACTION_VIEW, Uri.parse(LOUNGE_URL)).setPackage(SILK);
         if (pm.resolveActivity(lounge, 0) == null) lounge = new Intent(Intent.ACTION_VIEW, Uri.parse(LOUNGE_URL));
-        add(new Tile(LOUNGE_KEY, "Claude Lounge", getDrawable(R.drawable.banner), lounge));
+        add(new Tile(LOUNGE_KEY, L.t("lounge"), getDrawable(R.drawable.banner), lounge));
         for (String cat : new String[]{Intent.CATEGORY_LEANBACK_LAUNCHER, Intent.CATEGORY_LAUNCHER}) {
             Intent q = new Intent(Intent.ACTION_MAIN).addCategory(cat);
             for (ResolveInfo ri : pm.queryIntentActivities(q, 0)) {
@@ -385,7 +403,7 @@ public class MainActivity extends Activity {
                 Intent launch = new Intent(Intent.ACTION_MAIN).addCategory(cat)
                         .setClassName(pkg, ri.activityInfo.name).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 String label = String.valueOf(ri.loadLabel(pm));
-                if (pkg.equals("com.amazon.tv.launcher")) label = "Fire TV Home";
+                if (pkg.equals("com.amazon.tv.launcher")) label = L.t("firetvhome");
                 add(new Tile(pkg, label, icon, launch));
             }
         }
@@ -414,7 +432,7 @@ public class MainActivity extends Activity {
             View v = LayoutInflater.from(this).inflate(R.layout.dock_item, row, false);
             ((ImageView) v.findViewById(R.id.icon)).setImageDrawable(t.icon);
             v.setContentDescription(t.label);
-            v.setOnClickListener(x -> launch(t));
+            v.setOnClickListener(x -> Motion.zoomLaunch(this, x, tintFor(t.key), () -> launch(t)));
             v.setOnFocusChangeListener((x, f) -> Motion.dockFocus(x, f, Ui.dp(this, 5)));
             row.addView(v);
         }
@@ -428,7 +446,7 @@ public class MainActivity extends Activity {
             if (r.size() > 3) r = r.subList(0, 3);
             prefs.edit().putInt("n." + t.key, prefs.getInt("n." + t.key, 0) + 1)
                     .putString("recent", String.join(",", r)).apply();
-        } catch (Exception e) { Toast.makeText(this, "Cannot open " + t.label, Toast.LENGTH_SHORT).show(); }
+        } catch (Exception e) { Toast.makeText(this, L.f("cannotopen", t.label), Toast.LENGTH_SHORT).show(); }
     }
 
     class TileAdapter extends BaseAdapter {

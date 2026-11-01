@@ -61,7 +61,7 @@ public class Posters {
                 if (li == null) li = a.getPackageManager().getLaunchIntentForPackage(it.pkg);
                 if (li != null) { a.startActivity(li); return; }
             }
-            Toast.makeText(a, "Nothing to open yet", Toast.LENGTH_SHORT).show();
-        } catch (Exception e) { Toast.makeText(a, "Cannot open", Toast.LENGTH_SHORT).show(); }
+            Toast.makeText(a, L.t("nothingyet"), Toast.LENGTH_SHORT).show();
+        } catch (Exception e) { Toast.makeText(a, L.f("cannotopen", ""), Toast.LENGTH_SHORT).show(); }
     }
 }

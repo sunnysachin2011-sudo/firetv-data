@@ -2,6 +2,7 @@ package ai.claude.home;
 
 import android.app.Activity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import org.json.JSONObject;
@@ -35,13 +36,52 @@ public class Ambient {
     void hide() {
         if (!shown()) return;
         if (drift != null) { drift.cancel(); drift = null; }
-        root.animate().alpha(0f).setDuration(250).withEndAction(() -> root.setVisibility(View.GONE)).start();
+        TextView big = a.findViewById(R.id.ambClock);
+        TextView small = a.findViewById(R.id.clock);
+        ViewGroup box = (ViewGroup) root;
+        if (!Motion.on() || small.getWidth() == 0) {
+            root.animate().alpha(0f).setDuration(250).withEndAction(() -> root.setVisibility(View.GONE)).start();
+            return;
+        }
+        // The big clock flies into the small clock at the top right; everything else fades.
+        int[] b = new int[2], t = new int[2];
+        big.getLocationOnScreen(b); small.getLocationOnScreen(t);
+        float scale = small.getTextSize() / big.getTextSize();
+        big.setPivotX(big.getWidth()); big.setPivotY(big.getHeight() / 2f);
+        float dx = (t[0] + small.getWidth()) - (b[0] + big.getWidth());
+        float dy = (t[1] + small.getHeight() / 2f) - (b[1] + big.getHeight() / 2f);
+        small.setAlpha(0f);
+        java.util.List<View> others = new java.util.ArrayList<>();
+        collect(box, big, others);
+        for (View o : others) o.animate().alpha(0f).setStartDelay(60).setDuration(380).setInterpolator(Motion.STANDARD).start();
+        box.setBackgroundColor(0x00000000);
+        big.animate().scaleX(scale).scaleY(scale).translationX(dx).translationY(dy).setStartDelay(0).setDuration(560)
+                .setInterpolator(new android.view.animation.PathInterpolator(0.45f, 0f, 0.15f, 1f)).withEndAction(() -> {
+                    small.animate().alpha(1f).setDuration(160).start();
+                    big.animate().alpha(0f).setDuration(120).withEndAction(() -> {
+                        root.setVisibility(View.GONE);
+                        big.setScaleX(1f); big.setScaleY(1f); big.setTranslationX(0); big.setTranslationY(0); big.setAlpha(1f);
+                        for (View o : others) o.setAlpha(1f);
+                        box.setBackgroundColor(0xFF0B0D14);
+                    }).start();
+                }).start();
     }
+
+    /** Leaf views except the clock and its parents. */
+    static void collect(ViewGroup g, View keep, java.util.List<View> out) {
+        for (int i = 0; i < g.getChildCount(); i++) {
+            View c = g.getChildAt(i);
+            if (c == keep) continue;
+            if (c instanceof ViewGroup && contains((ViewGroup) c, keep)) collect((ViewGroup) c, keep, out);
+            else out.add(c);
+        }
+    }
+    static boolean contains(ViewGroup g, View v) { for (android.view.ViewParent p = v.getParent(); p != null; p = p.getParent()) if (p == g) return true; return false; }
 
     void update() {
         Date now = new Date();
         ((TextView) a.findViewById(R.id.ambClock)).setText(new SimpleDateFormat("HH:mm", Locale.ENGLISH).format(now));
-        ((TextView) a.findViewById(R.id.ambDate)).setText(new SimpleDateFormat("EEEE d MMMM", Locale.ENGLISH).format(now));
+        ((TextView) a.findViewById(R.id.ambDate)).setText(new SimpleDateFormat("EEEE d MMMM", L.dateLocale()).format(now));
         ((TextView) a.findViewById(R.id.ambNext)).setText(nextMatch());
         ((TextView) a.findViewById(R.id.ambWeather)).setText(weather);
         if (System.currentTimeMillis() - weatherAt > 30 * 60000L) loadWeather();
@@ -56,7 +96,7 @@ public class Ambient {
         }
         if (best == null) return "";
         SimpleDateFormat f = new SimpleDateFormat("HH:mm", Locale.US); f.setTimeZone(TimeZone.getTimeZone("Europe/Berlin"));
-        return (best.live(now) ? "● Live now   " : f.format(new Date(best.kick)) + "   ") + best.home + " – " + best.away + "   ·   " + best.app;
+        return (best.live(now) ? "● " + L.t("livenow") + "   " : f.format(new Date(best.kick)) + "   ") + best.home + " – " + best.away + "   ·   " + best.app;
     }
 
     void loadWeather() {
@@ -67,7 +107,7 @@ public class Ambient {
                 JSONObject c = o.getJSONObject("current");
                 JSONObject d = o.getJSONObject("daily");
                 String s = Math.round(c.getDouble("temperature_2m")) + "°  " + word(c.getInt("weather_code"))
-                        + "\nCologne  ·  " + Math.round(d.getJSONArray("temperature_2m_max").getDouble(0)) + "° / "
+                        + "\n" + L.t("cologne") + "  ·  " + Math.round(d.getJSONArray("temperature_2m_max").getDouble(0)) + "° / "
                         + Math.round(d.getJSONArray("temperature_2m_min").getDouble(0)) + "°";
                 weather = s;
                 a.runOnUiThread(() -> ((TextView) a.findViewById(R.id.ambWeather)).setText(weather));
@@ -76,16 +116,16 @@ public class Ambient {
     }
 
     static String word(int code) {
-        if (code == 0) return "Clear";
-        if (code <= 2) return "Partly cloudy";
-        if (code == 3) return "Cloudy";
-        if (code == 45 || code == 48) return "Fog";
-        if (code >= 51 && code <= 57) return "Drizzle";
-        if (code >= 61 && code <= 67) return "Rain";
-        if (code >= 71 && code <= 77) return "Snow";
-        if (code >= 80 && code <= 82) return "Showers";
-        if (code >= 85 && code <= 86) return "Snow showers";
-        if (code >= 95) return "Thunder";
+        if (code == 0) return L.t("w.clear");
+        if (code <= 2) return L.t("w.partly");
+        if (code == 3) return L.t("w.cloudy");
+        if (code == 45 || code == 48) return L.t("w.fog");
+        if (code >= 51 && code <= 57) return L.t("w.drizzle");
+        if (code >= 61 && code <= 67) return L.t("w.rain");
+        if (code >= 71 && code <= 77) return L.t("w.snow");
+        if (code >= 80 && code <= 82) return L.t("w.showers");
+        if (code >= 85 && code <= 86) return L.t("w.snowshowers");
+        if (code >= 95) return L.t("w.thunder");
         return "";
     }
 }

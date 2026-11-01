@@ -96,4 +96,63 @@ public class Motion {
         a.start();
         return a;
     }
+
+    // ---------- zoom launch ----------
+    static View cover; static long coverAt;
+
+    /** OK on a card: a panel in the card's colour grows from the card to fill the screen, then the app opens. */
+    static void zoomLaunch(android.app.Activity a, View src, int color, Runnable go) {
+        if (!on() || cover != null) { go.run(); return; }
+        ViewGroup root = a.findViewById(R.id.root);
+        int[] r = new int[2], s = new int[2];
+        root.getLocationOnScreen(r); src.getLocationOnScreen(s);
+        int w = Math.max(1, Math.round(src.getWidth() * src.getScaleX())), h = Math.max(1, Math.round(src.getHeight() * src.getScaleY()));
+        float x = s[0] - r[0], y = s[1] - r[1];
+        View v = new View(a);
+        android.graphics.drawable.GradientDrawable g = new android.graphics.drawable.GradientDrawable();
+        g.setColor((color & 0x00FFFFFF) | 0xFF000000); g.setCornerRadius(Ui.dp(a, 14));
+        v.setBackground(g); v.setAlpha(0f);
+        root.addView(v, new android.widget.FrameLayout.LayoutParams(w, h));
+        v.setX(x); v.setY(y); v.setTranslationZ(Ui.dp(a, 20));
+        float sx = root.getWidth() / (float) w * 1.04f, sy = root.getHeight() / (float) h * 1.04f;
+        float dx = root.getWidth() / 2f - (x + w / 2f), dy = root.getHeight() / 2f - (y + h / 2f);
+        cover = v; coverAt = System.currentTimeMillis();
+        v.animate().alpha(1f).setDuration(120).start();
+        v.animate().scaleX(sx).scaleY(sy).translationX(dx).translationY(dy).setStartDelay(40).setDuration(340)
+                .setInterpolator(new PathInterpolator(0.4f, 0f, 0.2f, 1f)).withEndAction(() -> {
+                    go.run();
+                    v.postDelayed(() -> { if (cover == v && System.currentTimeMillis() - coverAt > 1800) uncover(); }, 2000);
+                }).start();
+    }
+
+    /** Back on Home: the panel fades away. */
+    static void uncover() {
+        View v = cover; if (v == null) return; cover = null;
+        v.animate().cancel();
+        v.animate().alpha(0f).setStartDelay(80).setDuration(380).setInterpolator(EASE_OUT)
+                .withEndAction(() -> { if (v.getParent() != null) ((ViewGroup) v.getParent()).removeView(v); }).start();
+    }
+
+    // ---------- gliding tab marker ----------
+    static void movePill(View pill, View tab, boolean animate) {
+        if (tab.getWidth() == 0) { tab.post(() -> movePill(pill, tab, false)); return; }
+        ViewGroup.LayoutParams lp = pill.getLayoutParams();
+        int fromW = lp.width > 0 ? lp.width : tab.getWidth();
+        int toW = tab.getWidth(); lp.height = tab.getHeight();
+        pill.setVisibility(View.VISIBLE);
+        if (!animate || !on()) { lp.width = toW; pill.setLayoutParams(lp); pill.setTranslationX(tab.getLeft()); return; }
+        pill.animate().cancel();
+        pill.animate().translationX(tab.getLeft()).setDuration(340).setInterpolator(new OvershootInterpolator(0.9f)).start();
+        ValueAnimator wa = ValueAnimator.ofInt(fromW, toW);
+        wa.setDuration(340); wa.setInterpolator(EASE_OUT);
+        wa.addUpdateListener(x -> { lp.width = (int) x.getAnimatedValue(); pill.setLayoutParams(lp); });
+        wa.start();
+    }
+
+    // ---------- language change ----------
+    static void curtain(android.app.Activity a, Runnable then) {
+        View root = a.findViewById(R.id.root);
+        if (!on()) { then.run(); return; }
+        root.animate().alpha(0f).setDuration(220).setInterpolator(EASE_IN).withEndAction(then).start();
+    }
 }
