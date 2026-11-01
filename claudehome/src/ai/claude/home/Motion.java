@@ -76,11 +76,11 @@ public class Motion {
                 .withEndAction(() -> { v.setVisibility(View.GONE); v.setTranslationY(0); v.setAlpha(1f); }).start();
     }
 
-    /** LIVE dot breathes. */
+    /** LIVE dot breathes three times (the row rebuilds every minute, so it breathes again then). */
     static void pulse(View dot) {
         if (!on()) return;
         ObjectAnimator a = ObjectAnimator.ofFloat(dot, View.ALPHA, 1f, 0.25f);
-        a.setDuration(900); a.setRepeatMode(ValueAnimator.REVERSE); a.setRepeatCount(ValueAnimator.INFINITE);
+        a.setDuration(700); a.setRepeatMode(ValueAnimator.REVERSE); a.setRepeatCount(5);
         a.setInterpolator(STANDARD); a.start();
     }
 

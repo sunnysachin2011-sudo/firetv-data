@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FF0B0D14">
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
 
     <!-- backdrop: two images for crossfade, a colour tint, two scrims -->
     <ImageView android:id="@+id/backA" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:alpha="0" />
