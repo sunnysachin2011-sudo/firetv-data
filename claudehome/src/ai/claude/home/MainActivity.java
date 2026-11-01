@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
     /** One card in the For you row; the hero shows the focused one. */
     static class Card {
         String top, title, sub, eyebrow, heroTitle, heroSub, action; int tint; boolean live, big;
-        Posters.Item poster; Runnable open;
+        Posters.Item poster; Runnable open; String pkg, pkgLabel;
     }
 
     final List<Tile> tiles = new ArrayList<>();
@@ -72,11 +72,13 @@ public class MainActivity extends Activity {
             tabs[i].setOnFocusChangeListener((v, f) -> { if (f) showTab(idx); });
         }
         findViewById(R.id.gear).setOnClickListener(v -> openSettings());
+        findViewById(R.id.vpnPill).setOnClickListener(v -> openFix(null, null));
         applyTexts();
         buildTiles();
         adapter = new TileAdapter();
         grid.setAdapter(adapter);
         grid.setOnItemClickListener((p, v, pos, id) -> { Tile t = tiles.get(pos); Motion.zoomLaunch(this, v, tintFor(t.key), () -> launch(t)); });
+        grid.setOnItemLongClickListener((p, v, pos, id) -> { Tile t = tiles.get(pos); return fixFor(t.key, t.label); });
         grid.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             View last;
             public void onItemSelected(AdapterView<?> p, View v, int pos, long id) {
@@ -134,6 +136,7 @@ public class MainActivity extends Activity {
         buildDock();
         backdrop.loadWallpaper(settings.getString("wallpaper", "photo"), null);
         News.load(this, this::buildNews);
+        handler.postDelayed(this::updateVpnPill, 800);
         resetIdle();
         if (getIntent().getBooleanExtra("ambient", false)) { getIntent().removeExtra("ambient"); handler.postDelayed(ambient::show, 1500); }
     }
@@ -150,6 +153,12 @@ public class MainActivity extends Activity {
             return true;
         }
         resetIdle();
+        if (e.getKeyCode() == KeyEvent.KEYCODE_MENU && e.getAction() == KeyEvent.ACTION_UP && !settingsOpen()) {
+            View f = getCurrentFocus();
+            String pkg = f == null ? null : f == grid ? (grid.getSelectedItemPosition() >= 0 ? tiles.get(grid.getSelectedItemPosition()).key : null) : (String) f.getTag(R.id.vpnPill);
+            if (pkg != null && fixFor(pkg, "")) return true;
+            if (Vpn.installed(this)) { openFix(null, null); return true; }
+        }
         return super.dispatchKeyEvent(e);
     }
 
@@ -259,6 +268,7 @@ public class MainActivity extends Activity {
             c.action = m.pkg.isEmpty() ? L.t("notapps") : "▶  " + m.app;
             c.tint = tintFor(m.pkg);
             c.open = () -> Football.open(this, m);
+            c.pkg = m.pkg; c.pkgLabel = m.app;
             out.add(c);
         }
         for (Posters.Item it : Posters.items) {
@@ -271,6 +281,7 @@ public class MainActivity extends Activity {
             c.tint = it.url != null && it.url.equals(LOUNGE_URL) ? 0xFFD97757 : tintFor(it.pkg);
             c.poster = it;
             c.open = () -> Posters.open(this, it);
+            c.pkg = it.pkg; c.pkgLabel = app;
             out.add(c);
         }
         if (out.isEmpty()) {
@@ -324,6 +335,8 @@ public class MainActivity extends Activity {
             if (c.live) { View dot = v.findViewById(R.id.cDot); dot.setVisibility(View.VISIBLE); Motion.pulse(dot); ((TextView) v.findViewById(R.id.cTop)).setTextColor(0xFFFF8A8E); }
             if (c.big) v.findViewById(R.id.cStar).setVisibility(View.VISIBLE);
             v.setOnClickListener(x -> Motion.zoomLaunch(this, x, c.tint, c.open));
+            v.setOnLongClickListener(x -> fixFor(c.pkg, c.pkgLabel));
+            v.setTag(R.id.vpnPill, c.pkg);
             v.setOnFocusChangeListener((x, f) -> {
                 Motion.focus(x, f, Ui.dp(this, 10));
                 if (f) setHero(c);
@@ -378,6 +391,13 @@ public class MainActivity extends Activity {
             settings.edit().putInt("idle", i).apply();
             resetIdle();
         });
+        ((TextView) findViewById(R.id.setSub)).setText("Claude Home 1.3");
+        showPanel(first);
+    }
+
+    void showPanel(View first) {
+        View box = findViewById(R.id.settings), panel = findViewById(R.id.setPanel), scrim = findViewById(R.id.setScrim);
+        LinearLayout rows = findViewById(R.id.setRows);
         Ui.apply(box);
         ((TextView) findViewById(R.id.setTitle)).setTypeface(Ui.semibold);
         ((ViewGroup) findViewById(R.id.main)).setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);
@@ -389,6 +409,51 @@ public class MainActivity extends Activity {
             Motion.stagger(rows, Ui.dp(this, 18), 140);
         }
         first.requestFocus();
+    }
+
+    /** Fix panel for an Indian streaming app: VPN city, restart, clear cache, open. pkg may be null (VPN only). */
+    void openFix(String pkg, String label) {
+        ((TextView) findViewById(R.id.setTitle)).setText(pkg == null ? L.t("f.vpntitle") : label);
+        ((TextView) findViewById(R.id.setSub)).setText(L.t("f.sub"));
+        ((TextView) findViewById(R.id.setHint)).setText(L.t("f.hint"));
+        LinearLayout rows = findViewById(R.id.setRows);
+        rows.removeAllViews();
+        View first = addRow(rows, L.t("f.vpn"), new String[]{ L.t("Mumbai"), L.t("Delhi") }, Arrays.asList(Vpn.TUNNELS).indexOf(Vpn.current(this)), (i, chips) -> {
+            Vpn.switchTo(this, Vpn.TUNNELS[i]);
+            if (pkg != null) Vpn.stopApp(this, pkg);
+            Toast.makeText(this, L.f("f.switched", L.t(Vpn.TUNNELS[i])), Toast.LENGTH_SHORT).show();
+            updateVpnPill();
+        });
+        if (pkg != null) {
+            addRow(rows, L.t("f.fix"), new String[]{ L.t("f.restart"), L.t("f.cache"), L.t("f.open") }, -1, (i, chips) -> {
+                Tile t = byKey.get(pkg);
+                if (i == 0) { Vpn.stopApp(this, pkg); closeSettings(); handler.postDelayed(() -> { if (t != null) launch(t); }, 600); }
+                else if (i == 1) { Vpn.stopApp(this, pkg); Toast.makeText(this, L.t("f.cachehint"), Toast.LENGTH_LONG).show(); Vpn.openAppInfo(this, pkg); closeSettingsNow(); }
+                else { closeSettings(); if (t != null) launch(t); }
+            });
+        }
+        showPanel(first);
+    }
+
+    void closeSettingsNow() {
+        ((ViewGroup) findViewById(R.id.main)).setDescendantFocusability(ViewGroup.FOCUS_AFTER_DESCENDANTS);
+        findViewById(R.id.settings).setVisibility(View.GONE);
+    }
+
+    void updateVpnPill() {
+        TextView p = findViewById(R.id.vpnPill);
+        if (!Vpn.installed(this)) { p.setVisibility(View.GONE); return; }
+        p.setVisibility(View.VISIBLE);
+        boolean up = Vpn.vpnUp(this);
+        p.setText((up ? "● " : "○ ") + L.t(Vpn.current(this)));
+        p.setAlpha(up ? 1f : 0.6f);
+    }
+
+    /** Hold OK (or press Menu) on a streaming app: open the fix panel. */
+    boolean fixFor(String pkg, String label) {
+        if (pkg == null || !Vpn.isStreaming(pkg) || !Vpn.installed(this)) return false;
+        openFix(pkg, label);
+        return true;
     }
 
     interface Pick { void on(int i, List<View> chips); }
@@ -484,6 +549,8 @@ public class MainActivity extends Activity {
             ((ImageView) v.findViewById(R.id.icon)).setImageDrawable(t.icon);
             v.setContentDescription(t.label);
             v.setOnClickListener(x -> Motion.zoomLaunch(this, x, tintFor(t.key), () -> launch(t)));
+            v.setOnLongClickListener(x -> fixFor(t.key, t.label));
+            v.setTag(R.id.vpnPill, t.key);
             v.setOnFocusChangeListener((x, f) -> Motion.dockFocus(x, f, Ui.dp(this, 5)));
             row.addView(v);
         }

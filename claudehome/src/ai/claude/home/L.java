@@ -82,6 +82,18 @@ public class L {
         p("s.off", "Off", "बंद", "Aus");
         p("s.hint", "Back closes  ·  OK chooses", "Back से बंद  ·  OK से चुनें", "Zurück schließt  ·  OK wählt");
         p("vs", "v", "बनाम", "–");
+        p("f.vpn", "VPN location", "VPN स्थान", "VPN-Standort");
+        p("f.fix", "Fix the app", "ऐप ठीक करें", "App reparieren");
+        p("f.restart", "Restart app", "ऐप फिर से चलाएँ", "App neu starten");
+        p("f.cache", "Clear cache", "कैश साफ़ करें", "Cache leeren");
+        p("f.open", "Open", "खोलें", "Öffnen");
+        p("f.sub", "Blocked or not loading? Switch the city, then restart the app.", "ब्लॉक है या नहीं चल रहा? शहर बदलें, फिर ऐप दोबारा चलाएँ।", "Gesperrt oder lädt nicht? Stadt wechseln, dann App neu starten.");
+        p("f.hint", "Hold OK on an Indian app to open this  ·  Back closes", "किसी भारतीय ऐप पर OK दबाए रखें  ·  Back से बंद", "OK auf einer indischen App halten  ·  Zurück schließt");
+        p("f.vpntitle", "VPN for Indian apps", "भारतीय ऐप्स के लिए VPN", "VPN für indische Apps");
+        p("f.switched", "VPN: %s", "VPN: %s", "VPN: %s");
+        p("f.cachehint", "Press OK on \"Clear cache\", then Back", "\"Clear cache\" पर OK दबाएँ, फिर Back", "OK auf \"Cache leeren\", dann Zurück");
+        p("Mumbai", "Mumbai", "मुंबई", "Mumbai");
+        p("Delhi", "Delhi", "दिल्ली", "Delhi");
         p("tonight", "Tonight", "आज रात", "Heute Abend");
     }
 
