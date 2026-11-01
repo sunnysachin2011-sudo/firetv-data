@@ -59,11 +59,12 @@ public class MainActivity extends Activity {
         backdrop = new Backdrop(this);
         ambient = new Ambient(this);
         ((TextView) findViewById(R.id.heroTitle)).setTypeface(Ui.semibold);
+        ((TextView) findViewById(R.id.newsTitle)).setTypeface(Ui.semibold);
         ((TextView) findViewById(R.id.ambClock)).setTypeface(Ui.medium);
         clock = findViewById(R.id.clock);
         grid = findViewById(R.id.grid);
-        tabs = new TextView[]{ findViewById(R.id.tabForYou), findViewById(R.id.tabFootball), findViewById(R.id.tabApps) };
-        pages = new View[]{ findViewById(R.id.pageForYou), findViewById(R.id.pageFootball), grid };
+        tabs = new TextView[]{ findViewById(R.id.tabForYou), findViewById(R.id.tabFootball), findViewById(R.id.tabNews), findViewById(R.id.tabApps) };
+        pages = new View[]{ findViewById(R.id.pageForYou), findViewById(R.id.pageFootball), findViewById(R.id.pageNews), grid };
         for (int i = 0; i < tabs.length; i++) {
             final int idx = i;
             tabs[i].setOnClickListener(v -> showTab(idx));
@@ -88,16 +89,27 @@ public class MainActivity extends Activity {
         backdrop.tint(0xFF2D5BFF);
         backdrop.loadWallpaper(settings.getString("wallpaper", "photo"), null);
         Posters.load(this, this::buildForYou);
-        News.load(this, this::buildForYou);
+        News.load(this, this::buildNews);
         buildForYou();
         tick();
         handler.postDelayed(() -> { View first = ((LinearLayout) findViewById(R.id.heroRow)).getChildAt(0); if (first != null) first.requestFocus(); else tabs[0].requestFocus(); }, 700);
     }
 
     void showTab(int idx) {
+        int from = tab;
         tab = idx;
-        for (int i = 0; i < tabs.length; i++) { tabs[i].setSelected(i == idx); pages[i].setVisibility(i == idx ? View.VISIBLE : View.GONE); }
-        findViewById(R.id.dockScroll).setVisibility(idx == 2 ? View.GONE : View.VISIBLE);
+        for (int i = 0; i < tabs.length; i++) tabs[i].setSelected(i == idx);
+        View dock = findViewById(R.id.dockScroll);
+        boolean dockOn = idx != 3;
+        if (dockOn != (dock.getVisibility() == View.VISIBLE)) Motion.fade(dock, dockOn);
+        if (from == idx || !Motion.on()) {
+            for (int i = 0; i < pages.length; i++) { pages[i].setVisibility(i == idx ? View.VISIBLE : View.GONE); pages[i].setAlpha(1f); pages[i].setTranslationX(0); }
+            return;
+        }
+        Motion.swapPages(pages[from], pages[idx], idx > from ? 1 : -1, Ui.dp(this, 48));
+        if (idx == 0 && heroCard != null) backdrop.tint(heroCard.tint);
+        if (idx == 1) Motion.stagger(findViewById(R.id.footballRow2), Ui.dp(this, 24), 120);
+        if (idx == 2) { Motion.stagger(findViewById(R.id.newsRow), Ui.dp(this, 24), 120); backdrop.tint(0xFF6E7BFF); }
     }
 
     @Override protected void onNewIntent(Intent i) { super.onNewIntent(i); setIntent(i); }
@@ -109,7 +121,7 @@ public class MainActivity extends Activity {
         sortTiles(); if (adapter != null) adapter.notifyDataSetChanged();
         buildDock();
         backdrop.loadWallpaper(settings.getString("wallpaper", "photo"), null);
-        News.load(this, this::buildForYou);
+        News.load(this, this::buildNews);
         resetIdle();
         if (getIntent().getBooleanExtra("ambient", false)) { getIntent().removeExtra("ambient"); handler.postDelayed(ambient::show, 1500); }
     }
@@ -161,6 +173,37 @@ public class MainActivity extends Activity {
     /** Called by Football after each render. */
     void footballRendered(boolean hasMatches) { buildForYou(); }
 
+    static int regionTint(String r) {
+        if ("India".equalsIgnoreCase(r)) return 0xFFFF9933;
+        if ("Germany".equalsIgnoreCase(r)) return 0xFFE0B400;
+        return 0xFF3D8BFF;
+    }
+
+    void buildNews() {
+        LinearLayout row = findViewById(R.id.newsRow);
+        row.removeAllViews();
+        String today = new SimpleDateFormat("yyyy-MM-dd", Locale.US).format(new Date());
+        boolean fresh = today.equals(News.date);
+        ((TextView) findViewById(R.id.newsEyebrow)).setText(News.stories.isEmpty() ? "Top stories" : fresh ? "Top stories · " + new SimpleDateFormat("EEE d MMM", Locale.ENGLISH).format(new Date()) : "Top stories · from " + News.date);
+        ((TextView) findViewById(R.id.newsTitle)).setText(News.stories.isEmpty() ? "No stories yet" : "India, Germany, World");
+        for (News.Story st : News.stories) {
+            View v = LayoutInflater.from(this).inflate(R.layout.news_card, row, false);
+            Ui.apply(v);
+            int tint = regionTint(st.region);
+            v.findViewById(R.id.nBar).setBackgroundColor(tint);
+            ((TextView) v.findViewById(R.id.nRegion)).setText(st.region);
+            TextView h = v.findViewById(R.id.nHead); h.setText(st.headline); h.setTypeface(Ui.semibold);
+            ((TextView) v.findViewById(R.id.nSum)).setText(st.summary);
+            v.setOnClickListener(x -> { Tile t = byKey.get(LOUNGE_KEY); if (t != null) launch(t); });
+            v.setOnFocusChangeListener((x, f) -> {
+                Motion.focus(x, f, Ui.dp(this, 10));
+                if (f) backdrop.tint(tint);
+            });
+            row.addView(v);
+        }
+        if (tab == 2) Motion.stagger(row, Ui.dp(this, 24), 0);
+    }
+
     // ---------- For you row + hero ----------
 
     static int tintFor(String pkg) {
@@ -200,15 +243,6 @@ public class MainActivity extends Activity {
             c.action = m.pkg.isEmpty() ? "Not on your apps" : "▶  " + m.app;
             c.tint = tintFor(m.pkg);
             c.open = () -> Football.open(this, m);
-            out.add(c);
-        }
-        String today = new SimpleDateFormat("yyyy-MM-dd", Locale.US).format(new Date());
-        if (today.equals(News.date)) for (News.Story st : News.stories) {
-            Card c = new Card();
-            c.top = st.region + " · Top story"; c.title = st.headline; c.sub = "";
-            c.eyebrow = "Top story · " + st.region; c.heroTitle = st.headline; c.heroSub = st.summary;
-            c.action = "▶  Ask Claude about it"; c.tint = 0xFF6E7BFF;
-            c.open = () -> { Tile t = byKey.get(LOUNGE_KEY); if (t != null) launch(t); };
             out.add(c);
         }
         for (Posters.Item it : Posters.items) {
@@ -259,6 +293,7 @@ public class MainActivity extends Activity {
 
     void buildForYou() {
         LinearLayout row = findViewById(R.id.heroRow);
+        boolean first = row.getChildCount() == 0;
         int focused = -1;
         for (int i = 0; i < row.getChildCount(); i++) if (row.getChildAt(i).hasFocus()) focused = i;
         row.removeAllViews();
@@ -269,16 +304,17 @@ public class MainActivity extends Activity {
             ((TextView) v.findViewById(R.id.cTop)).setText(c.top);
             TextView title = v.findViewById(R.id.cTitle); title.setText(c.title); title.setTypeface(Ui.semibold);
             ((TextView) v.findViewById(R.id.cSub)).setText(c.sub);
-            if (c.live) { v.findViewById(R.id.cDot).setVisibility(View.VISIBLE); ((TextView) v.findViewById(R.id.cTop)).setTextColor(0xFFFF8A8E); }
+            if (c.live) { View dot = v.findViewById(R.id.cDot); dot.setVisibility(View.VISIBLE); Motion.pulse(dot); ((TextView) v.findViewById(R.id.cTop)).setTextColor(0xFFFF8A8E); }
             if (c.big) v.findViewById(R.id.cStar).setVisibility(View.VISIBLE);
             v.setOnClickListener(x -> c.open.run());
             v.setOnFocusChangeListener((x, f) -> {
-                x.animate().scaleX(f ? 1.08f : 1f).scaleY(f ? 1.08f : 1f).translationZ(f ? Ui.dp(this, 10) : 0).setDuration(160).start();
+                Motion.focus(x, f, Ui.dp(this, 10));
                 if (f) setHero(c);
             });
             row.addView(v);
         }
         if (focused >= 0 && row.getChildCount() > 0) row.getChildAt(Math.min(focused, row.getChildCount() - 1)).requestFocus();
+        if (first && tab == 0) Motion.stagger(row, Ui.dp(this, 28), 250);
         if (heroCard == null || focused < 0) setHero(list.get(0));
     }
 
@@ -289,15 +325,12 @@ public class MainActivity extends Activity {
         backdrop.showImage(c.poster != null ? c.poster.bitmap : null);
         if (same) return;
         View box = findViewById(R.id.heroText);
-        box.animate().cancel();
-        box.animate().alpha(0f).translationX(-Ui.dp(this, 10)).setDuration(110).withEndAction(() -> {
+        Motion.heroSwap((ViewGroup) box, Ui.dp(this, 16), () -> {
             ((TextView) findViewById(R.id.heroEyebrow)).setText(c.eyebrow);
             ((TextView) findViewById(R.id.heroTitle)).setText(c.heroTitle);
             ((TextView) findViewById(R.id.heroSub)).setText(c.heroSub);
             ((TextView) findViewById(R.id.heroAction)).setText(c.action);
-            box.setTranslationX(Ui.dp(this, 14));
-            box.animate().alpha(1f).translationX(0).setDuration(220).start();
-        }).start();
+        });
     }
 
     // ---------- settings ----------
@@ -382,7 +415,7 @@ public class MainActivity extends Activity {
             ((ImageView) v.findViewById(R.id.icon)).setImageDrawable(t.icon);
             v.setContentDescription(t.label);
             v.setOnClickListener(x -> launch(t));
-            v.setOnFocusChangeListener((x, f) -> x.animate().scaleX(f ? 1.14f : 1f).scaleY(f ? 1.14f : 1f).translationY(f ? -Ui.dp(this, 4) : 0).setDuration(150).start());
+            v.setOnFocusChangeListener((x, f) -> Motion.dockFocus(x, f, Ui.dp(this, 5)));
             row.addView(v);
         }
     }

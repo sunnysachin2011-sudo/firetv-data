@@ -13,6 +13,7 @@ public class Ambient {
     static final String WEATHER = "https://api.open-meteo.com/v1/forecast?latitude=50.94&longitude=6.92&current=temperature_2m,weather_code&daily=temperature_2m_max,temperature_2m_min&timezone=Europe%2FBerlin&forecast_days=1";
     final Activity a; final View root;
     String weather = ""; long weatherAt = 0;
+    android.animation.ValueAnimator drift;
 
     Ambient(Activity a) { this.a = a; root = a.findViewById(R.id.ambient); }
 
@@ -24,7 +25,10 @@ public class Ambient {
         ((TextView) a.findViewById(R.id.ambCredit)).setText(Backdrop.credit);
         update();
         root.setAlpha(0f); root.setVisibility(View.VISIBLE);
-        root.animate().alpha(1f).setDuration(800).start();
+        root.animate().alpha(1f).setDuration(1200).start();
+        if (drift == null) drift = Motion.kenBurns(a.findViewById(R.id.ambBack), 1.12f, 60000);
+        View clock = a.findViewById(R.id.ambClock);
+        if (Motion.on()) { clock.setAlpha(0f); clock.setTranslationY(40); clock.animate().alpha(1f).translationY(0).setStartDelay(500).setDuration(900).setInterpolator(Motion.EASE_OUT).start(); }
         root.requestFocus();
     }
 

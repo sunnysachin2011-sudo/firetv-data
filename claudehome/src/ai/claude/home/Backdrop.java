@@ -65,9 +65,13 @@ public class Backdrop {
         tmp.renameTo(into);
     }
 
+    android.animation.ValueAnimator drift;
     void show(Bitmap bm) {
+        boolean firstTime = backA.getDrawable() == null;
         backA.setImageBitmap(bm);
-        backA.animate().alpha(0.9f).setDuration(900).start();
+        if (firstTime) { backA.setScaleX(1.06f); backA.setScaleY(1.06f); }
+        backA.animate().alpha(0.9f).setDuration(firstTime ? 1400 : 600).setInterpolator(Motion.EASE_OUT).start();
+        if (drift == null) backA.postDelayed(() -> drift = Motion.kenBurns(backA, 1.09f, 45000), firstTime ? 1400 : 0);
     }
 
     /** Poster art for the focused card (or null to go back to the wallpaper). */

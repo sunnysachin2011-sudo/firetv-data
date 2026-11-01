@@ -17,6 +17,7 @@
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
             <TextView android:id="@+id/tabForYou" style="@style/Tab" android:text="For you" android:nextFocusDown="@+id/heroRow" />
             <TextView android:id="@+id/tabFootball" style="@style/Tab" android:text="Sport" android:layout_marginLeft="4dp" />
+            <TextView android:id="@+id/tabNews" style="@style/Tab" android:text="News" android:layout_marginLeft="4dp" />
             <TextView android:id="@+id/tabApps" style="@style/Tab" android:text="Apps" android:layout_marginLeft="4dp" />
             <View android:layout_width="0dp" android:layout_weight="1" android:layout_height="1dp" />
             <TextView android:id="@+id/greeting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="#B3FFFFFF" android:layout_marginRight="16dp" />
@@ -47,6 +48,17 @@
                     <LinearLayout android:id="@+id/footballRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:clipChildren="false" />
                 </HorizontalScrollView>
                 <TextView android:id="@+id/footballNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textSize="13sp" android:textColor="#99FFFFFF" android:text="Football and men's cricket. New list every morning at 06:46." />
+            </LinearLayout>
+
+            <!-- NEWS tab -->
+            <LinearLayout android:id="@+id/pageNews" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:visibility="gone">
+                <TextView android:id="@+id/newsEyebrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34dp" android:textSize="13sp" android:textColor="#FF9FC1FF" android:letterSpacing="0.15" android:textAllCaps="true" android:text="Top stories" />
+                <TextView android:id="@+id/newsTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textSize="40sp" android:textColor="#FFFFFFFF" android:text="Today in three stories" />
+                <View android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1" />
+                <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none" android:clipToPadding="false" android:clipChildren="false" android:paddingTop="12dp" android:paddingBottom="12dp" android:paddingLeft="6dp">
+                    <LinearLayout android:id="@+id/newsRow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:clipChildren="false" />
+                </HorizontalScrollView>
+                <TextView android:id="@+id/newsNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textSize="13sp" android:textColor="#99FFFFFF" android:text="New stories every morning at 06:46. OK on a story opens the Lounge to ask about it." />
             </LinearLayout>
 
             <!-- APPS tab -->

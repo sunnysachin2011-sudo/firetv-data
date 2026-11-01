@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="268dp" android:layout_height="230dp" android:layout_marginRight="18dp"
+    android:orientation="vertical" android:background="@drawable/card_glass"
+    android:focusable="true" android:focusableInTouchMode="true" android:padding="18dp">
+    <View android:id="@+id/nBar" android:layout_width="28dp" android:layout_height="3dp" android:background="#FFFFFFFF" />
+    <TextView android:id="@+id/nRegion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"
+        android:textSize="12sp" android:letterSpacing="0.15" android:textAllCaps="true" android:textColor="#C8FFFFFF" />
+    <TextView android:id="@+id/nHead" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+        android:textSize="20sp" android:textStyle="bold" android:textColor="#FFFFFFFF" android:maxLines="3" android:ellipsize="end" android:lineSpacingMultiplier="1.05" />
+    <TextView android:id="@+id/nSum" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"
+        android:textSize="13sp" android:textColor="#B3FFFFFF" android:maxLines="4" android:ellipsize="end" android:lineSpacingMultiplier="1.1" />
+</LinearLayout>
