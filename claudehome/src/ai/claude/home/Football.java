@@ -24,7 +24,12 @@ public class Football {
         long kick, dur = MATCH_MS; String home, away, comp, app, pkg, sport = "football"; boolean big;
         boolean live(long now) { return kick > 0 && now >= kick && now < kick + dur; }
         boolean soon(long now) { return kick > 0 && now >= kick - ALERT_MS && now < kick; }
-        String teams() { return home + "  –  " + away; }
+        String teams() { return h() + "  –  " + a(); }
+        java.util.Map<String, String[]> tr = new java.util.HashMap<>();   // lang -> {home, away, comp}
+        String pick(int i, String en) { String[] v = tr.get(L.lang); return v == null || v[i] == null || v[i].isEmpty() ? en : v[i]; }
+        String h() { return pick(0, home); }
+        String a() { return pick(1, away); }
+        String c() { return pick(2, comp); }
     }
 
     static List<Match> matches = new ArrayList<>();
@@ -68,6 +73,7 @@ public class Football {
                 JSONObject j = ms.getJSONObject(i); Match m = new Match();
                 try { m.kick = inF.parse(j.optString("kickoff")).getTime(); } catch (Exception e) { m.kick = 0; }
                 m.home = j.optString("home"); m.away = j.optString("away"); m.comp = j.optString("competition");
+                for (String lg : new String[]{"hi", "de"}) m.tr.put(lg, new String[]{ j.optString("home_" + lg), j.optString("away_" + lg), j.optString("competition_" + lg) });
                 m.app = j.optString("app"); m.pkg = j.optString("package"); m.big = j.optBoolean("big");
                 m.sport = j.optString("sport", "football");
                 if (j.has("duration_min")) m.dur = j.optLong("duration_min") * 60000L; else if (m.sport.equals("cricket")) m.dur = 8 * 3600 * 1000L;
@@ -109,7 +115,7 @@ public class Football {
             } else if (over) { tvTime.setText(t + "   " + L.t("finished")); tvTime.setTextColor(a.getColor(R.color.muted)); v.setAlpha(0.55f); }
             else tvTime.setText(t);
             ((TextView) v.findViewById(R.id.mTeams)).setText(m.teams());
-            ((TextView) v.findViewById(R.id.mComp)).setText((m.sport.equals("cricket") ? "\uD83C\uDFCF " : "\u26BD ") + m.comp);
+            ((TextView) v.findViewById(R.id.mComp)).setText((m.sport.equals("cricket") ? "\uD83C\uDFCF " : "\u26BD ") + m.c());
             TextView tvApp = v.findViewById(R.id.mApp);
             tvApp.setText(m.app); if (m.pkg.isEmpty()) tvApp.setAlpha(0.5f);
             if (m.big) v.findViewById(R.id.mBig).setVisibility(View.VISIBLE);
@@ -138,9 +144,9 @@ public class Football {
 
     static String alertText(Match m) {
         long now = System.currentTimeMillis();
-        if (m.live(now)) return L.f("alertlive", m.home + " – " + m.away, m.app);
+        if (m.live(now)) return L.f("alertlive", m.h() + " – " + m.a(), m.app);
         long min = Math.max(1, (m.kick - now) / 60000);
-        return L.f("alertsoon", m.home + " – " + m.away, min, m.app);
+        return L.f("alertsoon", m.h() + " – " + m.a(), min, m.app);
     }
 
     static void empty(View title, View scroll, String msg) {

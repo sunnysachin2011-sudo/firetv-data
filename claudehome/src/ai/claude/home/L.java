@@ -81,6 +81,7 @@ public class L {
         p("s.min", "%d min", "%d मिनट", "%d Min.");
         p("s.off", "Off", "बंद", "Aus");
         p("s.hint", "Back closes  ·  OK chooses", "Back से बंद  ·  OK से चुनें", "Zurück schließt  ·  OK wählt");
+        p("vs", "v", "बनाम", "–");
         p("tonight", "Tonight", "आज रात", "Heute Abend");
     }
 

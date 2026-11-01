@@ -250,12 +250,12 @@ public class MainActivity extends Activity {
             boolean live = m.live(now);
             String sport = L.t(m.sport.equals("cricket") ? "cricket" : "football");
             c.live = live; c.big = m.big;
-            c.top = live ? L.t("live") + " · " + shortComp(m.comp) : hm.format(new Date(m.kick)) + " · " + shortComp(m.comp);
-            c.title = m.home + " – " + m.away;
+            c.top = live ? L.t("live") + " · " + shortComp(m.c()) : hm.format(new Date(m.kick)) + " · " + shortComp(m.c());
+            c.title = m.h() + " – " + m.a();
             c.sub = m.app;
             c.eyebrow = (live ? L.t("livenow") + " · " : L.t("today") + " " + hm.format(new Date(m.kick)) + " · ") + sport;
-            c.heroTitle = m.home + " v " + m.away;
-            c.heroSub = firstPart(m.comp) + (live ? "  ·  " + L.f("ends", hm.format(new Date(m.kick + m.dur))) : "  ·  " + until(m.kick - now));
+            c.heroTitle = m.h() + " " + L.t("vs") + " " + m.a();
+            c.heroSub = firstPart(m.c()) + (live ? "  ·  " + L.f("ends", hm.format(new Date(m.kick + m.dur))) : "  ·  " + until(m.kick - now));
             c.action = m.pkg.isEmpty() ? L.t("notapps") : "▶  " + m.app;
             c.tint = tintFor(m.pkg);
             c.open = () -> Football.open(this, m);
@@ -263,9 +263,9 @@ public class MainActivity extends Activity {
         }
         for (Posters.Item it : Posters.items) {
             Card c = new Card();
-            String head = "Tonight".equals(Posters.heading) ? L.t("tonight") : Posters.heading;
-            c.top = head; c.title = it.title; c.sub = it.sub;
-            c.eyebrow = head; c.heroTitle = it.title; c.heroSub = it.sub;
+            String head = L.t("tonight");
+            c.top = head; c.title = it.t(); c.sub = it.s();
+            c.eyebrow = head; c.heroTitle = it.t(); c.heroSub = it.s();
             String app = appName(it.pkg);
             c.action = it.url != null && it.url.equals(LOUNGE_URL) ? "▶  " + L.t("openlounge") : app.isEmpty() ? "▶  " + L.t("open") : "▶  " + app;
             c.tint = it.url != null && it.url.equals(LOUNGE_URL) ? 0xFFD97757 : tintFor(it.pkg);

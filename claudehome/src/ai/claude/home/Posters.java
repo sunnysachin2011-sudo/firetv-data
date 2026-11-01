@@ -15,7 +15,11 @@ import java.util.*;
 public class Posters {
     static final String URL_JSON = "https://raw.githubusercontent.com/sunnysachin2011-sudo/firetv-data/main/posters.json";
 
-    static class Item { String title, sub, image, pkg, url; Bitmap bitmap; }
+    static class Item {
+        String title, sub, image, pkg, url; Bitmap bitmap; Map<String, String[]> tr = new HashMap<>();
+        String t() { String[] v = tr.get(L.lang); return v == null || v[0].isEmpty() ? title : v[0]; }
+        String s() { String[] v = tr.get(L.lang); return v == null || v[1].isEmpty() ? sub : v[1]; }
+    }
 
     static List<Item> items = new ArrayList<>();
     static String heading = "Tonight";
@@ -31,6 +35,7 @@ public class Posters {
                 for (int i = 0; arr != null && i < arr.length(); i++) {
                     JSONObject j = arr.getJSONObject(i); Item it = new Item();
                     it.title = j.optString("title"); it.sub = j.optString("subtitle"); it.image = j.optString("image");
+                    for (String lg : new String[]{"hi", "de"}) it.tr.put(lg, new String[]{ j.optString("title_" + lg), j.optString("subtitle_" + lg) });
                     it.pkg = j.optString("package"); it.url = j.optString("url"); list.add(it);
                 }
             } catch (Exception ignored) {}

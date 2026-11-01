@@ -96,7 +96,7 @@ public class Ambient {
         }
         if (best == null) return "";
         SimpleDateFormat f = new SimpleDateFormat("HH:mm", Locale.US); f.setTimeZone(TimeZone.getTimeZone("Europe/Berlin"));
-        return (best.live(now) ? "● " + L.t("livenow") + "   " : f.format(new Date(best.kick)) + "   ") + best.home + " – " + best.away + "   ·   " + best.app;
+        return (best.live(now) ? "● " + L.t("livenow") + "   " : f.format(new Date(best.kick)) + "   ") + best.h() + " – " + best.a() + "   ·   " + best.app;
     }
 
     void loadWeather() {
