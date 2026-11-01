@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="22dp">
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="22dp" android:clipChildren="false" android:clipToPadding="false">
     <TextView android:id="@+id/rowLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:textSize="12sp" android:letterSpacing="0.15" android:textAllCaps="true" android:textColor="#FF9FC1FF" />
     <LinearLayout android:id="@+id/rowChips" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal"
-        android:layout_marginTop="10dp" android:clipChildren="false" android:clipToPadding="false" />
+        android:layout_marginTop="8dp" android:layout_marginLeft="-6dp" android:paddingLeft="6dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:clipChildren="false" android:clipToPadding="false" />
 </LinearLayout>
