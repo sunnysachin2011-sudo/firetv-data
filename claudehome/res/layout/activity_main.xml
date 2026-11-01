@@ -7,8 +7,8 @@
     <ImageView android:id="@+id/backB" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:alpha="0" />
     <View android:id="@+id/tintA" android:layout_width="match_parent" android:layout_height="match_parent" />
     <View android:id="@+id/tintB" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0" />
-    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/scrim_left" />
-    <View android:layout_width="match_parent" android:layout_height="320dp" android:layout_gravity="bottom" android:background="@drawable/scrim_bottom" />
+    <View android:id="@+id/scrimL" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/scrim_left" />
+    <View android:id="@+id/scrimB" android:layout_width="match_parent" android:layout_height="320dp" android:layout_gravity="bottom" android:background="@drawable/scrim_bottom" />
 
     <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
         android:paddingLeft="52dp" android:paddingRight="52dp" android:paddingTop="20dp">

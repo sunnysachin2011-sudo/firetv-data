@@ -34,6 +34,7 @@ public class Ambient {
 
     void hide() {
         if (!shown()) return;
+        if (drift != null) { drift.cancel(); drift = null; }
         root.animate().alpha(0f).setDuration(250).withEndAction(() -> root.setVisibility(View.GONE)).start();
     }
 

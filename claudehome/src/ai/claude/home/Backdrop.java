@@ -25,6 +25,9 @@ public class Backdrop {
         this.a = a;
         backA = a.findViewById(R.id.backA); backB = a.findViewById(R.id.backB);
         tintA = a.findViewById(R.id.tintA); tintB = a.findViewById(R.id.tintB);
+        tintA.setLayerType(View.LAYER_TYPE_HARDWARE, null); tintB.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+        a.findViewById(R.id.scrimL).setLayerType(View.LAYER_TYPE_HARDWARE, null);
+        a.findViewById(R.id.scrimB).setLayerType(View.LAYER_TYPE_HARDWARE, null);
     }
 
     /** style: "photo" or "gradient" */
@@ -69,9 +72,11 @@ public class Backdrop {
     void show(Bitmap bm) {
         boolean firstTime = backA.getDrawable() == null;
         backA.setImageBitmap(bm);
-        if (firstTime) { backA.setScaleX(1.06f); backA.setScaleY(1.06f); }
-        backA.animate().alpha(0.9f).setDuration(firstTime ? 1400 : 600).setInterpolator(Motion.EASE_OUT).start();
-        if (drift == null) backA.postDelayed(() -> drift = Motion.kenBurns(backA, 1.09f, 45000), firstTime ? 1400 : 0);
+        backA.animate().cancel();
+        if (firstTime && Motion.on()) { backA.setScaleX(1.08f); backA.setScaleY(1.08f);
+            backA.animate().alpha(0.9f).scaleX(1f).scaleY(1f).setDuration(6000).setInterpolator(Motion.EASE_OUT)
+                .withEndAction(() -> backA.setLayerType(android.view.View.LAYER_TYPE_NONE, null)).start(); }
+        else backA.animate().alpha(0.9f).setDuration(600).start();
     }
 
     /** Poster art for the focused card (or null to go back to the wallpaper). */
