@@ -99,6 +99,8 @@ public class MainActivity extends Activity {
         findViewById(R.id.dockScroll).setVisibility(idx == 2 ? View.GONE : View.VISIBLE);
     }
 
+    @Override protected void onNewIntent(Intent i) { super.onNewIntent(i); setIntent(i); }
+
     @Override protected void onResume() {
         super.onResume();
         resumed = true;
@@ -107,6 +109,7 @@ public class MainActivity extends Activity {
         buildDock();
         backdrop.loadWallpaper(settings.getString("wallpaper", "photo"), null);
         resetIdle();
+        if (getIntent().getBooleanExtra("ambient", false)) { getIntent().removeExtra("ambient"); handler.postDelayed(ambient::show, 1500); }
     }
 
     @Override protected void onPause() { resumed = false; handler.removeCallbacks(idle); ambient.hide(); super.onPause(); }
@@ -191,7 +194,7 @@ public class MainActivity extends Activity {
             c.sub = m.app;
             c.eyebrow = (live ? "Live now · " : "Today " + hm.format(new Date(m.kick)) + " · ") + sport;
             c.heroTitle = m.home + " v " + m.away;
-            c.heroSub = m.comp + (live ? "  ·  ends ~" + hm.format(new Date(m.kick + m.dur)) : "  ·  " + until(m.kick - now));
+            c.heroSub = firstPart(m.comp) + (live ? "  ·  ends ~" + hm.format(new Date(m.kick + m.dur)) : "  ·  " + until(m.kick - now));
             c.action = m.pkg.isEmpty() ? "Not on your apps" : "▶  " + m.app;
             c.tint = tintFor(m.pkg);
             c.open = () -> Football.open(this, m);
@@ -217,6 +220,12 @@ public class MainActivity extends Activity {
             out.add(c);
         }
         return out;
+    }
+
+    static String firstPart(String comp) {
+        if (comp == null) return "";
+        int i = comp.indexOf(',');
+        return i > 0 ? comp.substring(0, i) : comp;
     }
 
     static String shortComp(String comp) {
