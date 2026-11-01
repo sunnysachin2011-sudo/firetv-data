@@ -452,6 +452,7 @@ public class MainActivity extends Activity {
     /** Hold OK (or press Menu) on a streaming app: open the fix panel. */
     boolean fixFor(String pkg, String label) {
         if (pkg == null || !Vpn.isStreaming(pkg) || !Vpn.installed(this)) return false;
+        if (label == null || label.isEmpty()) { Tile t = byKey.get(pkg); label = t != null ? t.label : pkg; }
         openFix(pkg, label);
         return true;
     }
