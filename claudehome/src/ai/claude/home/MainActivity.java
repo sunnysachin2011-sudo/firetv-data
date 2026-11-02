@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
     static final String TVBRO = "com.phlox.tvwebbrowser";
     static final String LOUNGE_KEY = "claude.lounge";
     static final String[] FAVOURITES = { "in.startv.hotstar", "com.onemainstream.sonyliv.android", "com.fancode.tv",
-            "com.netflix.ninja", "com.amazon.firetv.youtube", "com.spotify.tv.android", "com.zee5.amazon", LOUNGE_KEY, TVBRO, "com.amazon.tv.launcher" };
+            "com.netflix.ninja", "com.amazon.firebat", "com.amazon.firetv.youtube", "com.spotify.tv.android", "com.zee5.amazon", LOUNGE_KEY, TVBRO, "com.amazon.tv.launcher" };
     static final long[] IDLE_CHOICES = { 5 * 60000L, 15 * 60000L, 0 };
 
     static class Tile {
@@ -397,7 +397,7 @@ public class MainActivity extends Activity {
             findViewById(R.id.gear).requestFocus();
             startActivity(new Intent(this, PictureActivity.class).putExtra("mode", i == 0 ? "wizard" : "patterns"));
         });
-        ((TextView) findViewById(R.id.setSub)).setText("Claude Home 1.4");
+        ((TextView) findViewById(R.id.setSub)).setText("Claude Home 1.5");
         showPanel(first);
     }
 
