@@ -238,6 +238,7 @@ public class MainActivity extends Activity {
             case "com.onemainstream.sonyliv.android": return 0xFFC9971C;
             case "com.fancode.tv": return 0xFFFF5B2E;
             case "com.netflix.ninja": return 0xFFE50914;
+            case "com.amazon.firebat": return 0xFF1A98FF;
             case "com.amazon.firetv.youtube": return 0xFFE62117;
             case "com.zee5.amazon": return 0xFF8230C6;
             case "com.spotify.tv.android": return 0xFF1DB954;
@@ -391,7 +392,12 @@ public class MainActivity extends Activity {
             settings.edit().putInt("idle", i).apply();
             resetIdle();
         });
-        ((TextView) findViewById(R.id.setSub)).setText("Claude Home 1.3");
+        addRow(rows, L.t("s.pic"), new String[]{ L.t("s.picstart"), L.t("s.picpat") }, -1, (i, chips) -> {
+            closeSettingsNow();
+            findViewById(R.id.gear).requestFocus();
+            startActivity(new Intent(this, PictureActivity.class).putExtra("mode", i == 0 ? "wizard" : "patterns"));
+        });
+        ((TextView) findViewById(R.id.setSub)).setText("Claude Home 1.4");
         showPanel(first);
     }
 
@@ -411,7 +417,7 @@ public class MainActivity extends Activity {
         first.requestFocus();
     }
 
-    /** Fix panel for an Indian streaming app: VPN city, restart, clear cache, open. pkg may be null (VPN only). */
+    /** Fix panel for an app that uses the VPN (Indian apps, Netflix, Prime Video): VPN city, restart, clear cache, open. pkg may be null (VPN only). */
     void openFix(String pkg, String label) {
         ((TextView) findViewById(R.id.setTitle)).setText(pkg == null ? L.t("f.vpntitle") : label);
         ((TextView) findViewById(R.id.setSub)).setText(L.t("f.sub"));

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ai.claude.home" android:versionCode="13" android:versionName="1.3">
+    package="ai.claude.home" android:versionCode="14" android:versionName="1.4">
     <uses-sdk android:minSdkVersion="25" android:targetSdkVersion="30" />
     <uses-feature android:name="android.software.leanback" android:required="false" />
     <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
@@ -26,6 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PictureActivity" android:exported="true" android:screenOrientation="landscape"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
         <receiver android:name=".BootReceiver" android:exported="true" android:enabled="true">
             <intent-filter><action android:name="android.intent.action.BOOT_COMPLETED" /></intent-filter>
         </receiver>

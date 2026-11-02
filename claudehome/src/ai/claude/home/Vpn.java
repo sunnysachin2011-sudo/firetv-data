@@ -14,7 +14,7 @@ import android.provider.Settings;
 public class Vpn {
     static final String WG = "com.wireguard.android";
     static final String[] TUNNELS = { "Mumbai", "Delhi" };
-    static final String[] STREAMING = { "in.startv.hotstar", "com.onemainstream.sonyliv.android", "com.fancode.tv", "com.zee5.amazon" };
+    static final String[] STREAMING = { "in.startv.hotstar", "com.onemainstream.sonyliv.android", "com.fancode.tv", "com.zee5.amazon", "com.netflix.ninja", "com.amazon.firebat" };
 
     static boolean installed(Context c) { return c.getPackageManager().getLaunchIntentForPackage(WG) != null || c.getPackageManager().getLeanbackLaunchIntentForPackage(WG) != null; }
 
