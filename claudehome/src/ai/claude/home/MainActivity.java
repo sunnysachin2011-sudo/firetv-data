@@ -136,7 +136,8 @@ public class MainActivity extends Activity {
         buildDock();
         backdrop.loadWallpaper(settings.getString("wallpaper", "photo"), null);
         News.load(this, this::buildNews);
-        handler.postDelayed(this::updateVpnPill, 800);
+        Vpn.ensure(this, this::comeBack);
+        handler.postDelayed(this::updateVpnPill, 1500);
         resetIdle();
         if (getIntent().getBooleanExtra("ambient", false)) { getIntent().removeExtra("ambient"); handler.postDelayed(ambient::show, 1500); }
     }
@@ -174,6 +175,7 @@ public class MainActivity extends Activity {
         clock.setText(new SimpleDateFormat("EEE d MMM  HH:mm", L.dateLocale()).format(new Date()));
         updateAlert();
         if (ambient.shown()) ambient.update();
+        if (resumed && !Vpn.ensure(this, this::comeBack)) updateVpnPill();
         handler.postDelayed(this::tick, 30000);
     }
 
@@ -519,7 +521,7 @@ public class MainActivity extends Activity {
             for (ResolveInfo ri : pm.queryIntentActivities(q, 0)) {
                 String pkg = ri.activityInfo.packageName;
                 if (byKey.containsKey(pkg) || pkg.equals(getPackageName())) continue;
-                if (pkg.startsWith("com.amazon.") && !pkg.equals(SILK) && !pkg.equals("com.amazon.firetv.youtube")
+                if (pkg.startsWith("com.amazon.") && !pkg.equals(SILK) && !pkg.equals("com.amazon.firetv.youtube") && !pkg.equals("com.amazon.firebat")
                         && !pkg.equals("com.amazon.tv.settings.v2") && !pkg.equals("com.amazon.tv.launcher")) continue;
                 Drawable icon = ri.activityInfo.loadBanner(pm);
                 if (icon == null) icon = ri.loadIcon(pm);
@@ -564,6 +566,16 @@ public class MainActivity extends Activity {
     }
 
     void launch(Tile t) {
+        if (Vpn.isStreaming(t.key) && Vpn.ensure(this, () -> launchNow(t))) return;
+        launchNow(t);
+    }
+
+    /** Back to Claude Home after the VPN watchdog showed WireGuard for a moment. */
+    void comeBack() {
+        try { startActivity(new Intent(this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_REORDER_TO_FRONT | Intent.FLAG_ACTIVITY_NO_ANIMATION)); } catch (Exception ignored) {}
+    }
+
+    void launchNow(Tile t) {
         try {
             startActivity(t.intent);
             List<String> r = new ArrayList<>(Arrays.asList(prefs.getString("recent", "").split(",")));

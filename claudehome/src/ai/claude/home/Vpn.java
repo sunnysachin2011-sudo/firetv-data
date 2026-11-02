@@ -36,6 +36,28 @@ public class Vpn {
         prefs(c).edit().putString("tunnel", tunnel).apply();
     }
 
+    static long lastKick;
+
+    /** Watchdog. Android blocks WireGuard from starting its VPN service while WireGuard is in the background
+     *  ("Background start not allowed"), so a plain broadcast fails after a reboot. Bring WireGuard to the front
+     *  for ~2 s, send the start signal, then run "then" (come back, or open the app). At most once per 5 min.
+     *  Returns true when it took over (the caller must not continue). */
+    static boolean ensure(android.app.Activity a, Runnable then) {
+        if (!installed(a) || vpnUp(a)) return false;
+        long now = System.currentTimeMillis();
+        if (now - lastKick < 5 * 60000L) return false;
+        lastKick = now;
+        Intent w = a.getPackageManager().getLeanbackLaunchIntentForPackage(WG);
+        if (w == null) w = a.getPackageManager().getLaunchIntentForPackage(WG);
+        if (w == null) { send(a, "SET_TUNNEL_UP", current(a)); return false; }
+        android.os.Handler h = new android.os.Handler(android.os.Looper.getMainLooper());
+        try { a.startActivity(w.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_NO_ANIMATION)); }
+        catch (Exception e) { send(a, "SET_TUNNEL_UP", current(a)); return false; }
+        h.postDelayed(() -> send(a, "SET_TUNNEL_UP", current(a)), 900);
+        h.postDelayed(then, 2600);
+        return true;
+    }
+
     /** At boot: bring the last used location back up. */
     static void restore(Context c) { if (installed(c)) send(c, "SET_TUNNEL_UP", current(c)); }
 
