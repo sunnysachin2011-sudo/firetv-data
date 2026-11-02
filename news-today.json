@@ -1,36 +1,36 @@
 {
- "date": "2026-11-01",
- "generated": "2026-11-01T13:15:00+01:00",
+ "date": "2026-11-02",
+ "generated": "2026-11-02T07:03:00+01:00",
  "news": [
   {
    "region": "India",
-   "headline": "Thousands march in Delhi against the election chief",
-   "summary": "Rahul Gandhi led a march demanding Chief Election Commissioner Gyanesh Kumar resign over voter-list cuts of more than 130 million names. The Election Commission denies bias.",
-   "source": "https://yahoo.com/news/world/articles/thousands-rally-delhi-demand-india-112608066.html",
-   "headline_hi": "दिल्ली में हज़ारों लोगों ने चुनाव आयुक्त के ख़िलाफ़ मार्च किया",
-   "summary_hi": "राहुल गांधी के नेतृत्व में मार्च ने मुख्य चुनाव आयुक्त ज्ञानेश कुमार से इस्तीफ़े की माँग की। मतदाता सूची से 13 करोड़ से अधिक नाम हटे हैं। चुनाव आयोग पक्षपात से इनकार करता है।",
-   "headline_de": "Tausende marschieren in Delhi gegen den Wahlleiter",
-   "summary_de": "Rahul Gandhi führte einen Marsch an, der den Rücktritt von Wahlleiter Gyanesh Kumar fordert. Über 130 Millionen Namen wurden aus Wählerlisten gestrichen. Die Wahlkommission weist Parteilichkeit zurück."
+   "headline": "Rahul Gandhi leads huge Delhi rally against poll chief",
+   "summary": "Tens of thousands rallied at Ramlila Maidan on Sunday to demand Chief Election Commissioner Gyanesh Kumar quit over a voter-roll revision. The Commission says it only removes ineligible names.",
+   "headline_hi": "दिल्ली में राहुल गांधी की चुनाव आयुक्त के ख़िलाफ़ बड़ी रैली",
+   "summary_hi": "रविवार को रामलीला मैदान में हज़ारों लोगों ने मतदाता सूची संशोधन को लेकर मुख्य चुनाव आयुक्त ज्ञानेश कुमार के इस्तीफ़े की माँग की। आयोग का कहना है कि सिर्फ़ अपात्र नाम हटाए गए हैं।",
+   "headline_de": "Rahul Gandhi führt Großkundgebung gegen Indiens Wahlleiter",
+   "summary_de": "Zehntausende forderten am Sonntag auf dem Ramlila Maidan den Rücktritt von Wahlleiter Gyanesh Kumar wegen der Überprüfung der Wählerlisten. Die Wahlkommission sagt, nur ungültige Einträge würden gestrichen.",
+   "source": "https://abcnews.com/Business/wireStory/indias-opposition-parties-stage-new-protest-countrys-election-137751746"
   },
   {
    "region": "Germany",
-   "headline": "Youth cost-of-living protests turn violent",
-   "summary": "Tens of thousands joined Gen Z-led rallies in more than 30 cities on Saturday. Shops were looted in Frankfurt, with clashes in Berlin, Cologne and Hamburg.",
-   "source": "https://www.cbsnews.com/news/germany-protest-frankfurt-looting-violence/",
-   "headline_hi": "युवाओं का महँगाई विरोध प्रदर्शन हिंसक हुआ",
-   "summary_hi": "शनिवार को 30 से अधिक शहरों में Gen Z के नेतृत्व वाली रैलियों में हज़ारों लोग शामिल हुए। फ़्रैंकफ़र्ट में दुकानें लूटी गईं, बर्लिन, कोलोन और हैम्बर्ग में झड़पें हुईं।",
-   "headline_de": "Jugendproteste gegen hohe Preise werden gewalttätig",
-   "summary_de": "Zehntausende nahmen am Samstag in über 30 Städten an Gen-Z-Demos teil. In Frankfurt wurden Läden geplündert, in Berlin, Köln und Hamburg gab es Zusammenstöße."
+   "headline": "Riots after Gen Z protests; Dobrindt vows tough action",
+   "summary": "Youth rallies in over 30 cities ended in looting and clashes in Frankfurt and Cologne, with 54 arrests and over 100 injured police reported. Interior Minister Dobrindt promised harsh penalties.",
+   "headline_hi": "जेन ज़ी प्रदर्शनों के बाद दंगे, डोब्रिंट सख़्ती करेंगे",
+   "summary_hi": "30 से ज़्यादा शहरों में युवाओं की रैलियाँ फ्रैंकफर्ट और कोलोन में लूटपाट और झड़पों में बदलीं; 54 गिरफ़्तारियाँ और 100 से अधिक पुलिसकर्मी घायल बताए गए। गृह मंत्री डोब्रिंट ने कड़ी सज़ा का वादा किया।",
+   "headline_de": "Krawalle nach Gen-Z-Protesten: Dobrindt kündigt Härte an",
+   "summary_de": "Jugendkundgebungen in über 30 Städten endeten in Frankfurt und Köln mit Plünderungen und Zusammenstößen; 54 Festnahmen und über 100 verletzte Polizisten wurden gemeldet. Innenminister Dobrindt verspricht harte Strafen.",
+   "source": "https://www.zdfheute.de/politik/deutschland/gen-z-proteste-pluenderungen-gewalt-100.html"
   },
   {
    "region": "World",
-   "headline": "Four tankers on fire in the Strait of Hormuz",
-   "summary": "Iran's Revolutionary Guards said four tankers caught fire after hitting mines. A UK agency reported one tanker hit by an unknown projectile. Reuters could not verify Iran's claim.",
-   "source": "https://gcaptain.com/irans-irgc-navy-says-four-tankers-catch-fire-in-strait-of-hormuz/",
-   "headline_hi": "होर्मुज़ जलडमरूमध्य में चार टैंकरों में आग",
-   "summary_hi": "ईरान के रिवोल्यूशनरी गार्ड्स ने कहा कि चार टैंकर बारूदी सुरंगों से टकराकर जल उठे। एक ब्रिटिश एजेंसी ने अज्ञात प्रक्षेप्य से टकराने की बात कही। रॉयटर्स ईरान के दावे की पुष्टि नहीं कर सका।",
-   "headline_de": "Vier Tanker brennen in der Straße von Hormus",
-   "summary_de": "Irans Revolutionsgarden melden vier Tanker nach Minentreffern in Flammen. Eine britische Behörde meldet einen Treffer durch ein unbekanntes Geschoss. Reuters konnte Irans Angaben nicht prüfen."
+   "headline": "Iran offers two-day plan to reopen Strait of Hormuz",
+   "summary": "Iran says Qatar-mediated talks produced a plan to reopen Hormuz within 48 hours if the US first meets its demands, including sanctions relief. Trump said talks are going fine but he is in no hurry.",
+   "headline_hi": "ईरान ने होर्मुज़ खोलने के लिए दो दिन की योजना रखी",
+   "summary_hi": "ईरान का कहना है कि क़तर की मध्यस्थता से बनी योजना के तहत अमेरिका के प्रतिबंध हटाने जैसी माँगें पूरी करने पर 48 घंटे में होर्मुज़ खुल सकता है। ट्रंप ने कहा बातचीत ठीक चल रही है, पर जल्दी नहीं है।",
+   "headline_de": "Iran bietet Zwei-Tage-Plan zur Öffnung der Straße von Hormus",
+   "summary_de": "Laut Iran soll ein über Katar vermittelter Plan Hormus binnen 48 Stunden öffnen, wenn die USA zuvor Forderungen wie Sanktionserleichterungen erfüllen. Trump sagte, die Gespräche liefen gut, er habe aber keine Eile.",
+   "source": "https://aljazeera.com/news/2026/11/1/mediators-continue-us-iran-negotiations-amid-war-rhetoric-what-we-know"
   }
  ]
 }
