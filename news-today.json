@@ -1,36 +1,36 @@
 {
- "date": "2026-11-02",
- "generated": "2026-11-02T07:03:00+01:00",
+ "date": "2026-11-03",
+ "generated": "2026-11-03T06:56:13+01:00",
  "news": [
   {
    "region": "India",
-   "headline": "Rahul Gandhi leads huge Delhi rally against poll chief",
-   "summary": "Tens of thousands rallied at Ramlila Maidan on Sunday to demand Chief Election Commissioner Gyanesh Kumar quit over a voter-roll revision. The Commission says it only removes ineligible names.",
-   "headline_hi": "दिल्ली में राहुल गांधी की चुनाव आयुक्त के ख़िलाफ़ बड़ी रैली",
-   "summary_hi": "रविवार को रामलीला मैदान में हज़ारों लोगों ने मतदाता सूची संशोधन को लेकर मुख्य चुनाव आयुक्त ज्ञानेश कुमार के इस्तीफ़े की माँग की। आयोग का कहना है कि सिर्फ़ अपात्र नाम हटाए गए हैं।",
-   "headline_de": "Rahul Gandhi führt Großkundgebung gegen Indiens Wahlleiter",
-   "summary_de": "Zehntausende forderten am Sonntag auf dem Ramlila Maidan den Rücktritt von Wahlleiter Gyanesh Kumar wegen der Überprüfung der Wählerlisten. Die Wahlkommission sagt, nur ungültige Einträge würden gestrichen.",
-   "source": "https://abcnews.com/Business/wireStory/indias-opposition-parties-stage-new-protest-countrys-election-137751746"
+   "headline": "Cyclone Murasu hits Andhra coast near Ongole",
+   "summary": "Severe cyclonic storm Murasu crossed the south Andhra Pradesh coast near Ongole early Tuesday with winds of 100-110 km/h. IMD warns of heavy rain and a storm surge in Prakasam, Bapatla and Krishna.",
+   "headline_hi": "चक्रवात मुरासु ओंगोल के पास आंध्र तट से टकराया",
+   "summary_hi": "भीषण चक्रवाती तूफ़ान मुरासु मंगलवार तड़के ओंगोल के पास दक्षिण आंध्र प्रदेश तट को पार कर गया; हवा की रफ़्तार 100-110 किमी/घंटा रही। IMD ने प्रकाशम, बापटला और कृष्णा में भारी बारिश और समुद्री उफान की चेतावनी दी है।",
+   "headline_de": "Zyklon Murasu trifft Andhra-Küste bei Ongole",
+   "summary_de": "Der schwere Wirbelsturm Murasu erreichte am frühen Dienstag die Küste von Andhra Pradesh nahe Ongole, mit Winden von 100-110 km/h. Der Wetterdienst warnt vor Starkregen und Sturmflut in Prakasam, Bapatla und Krishna.",
+   "source": "https://www.indiatvnews.com/news/india/cyclone-murasu-makes-landfall-in-andhra-pradesh-heavy-rains-strong-winds-batter-coastal-districts-latest-updates-2026-11-03-1058531"
   },
   {
    "region": "Germany",
-   "headline": "Riots after Gen Z protests; Dobrindt vows tough action",
-   "summary": "Youth rallies in over 30 cities ended in looting and clashes in Frankfurt and Cologne, with 54 arrests and over 100 injured police reported. Interior Minister Dobrindt promised harsh penalties.",
-   "headline_hi": "जेन ज़ी प्रदर्शनों के बाद दंगे, डोब्रिंट सख़्ती करेंगे",
-   "summary_hi": "30 से ज़्यादा शहरों में युवाओं की रैलियाँ फ्रैंकफर्ट और कोलोन में लूटपाट और झड़पों में बदलीं; 54 गिरफ़्तारियाँ और 100 से अधिक पुलिसकर्मी घायल बताए गए। गृह मंत्री डोब्रिंट ने कड़ी सज़ा का वादा किया।",
-   "headline_de": "Krawalle nach Gen-Z-Protesten: Dobrindt kündigt Härte an",
-   "summary_de": "Jugendkundgebungen in über 30 Städten endeten in Frankfurt und Köln mit Plünderungen und Zusammenstößen; 54 Festnahmen und über 100 verletzte Polizisten wurden gemeldet. Innenminister Dobrindt verspricht harte Strafen.",
-   "source": "https://www.zdfheute.de/politik/deutschland/gen-z-proteste-pluenderungen-gewalt-100.html"
+   "headline": "Frankfurt riots: over 100 police hurt, 54 arrested",
+   "summary": "Youth protests over living costs and education turned violent in Frankfurt at the weekend, with shops looted. Ministers blame left-wing extremists and migrants; that claim is unverified.",
+   "headline_hi": "फ़्रैंकफ़र्ट दंगे: 100+ पुलिसकर्मी घायल, 54 गिरफ़्तार",
+   "summary_hi": "महँगाई और शिक्षा को लेकर युवाओं का प्रदर्शन सप्ताहांत में फ़्रैंकफ़र्ट में हिंसक हो गया, दुकानें लूटी गईं। मंत्री वामपंथी चरमपंथियों और प्रवासियों को दोषी बता रहे हैं; यह दावा अपुष्ट है।",
+   "headline_de": "Krawalle in Frankfurt: über 100 Polizisten verletzt",
+   "summary_de": "Jugendproteste gegen hohe Lebenskosten und für bessere Bildung wurden am Wochenende in Frankfurt gewalttätig, Läden wurden geplündert. Minister machen Linksextreme und Migranten verantwortlich; das ist unbelegt.",
+   "source": "https://www.abc.net.au/news/2026-11-02/protests-europe-germany-frankfurt/107334774"
   },
   {
    "region": "World",
-   "headline": "Iran offers two-day plan to reopen Strait of Hormuz",
-   "summary": "Iran says Qatar-mediated talks produced a plan to reopen Hormuz within 48 hours if the US first meets its demands, including sanctions relief. Trump said talks are going fine but he is in no hurry.",
-   "headline_hi": "ईरान ने होर्मुज़ खोलने के लिए दो दिन की योजना रखी",
-   "summary_hi": "ईरान का कहना है कि क़तर की मध्यस्थता से बनी योजना के तहत अमेरिका के प्रतिबंध हटाने जैसी माँगें पूरी करने पर 48 घंटे में होर्मुज़ खुल सकता है। ट्रंप ने कहा बातचीत ठीक चल रही है, पर जल्दी नहीं है।",
-   "headline_de": "Iran bietet Zwei-Tage-Plan zur Öffnung der Straße von Hormus",
-   "summary_de": "Laut Iran soll ein über Katar vermittelter Plan Hormus binnen 48 Stunden öffnen, wenn die USA zuvor Forderungen wie Sanktionserleichterungen erfüllen. Trump sagte, die Gespräche liefen gut, er habe aber keine Eile.",
-   "source": "https://aljazeera.com/news/2026/11/1/mediators-continue-us-iran-negotiations-amid-war-rhetoric-what-we-know"
+   "headline": "Americans vote in midterms seen as test of Trump",
+   "summary": "US voters elect all 435 House seats, 35 Senate seats and 36 governors on Tuesday. Republicans hold both chambers; first results are expected overnight.",
+   "headline_hi": "अमेरिका में मध्यावधि चुनाव, ट्रंप की परीक्षा",
+   "summary_hi": "अमेरिकी मतदाता मंगलवार को प्रतिनिधि सभा की सभी 435 सीटों, सीनेट की 35 सीटों और 36 गवर्नरों के लिए वोट डाल रहे हैं। दोनों सदनों में रिपब्लिकन का बहुमत है; पहले नतीजे रात में आने की उम्मीद है।",
+   "headline_de": "USA wählen: Zwischenwahlen gelten als Test für Trump",
+   "summary_de": "Die US-Wähler bestimmen am Dienstag alle 435 Sitze im Repräsentantenhaus, 35 Senatssitze und 36 Gouverneure. Die Republikaner halten beide Kammern; erste Ergebnisse werden in der Nacht erwartet.",
+   "source": "https://www.aljazeera.com/news/2026/11/3/what-time-do-polls-open-and-close-in-the-us-midterm-elections-2026"
   }
  ]
 }
