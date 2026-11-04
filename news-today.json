@@ -1,36 +1,36 @@
 {
- "date": "2026-11-03",
- "generated": "2026-11-03T06:56:13+01:00",
+ "date": "2026-11-04",
+ "generated": "2026-11-04T07:09:24+01:00",
  "news": [
   {
    "region": "India",
-   "headline": "Cyclone Murasu hits Andhra coast near Ongole",
-   "summary": "Severe cyclonic storm Murasu crossed the south Andhra Pradesh coast near Ongole early Tuesday with winds of 100-110 km/h. IMD warns of heavy rain and a storm surge in Prakasam, Bapatla and Krishna.",
-   "headline_hi": "चक्रवात मुरासु ओंगोल के पास आंध्र तट से टकराया",
-   "summary_hi": "भीषण चक्रवाती तूफ़ान मुरासु मंगलवार तड़के ओंगोल के पास दक्षिण आंध्र प्रदेश तट को पार कर गया; हवा की रफ़्तार 100-110 किमी/घंटा रही। IMD ने प्रकाशम, बापटला और कृष्णा में भारी बारिश और समुद्री उफान की चेतावनी दी है।",
-   "headline_de": "Zyklon Murasu trifft Andhra-Küste bei Ongole",
-   "summary_de": "Der schwere Wirbelsturm Murasu erreichte am frühen Dienstag die Küste von Andhra Pradesh nahe Ongole, mit Winden von 100-110 km/h. Der Wetterdienst warnt vor Starkregen und Sturmflut in Prakasam, Bapatla und Krishna.",
-   "source": "https://www.indiatvnews.com/news/india/cyclone-murasu-makes-landfall-in-andhra-pradesh-heavy-rains-strong-winds-batter-coastal-districts-latest-updates-2026-11-03-1058531"
+   "headline": "Cyclone Murasu kills two, ruins 52,000 ha of crops",
+   "summary": "The storm crossed the Andhra coast near Ongole on Tuesday, killing two in Bapatla and damaging 312 houses. Over 12,000 people were evacuated; early damage estimate is Rs 344 crore.",
+   "headline_hi": "चक्रवात मुरासु से दो की मौत, 52,000 हेक्टेयर फ़सल बर्बाद",
+   "summary_hi": "तूफ़ान मंगलवार को ओंगोल के पास आंध्र तट से गुज़रा, बापटला में दो की मौत और 312 घरों को नुकसान। 12,000 से ज़्यादा लोग निकाले गए; शुरुआती अनुमान 344 करोड़ रुपये का नुकसान।",
+   "headline_de": "Zyklon Murasu: zwei Tote, 52.000 Hektar Ernte zerstört",
+   "summary_de": "Der Sturm traf am Dienstag bei Ongole auf die Küste Andhra Pradeshs; zwei Tote in Bapatla, 312 Häuser beschädigt. Über 12.000 Menschen evakuiert; erster Schaden rund 344 Crore Rupien.",
+   "source": "https://www.thenewsminute.com/andhra-pradesh/cyclone-murasu-leaves-2-dead-damages-312-houses-in-andhra-pradesh"
   },
   {
    "region": "Germany",
-   "headline": "Frankfurt riots: over 100 police hurt, 54 arrested",
-   "summary": "Youth protests over living costs and education turned violent in Frankfurt at the weekend, with shops looted. Ministers blame left-wing extremists and migrants; that claim is unverified.",
-   "headline_hi": "फ़्रैंकफ़र्ट दंगे: 100+ पुलिसकर्मी घायल, 54 गिरफ़्तार",
-   "summary_hi": "महँगाई और शिक्षा को लेकर युवाओं का प्रदर्शन सप्ताहांत में फ़्रैंकफ़र्ट में हिंसक हो गया, दुकानें लूटी गईं। मंत्री वामपंथी चरमपंथियों और प्रवासियों को दोषी बता रहे हैं; यह दावा अपुष्ट है।",
-   "headline_de": "Krawalle in Frankfurt: über 100 Polizisten verletzt",
-   "summary_de": "Jugendproteste gegen hohe Lebenskosten und für bessere Bildung wurden am Wochenende in Frankfurt gewalttätig, Läden wurden geplündert. Minister machen Linksextreme und Migranten verantwortlich; das ist unbelegt.",
-   "source": "https://www.abc.net.au/news/2026-11-02/protests-europe-germany-frankfurt/107334774"
+   "headline": "Merz pledges Ukraine more air defence and energy aid",
+   "summary": "Zelensky made a surprise visit to Berlin before US-led Ukraine-Russia talks in Abu Dhabi on 10-11 November. Merz promised extra air-defence and energy support for the winter.",
+   "headline_hi": "मर्ज़ ने यूक्रेन को और हवाई रक्षा व ऊर्जा मदद का वादा किया",
+   "summary_hi": "ज़ेलेंस्की 10-11 नवंबर की अबू धाबी वार्ता से पहले अचानक बर्लिन पहुँचे। मर्ज़ ने सर्दियों के लिए अतिरिक्त हवाई रक्षा और ऊर्जा सहायता का वादा किया।",
+   "headline_de": "Merz sagt Ukraine mehr Luftabwehr und Energiehilfe zu",
+   "summary_de": "Selenskyj kam überraschend nach Berlin, vor den von den USA geführten Gesprächen in Abu Dhabi am 10./11. November. Merz versprach zusätzliche Luftabwehr- und Energiehilfe für den Winter.",
+   "source": "https://www.yahoo.com/news/politics/articles/zelensky-pays-surprise-visit-berlin-133325061.html"
   },
   {
    "region": "World",
-   "headline": "Americans vote in midterms seen as test of Trump",
-   "summary": "US voters elect all 435 House seats, 35 Senate seats and 36 governors on Tuesday. Republicans hold both chambers; first results are expected overnight.",
-   "headline_hi": "अमेरिका में मध्यावधि चुनाव, ट्रंप की परीक्षा",
-   "summary_hi": "अमेरिकी मतदाता मंगलवार को प्रतिनिधि सभा की सभी 435 सीटों, सीनेट की 35 सीटों और 36 गवर्नरों के लिए वोट डाल रहे हैं। दोनों सदनों में रिपब्लिकन का बहुमत है; पहले नतीजे रात में आने की उम्मीद है।",
-   "headline_de": "USA wählen: Zwischenwahlen gelten als Test für Trump",
-   "summary_de": "Die US-Wähler bestimmen am Dienstag alle 435 Sitze im Repräsentantenhaus, 35 Senatssitze und 36 Gouverneure. Die Republikaner halten beide Kammern; erste Ergebnisse werden in der Nacht erwartet.",
-   "source": "https://www.aljazeera.com/news/2026/11/3/what-time-do-polls-open-and-close-in-the-us-midterm-elections-2026"
+   "headline": "Democrats win US Senate, poised to take House too",
+   "summary": "The AP called the Senate for Democrats after they flipped seats including Texas and Ohio. Several outlets also project a Democratic House majority; counting continues.",
+   "headline_hi": "डेमोक्रेट्स ने अमेरिकी सीनेट जीती, हाउस भी हाथ में",
+   "summary_hi": "टेक्सास और ओहायो समेत कई सीटें पलटने के बाद एपी ने सीनेट डेमोक्रेट्स को दी। कई मीडिया हाउस में भी डेमोक्रेट बहुमत बता रहे हैं; गिनती जारी है।",
+   "headline_de": "Demokraten gewinnen US-Senat, auch Haus in Reichweite",
+   "summary_de": "AP rief den Senat für die Demokraten aus, nachdem sie Sitze wie Texas und Ohio gewannen. Mehrere Medien sehen auch eine demokratische Mehrheit im Repräsentantenhaus; die Auszählung läuft.",
+   "source": "https://www.abc.net.au/news/2026-11-04/us-midterm-election-results-2026/107235570"
   }
  ]
 }
