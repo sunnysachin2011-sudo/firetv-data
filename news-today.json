@@ -1,36 +1,36 @@
 {
- "date": "2026-11-04",
- "generated": "2026-11-04T07:09:24+01:00",
+ "date": "2026-11-05",
+ "generated": "2026-11-05T06:55:36+01:00",
  "news": [
   {
    "region": "India",
-   "headline": "Cyclone Murasu kills two, ruins 52,000 ha of crops",
-   "summary": "The storm crossed the Andhra coast near Ongole on Tuesday, killing two in Bapatla and damaging 312 houses. Over 12,000 people were evacuated; early damage estimate is Rs 344 crore.",
-   "headline_hi": "चक्रवात मुरासु से दो की मौत, 52,000 हेक्टेयर फ़सल बर्बाद",
-   "summary_hi": "तूफ़ान मंगलवार को ओंगोल के पास आंध्र तट से गुज़रा, बापटला में दो की मौत और 312 घरों को नुकसान। 12,000 से ज़्यादा लोग निकाले गए; शुरुआती अनुमान 344 करोड़ रुपये का नुकसान।",
-   "headline_de": "Zyklon Murasu: zwei Tote, 52.000 Hektar Ernte zerstört",
-   "summary_de": "Der Sturm traf am Dienstag bei Ongole auf die Küste Andhra Pradeshs; zwei Tote in Bapatla, 312 Häuser beschädigt. Über 12.000 Menschen evakuiert; erster Schaden rund 344 Crore Rupien.",
-   "source": "https://www.thenewsminute.com/andhra-pradesh/cyclone-murasu-leaves-2-dead-damages-312-houses-in-andhra-pradesh"
+   "headline": "Cabinet gives Agniveers two more years of service",
+   "summary": "The Cabinet approved a two-year extension for Agniveers who would have left after four years, about 18,000 this year. After it, those willing can join the regular forces if they meet set criteria.",
+   "headline_hi": "कैबिनेट ने अग्निवीरों की सेवा दो साल बढ़ाई",
+   "summary_hi": "कैबिनेट ने चार साल बाद बाहर होने वाले अग्निवीरों को दो साल का विस्तार दिया, इस साल क़रीब 18,000 को। इसके बाद इच्छुक जवान तय मानदंड पूरे करने पर नियमित सेना में जा सकेंगे।",
+   "headline_de": "Indien: Agniveer-Soldaten dürfen zwei Jahre länger dienen",
+   "summary_de": "Das Kabinett verlängert den Dienst der Agniveers, die nach vier Jahren gehen müssten, um zwei Jahre; rund 18.000 betrifft es dieses Jahr. Danach können Willige in die regulären Streitkräfte wechseln.",
+   "source": "https://www.theweek.in/news/defence/2026/11/04/govt-to-extend-tenure-of-agniveers-by-two-years-how-will-this-be-implemented.html"
   },
   {
    "region": "Germany",
-   "headline": "Merz pledges Ukraine more air defence and energy aid",
-   "summary": "Zelensky made a surprise visit to Berlin before US-led Ukraine-Russia talks in Abu Dhabi on 10-11 November. Merz promised extra air-defence and energy support for the winter.",
-   "headline_hi": "मर्ज़ ने यूक्रेन को और हवाई रक्षा व ऊर्जा मदद का वादा किया",
-   "summary_hi": "ज़ेलेंस्की 10-11 नवंबर की अबू धाबी वार्ता से पहले अचानक बर्लिन पहुँचे। मर्ज़ ने सर्दियों के लिए अतिरिक्त हवाई रक्षा और ऊर्जा सहायता का वादा किया।",
-   "headline_de": "Merz sagt Ukraine mehr Luftabwehr und Energiehilfe zu",
-   "summary_de": "Selenskyj kam überraschend nach Berlin, vor den von den USA geführten Gesprächen in Abu Dhabi am 10./11. November. Merz versprach zusätzliche Luftabwehr- und Energiehilfe für den Winter.",
-   "source": "https://www.yahoo.com/news/politics/articles/zelensky-pays-surprise-visit-berlin-133325061.html"
+   "headline": "Zwickau remembers NSU victims 15 years on",
+   "summary": "Zwickau marked 15 years since the neo-Nazi NSU cell was exposed, with a service in St Mary's Cathedral and a silent vigil. The group murdered ten people between 2000 and 2007.",
+   "headline_hi": "ज़्विकाउ ने 15 साल बाद एनएसयू पीड़ितों को याद किया",
+   "summary_hi": "नव-नाज़ी गुट एनएसयू के पर्दाफ़ाश के 15 साल पूरे होने पर ज़्विकाउ के सेंट मैरी गिरजाघर में सभा और मौन श्रद्धांजलि हुई। इस गुट ने 2000 से 2007 के बीच दस लोगों की हत्या की थी।",
+   "headline_de": "Zwickau gedenkt der NSU-Opfer nach 15 Jahren",
+   "summary_de": "Zwickau erinnerte an die Enttarnung der Neonazi-Zelle NSU vor 15 Jahren, mit einer Feier im Dom St. Marien und stillem Gedenken. Die Gruppe ermordete zwischen 2000 und 2007 zehn Menschen.",
+   "source": "https://www.t-online.de/nachrichten/deutschland/id_101511568/gedenken-fuer-nsu-mordopfer-in-zwickau.html"
   },
   {
    "region": "World",
-   "headline": "Democrats win US Senate, poised to take House too",
-   "summary": "The AP called the Senate for Democrats after they flipped seats including Texas and Ohio. Several outlets also project a Democratic House majority; counting continues.",
-   "headline_hi": "डेमोक्रेट्स ने अमेरिकी सीनेट जीती, हाउस भी हाथ में",
-   "summary_hi": "टेक्सास और ओहायो समेत कई सीटें पलटने के बाद एपी ने सीनेट डेमोक्रेट्स को दी। कई मीडिया हाउस में भी डेमोक्रेट बहुमत बता रहे हैं; गिनती जारी है।",
-   "headline_de": "Demokraten gewinnen US-Senat, auch Haus in Reichweite",
-   "summary_de": "AP rief den Senat für die Demokraten aus, nachdem sie Sitze wie Texas und Ohio gewannen. Mehrere Medien sehen auch eine demokratische Mehrheit im Repräsentantenhaus; die Auszählung läuft.",
-   "source": "https://www.abc.net.au/news/2026-11-04/us-midterm-election-results-2026/107235570"
+   "headline": "Democrats win both houses of US Congress",
+   "summary": "Democrats won the House and the Senate in the US midterms, gaining at least seven Senate seats. Trump said he was a little surprised and would work with them, but stressed his veto power.",
+   "headline_hi": "डेमोक्रेट्स ने अमेरिकी संसद के दोनों सदन जीते",
+   "summary_hi": "अमेरिकी मध्यावधि चुनाव में डेमोक्रेट्स ने हाउस और सीनेट दोनों जीते, सीनेट में कम से कम सात सीटें बढ़ीं। ट्रंप ने कहा कि वे थोड़े हैरान हैं और साथ काम करेंगे, पर वीटो की बात भी कही।",
+   "headline_de": "Demokraten gewinnen beide Kammern des US-Kongresses",
+   "summary_de": "Bei den US-Zwischenwahlen gewannen die Demokraten Repräsentantenhaus und Senat und holten mindestens sieben Senatssitze dazu. Trump zeigte sich etwas überrascht, will kooperieren, betont aber sein Veto.",
+   "source": "https://abcnews.com/Politics/trump-bit-surprised-after-democrats-big-win-midterms/story?id=137835787"
   }
  ]
 }
