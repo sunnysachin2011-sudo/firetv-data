@@ -1,36 +1,36 @@
 {
- "date": "2026-11-05",
- "generated": "2026-11-05T06:55:36+01:00",
+ "date": "2026-11-06",
+ "generated": "2026-11-06T07:02:09+01:00",
  "news": [
   {
    "region": "India",
-   "headline": "Cabinet gives Agniveers two more years of service",
-   "summary": "The Cabinet approved a two-year extension for Agniveers who would have left after four years, about 18,000 this year. After it, those willing can join the regular forces if they meet set criteria.",
-   "headline_hi": "कैबिनेट ने अग्निवीरों की सेवा दो साल बढ़ाई",
-   "summary_hi": "कैबिनेट ने चार साल बाद बाहर होने वाले अग्निवीरों को दो साल का विस्तार दिया, इस साल क़रीब 18,000 को। इसके बाद इच्छुक जवान तय मानदंड पूरे करने पर नियमित सेना में जा सकेंगे।",
-   "headline_de": "Indien: Agniveer-Soldaten dürfen zwei Jahre länger dienen",
-   "summary_de": "Das Kabinett verlängert den Dienst der Agniveers, die nach vier Jahren gehen müssten, um zwei Jahre; rund 18.000 betrifft es dieses Jahr. Danach können Willige in die regulären Streitkräfte wechseln.",
-   "source": "https://www.theweek.in/news/defence/2026/11/04/govt-to-extend-tenure-of-agniveers-by-two-years-how-will-this-be-implemented.html"
+   "headline": "Top court: 24-hour arrest clock starts at detention",
+   "summary": "The Supreme Court ruled that the 24-hour limit to bring a held person before a magistrate runs from when police first detain them, not from the formal arrest. It ordered four men in a Tripura drugs case freed.",
+   "headline_hi": "सुप्रीम कोर्ट: 24 घंटे की गिनती हिरासत से शुरू",
+   "summary_hi": "सुप्रीम कोर्ट ने कहा कि मजिस्ट्रेट के सामने पेश करने के 24 घंटे हिरासत में लेते ही शुरू हो जाते हैं, औपचारिक गिरफ़्तारी से नहीं। त्रिपुरा के नशीले पदार्थ मामले के चार आरोपियों की रिहाई का आदेश दिया।",
+   "headline_de": "Indiens Oberstes Gericht: 24-Stunden-Frist ab Gewahrsam",
+   "summary_de": "Das Oberste Gericht entschied: Die 24-Stunden-Frist zur Vorführung vor einem Richter läuft, sobald die Polizei jemanden festhält, nicht erst ab der formellen Festnahme. Vier Männer aus Tripura kommen frei.",
+   "source": "https://www.thenewsminute.com/news/supreme-court-says-24-hour-arrest-deadline-begins-when-person-is-detained"
   },
   {
    "region": "Germany",
-   "headline": "Zwickau remembers NSU victims 15 years on",
-   "summary": "Zwickau marked 15 years since the neo-Nazi NSU cell was exposed, with a service in St Mary's Cathedral and a silent vigil. The group murdered ten people between 2000 and 2007.",
-   "headline_hi": "ज़्विकाउ ने 15 साल बाद एनएसयू पीड़ितों को याद किया",
-   "summary_hi": "नव-नाज़ी गुट एनएसयू के पर्दाफ़ाश के 15 साल पूरे होने पर ज़्विकाउ के सेंट मैरी गिरजाघर में सभा और मौन श्रद्धांजलि हुई। इस गुट ने 2000 से 2007 के बीच दस लोगों की हत्या की थी।",
-   "headline_de": "Zwickau gedenkt der NSU-Opfer nach 15 Jahren",
-   "summary_de": "Zwickau erinnerte an die Enttarnung der Neonazi-Zelle NSU vor 15 Jahren, mit einer Feier im Dom St. Marien und stillem Gedenken. Die Gruppe ermordete zwischen 2000 und 2007 zehn Menschen.",
-   "source": "https://www.t-online.de/nachrichten/deutschland/id_101511568/gedenken-fuer-nsu-mordopfer-in-zwickau.html"
+   "headline": "Bavarian deputy leader Aiwanger found dead in Berlin",
+   "summary": "Hubert Aiwanger, 55, Bavaria's economy minister and head of the Free Voters party, was found dead in a Berlin hotel on Wednesday evening. Prosecutors said the autopsy showed no sign that anyone else was involved.",
+   "headline_hi": "बवेरिया के उप-मुख्यमंत्री आइवांगर बर्लिन में मृत मिले",
+   "summary_hi": "बवेरिया के अर्थव्यवस्था मंत्री और फ़्री वोटर्स पार्टी के प्रमुख हुबर्ट आइवांगर (55) बुधवार शाम बर्लिन के एक होटल में मृत मिले। अभियोजकों के अनुसार पोस्टमार्टम में किसी और का हाथ होने के संकेत नहीं मिले।",
+   "headline_de": "Hubert Aiwanger tot in Berliner Hotel gefunden",
+   "summary_de": "Bayerns Wirtschaftsminister und Freie-Wähler-Chef Hubert Aiwanger (55) wurde am Mittwochabend tot in einem Berliner Hotel gefunden. Laut Staatsanwaltschaft ergab die Obduktion keine Hinweise auf Fremdverschulden.",
+   "source": "https://www.tagesspiegel.de/berlin/chef-der-freien-wahler-hubert-aiwanger-tot-in-hotel-in-berlin-aufgefunden-16243175.html"
   },
   {
    "region": "World",
-   "headline": "Democrats win both houses of US Congress",
-   "summary": "Democrats won the House and the Senate in the US midterms, gaining at least seven Senate seats. Trump said he was a little surprised and would work with them, but stressed his veto power.",
-   "headline_hi": "डेमोक्रेट्स ने अमेरिकी संसद के दोनों सदन जीते",
-   "summary_hi": "अमेरिकी मध्यावधि चुनाव में डेमोक्रेट्स ने हाउस और सीनेट दोनों जीते, सीनेट में कम से कम सात सीटें बढ़ीं। ट्रंप ने कहा कि वे थोड़े हैरान हैं और साथ काम करेंगे, पर वीटो की बात भी कही।",
-   "headline_de": "Demokraten gewinnen beide Kammern des US-Kongresses",
-   "summary_de": "Bei den US-Zwischenwahlen gewannen die Demokraten Repräsentantenhaus und Senat und holten mindestens sieben Senatssitze dazu. Trump zeigte sich etwas überrascht, will kooperieren, betont aber sein Veto.",
-   "source": "https://abcnews.com/Politics/trump-bit-surprised-after-democrats-big-win-midterms/story?id=137835787"
+   "headline": "Trump weighs new Iran strikes as Tehran sends nuclear offer",
+   "summary": "Trump said the US is \"locked and loaded\" to resume strikes on Iran but has not decided. Reuters reported, citing two sources, that Iran sent a nuclear proposal to Washington through Qatar.",
+   "headline_hi": "ट्रंप: ईरान पर नए हमले के लिए अमेरिका तैयार",
+   "summary_hi": "ट्रंप ने कहा कि अमेरिका ईरान पर फिर हमले के लिए पूरी तरह तैयार है, पर फ़ैसला अभी नहीं हुआ। रॉयटर्स ने दो सूत्रों के हवाले से बताया कि ईरान ने क़तर के ज़रिए परमाणु प्रस्ताव वॉशिंगटन भेजा है।",
+   "headline_de": "Trump droht Iran, Teheran schickt Atomvorschlag",
+   "summary_de": "Trump sagte, die USA seien für neue Angriffe auf den Iran bereit, entschieden sei aber nichts. Laut Reuters, das sich auf zwei Insider beruft, schickte der Iran über Katar einen Atomvorschlag nach Washington.",
+   "source": "https://thefederal.com/category/international/trump-says-us-locked-and-loaded-for-iran-as-tehran-sends-nuclear-proposal-261988"
   }
  ]
 }
