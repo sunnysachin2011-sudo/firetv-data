@@ -1,36 +1,36 @@
 {
- "date": "2026-11-06",
- "generated": "2026-11-06T07:02:09+01:00",
- "news": [
-  {
-   "region": "India",
-   "headline": "Top court: 24-hour arrest clock starts at detention",
-   "summary": "The Supreme Court ruled that the 24-hour limit to bring a held person before a magistrate runs from when police first detain them, not from the formal arrest. It ordered four men in a Tripura drugs case freed.",
-   "headline_hi": "सुप्रीम कोर्ट: 24 घंटे की गिनती हिरासत से शुरू",
-   "summary_hi": "सुप्रीम कोर्ट ने कहा कि मजिस्ट्रेट के सामने पेश करने के 24 घंटे हिरासत में लेते ही शुरू हो जाते हैं, औपचारिक गिरफ़्तारी से नहीं। त्रिपुरा के नशीले पदार्थ मामले के चार आरोपियों की रिहाई का आदेश दिया।",
-   "headline_de": "Indiens Oberstes Gericht: 24-Stunden-Frist ab Gewahrsam",
-   "summary_de": "Das Oberste Gericht entschied: Die 24-Stunden-Frist zur Vorführung vor einem Richter läuft, sobald die Polizei jemanden festhält, nicht erst ab der formellen Festnahme. Vier Männer aus Tripura kommen frei.",
-   "source": "https://www.thenewsminute.com/news/supreme-court-says-24-hour-arrest-deadline-begins-when-person-is-detained"
-  },
-  {
-   "region": "Germany",
-   "headline": "Bavarian deputy leader Aiwanger found dead in Berlin",
-   "summary": "Hubert Aiwanger, 55, Bavaria's economy minister and head of the Free Voters party, was found dead in a Berlin hotel on Wednesday evening. Prosecutors said the autopsy showed no sign that anyone else was involved.",
-   "headline_hi": "बवेरिया के उप-मुख्यमंत्री आइवांगर बर्लिन में मृत मिले",
-   "summary_hi": "बवेरिया के अर्थव्यवस्था मंत्री और फ़्री वोटर्स पार्टी के प्रमुख हुबर्ट आइवांगर (55) बुधवार शाम बर्लिन के एक होटल में मृत मिले। अभियोजकों के अनुसार पोस्टमार्टम में किसी और का हाथ होने के संकेत नहीं मिले।",
-   "headline_de": "Hubert Aiwanger tot in Berliner Hotel gefunden",
-   "summary_de": "Bayerns Wirtschaftsminister und Freie-Wähler-Chef Hubert Aiwanger (55) wurde am Mittwochabend tot in einem Berliner Hotel gefunden. Laut Staatsanwaltschaft ergab die Obduktion keine Hinweise auf Fremdverschulden.",
-   "source": "https://www.tagesspiegel.de/berlin/chef-der-freien-wahler-hubert-aiwanger-tot-in-hotel-in-berlin-aufgefunden-16243175.html"
-  },
-  {
-   "region": "World",
-   "headline": "Trump weighs new Iran strikes as Tehran sends nuclear offer",
-   "summary": "Trump said the US is \"locked and loaded\" to resume strikes on Iran but has not decided. Reuters reported, citing two sources, that Iran sent a nuclear proposal to Washington through Qatar.",
-   "headline_hi": "ट्रंप: ईरान पर नए हमले के लिए अमेरिका तैयार",
-   "summary_hi": "ट्रंप ने कहा कि अमेरिका ईरान पर फिर हमले के लिए पूरी तरह तैयार है, पर फ़ैसला अभी नहीं हुआ। रॉयटर्स ने दो सूत्रों के हवाले से बताया कि ईरान ने क़तर के ज़रिए परमाणु प्रस्ताव वॉशिंगटन भेजा है।",
-   "headline_de": "Trump droht Iran, Teheran schickt Atomvorschlag",
-   "summary_de": "Trump sagte, die USA seien für neue Angriffe auf den Iran bereit, entschieden sei aber nichts. Laut Reuters, das sich auf zwei Insider beruft, schickte der Iran über Katar einen Atomvorschlag nach Washington.",
-   "source": "https://thefederal.com/category/international/trump-says-us-locked-and-loaded-for-iran-as-tehran-sends-nuclear-proposal-261988"
-  }
- ]
+  "date": "2026-11-07",
+  "generated": "2026-11-07T06:59:47+01:00",
+  "news": [
+    {
+      "region": "India",
+      "headline": "Delhi invokes GRAP-III as smog builds before Diwali",
+      "summary": "Air in Delhi-NCR turned 'very poor' on Friday, with several stations above 400. CAQM ordered Stage III curbs: a ban on non-essential construction and limits on older diesel vehicles.",
+      "headline_hi": "दिवाली से पहले दिल्ली में धुंध, GRAP-3 लागू",
+      "summary_hi": "शुक्रवार को दिल्ली-एनसीआर की हवा 'बहुत खराब' रही, कई जगह AQI 400 से ऊपर। CAQM ने स्टेज-3 की पाबंदियाँ लगाईं: गैर-ज़रूरी निर्माण पर रोक और पुराने डीज़ल वाहनों पर सीमा।",
+      "headline_de": "Delhi verhängt GRAP-3 wegen Smog vor Diwali",
+      "summary_de": "Die Luft in Delhi-NCR war am Freitag 'sehr schlecht', an mehreren Stationen über 400. Die Behörde CAQM ordnete Stufe-3-Maßnahmen an: Baustopp für nicht nötige Arbeiten und Grenzen für alte Dieselautos.",
+      "source": "https://www.businesstoday.in/india/story/caqm-invokes-grap-stage-iii-in-delhi-ncr-as-air-quality-deteriorates-ahead-of-diwali-566278-2026-11-06"
+    },
+    {
+      "region": "Germany",
+      "headline": "Union set to pick Ilse Aigner for Federal President",
+      "summary": "CDU leaders agree on Bavaria's parliament president Ilse Aigner (CSU) to succeed Steinmeier, dpa reports; the Union presidium decides Monday. SPD chief Klingbeil says his party would back her.",
+      "headline_hi": "जर्मन राष्ट्रपति पद: यूनियन की पसंद इल्ज़े आइग्नर",
+      "summary_hi": "dpa के अनुसार सीडीयू नेतृत्व बवेरिया की संसद अध्यक्ष इल्ज़े आइग्नर (सीएसयू) को श्टाइनमायर का उत्तराधिकारी बनाने पर सहमत है; सोमवार को औपचारिक फैसला। एसपीडी प्रमुख क्लिंगबाइल ने समर्थन जताया।",
+      "headline_de": "Union will Ilse Aigner als Bundespräsidentin aufstellen",
+      "summary_de": "Die CDU-Spitze ist sich laut dpa einig, Bayerns Landtagspräsidentin Ilse Aigner (CSU) als Nachfolgerin Steinmeiers zu nominieren; das Präsidium entscheidet Montag. SPD-Chef Klingbeil sagt Unterstützung zu.",
+      "source": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101517178/bundespraesidenten-wahl-gemischte-reaktionen-auf-aigner-entscheidung.html"
+    },
+    {
+      "region": "World",
+      "headline": "Trump says Iran war decision coming soon",
+      "summary": "After meeting his security team, Trump said he will decide soon whether to resume strikes on Iran or seek a deal. Tehran says it sent a nuclear proposal via Qatar tied to its seven demands; unverified.",
+      "headline_hi": "ट्रंप: ईरान युद्ध पर फैसला जल्द",
+      "summary_hi": "सुरक्षा टीम से मिलने के बाद ट्रंप ने कहा कि वे जल्द तय करेंगे कि ईरान पर हमले फिर शुरू हों या समझौता हो। ईरान का दावा है कि उसने क़तर के ज़रिए परमाणु प्रस्ताव भेजा, जो उसकी सात शर्तों से जुड़ा है; पुष्टि नहीं।",
+      "headline_de": "Trump: Entscheidung zum Iran-Krieg kommt bald",
+      "summary_de": "Nach einem Treffen mit seinem Sicherheitsteam sagte Trump, er entscheide bald über neue Angriffe auf Iran oder einen Deal. Iran spricht von einem Atomvorschlag über Katar, geknüpft an sieben Forderungen; unbestätigt.",
+      "source": "https://www.thenationalnews.com/news/mena/2026/11/06/youll-know-soon-enough-trump-considers-iran-options/"
+    }
+  ]
 }
