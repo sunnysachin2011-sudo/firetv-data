@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-07",
-  "generated": "2026-11-07T06:59:47+01:00",
+  "date": "2026-11-08",
+  "generated": "2026-11-08T06:56:26+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Delhi invokes GRAP-III as smog builds before Diwali",
-      "summary": "Air in Delhi-NCR turned 'very poor' on Friday, with several stations above 400. CAQM ordered Stage III curbs: a ban on non-essential construction and limits on older diesel vehicles.",
-      "headline_hi": "दिवाली से पहले दिल्ली में धुंध, GRAP-3 लागू",
-      "summary_hi": "शुक्रवार को दिल्ली-एनसीआर की हवा 'बहुत खराब' रही, कई जगह AQI 400 से ऊपर। CAQM ने स्टेज-3 की पाबंदियाँ लगाईं: गैर-ज़रूरी निर्माण पर रोक और पुराने डीज़ल वाहनों पर सीमा।",
-      "headline_de": "Delhi verhängt GRAP-3 wegen Smog vor Diwali",
-      "summary_de": "Die Luft in Delhi-NCR war am Freitag 'sehr schlecht', an mehreren Stationen über 400. Die Behörde CAQM ordnete Stufe-3-Maßnahmen an: Baustopp für nicht nötige Arbeiten und Grenzen für alte Dieselautos.",
-      "source": "https://www.businesstoday.in/india/story/caqm-invokes-grap-stage-iii-in-delhi-ncr-as-air-quality-deteriorates-ahead-of-diwali-566278-2026-11-06"
+      "headline": "Agniveers get a path to permanent army jobs",
+      "summary": "Rajnath Singh said all Agniveers can become regular soldiers after a two-year extension, if willing and fit. Earlier only 25% were kept after four years.",
+      "headline_hi": "अग्निवीरों को स्थायी सैनिक बनने का रास्ता मिला",
+      "summary_hi": "राजनाथ सिंह ने कहा कि दो साल के विस्तार के बाद सभी अग्निवीर नियमित सैनिक बन सकते हैं, अगर वे इच्छुक और फिट हों। पहले चार साल बाद सिर्फ 25% को रखा जाता था।",
+      "headline_de": "Agniveers bekommen Weg in den festen Armeedienst",
+      "summary_de": "Rajnath Singh: Alle Agniveers können nach zwei Jahren Verlängerung reguläre Soldaten werden, wenn sie wollen und fit sind. Bisher blieben nur 25 % nach vier Jahren.",
+      "source": "https://www.tribuneindia.com/news/india/all-agniveers-eligible-for-regular-enrolment-after-2-year-extension-rajnath/"
     },
     {
       "region": "Germany",
-      "headline": "Union set to pick Ilse Aigner for Federal President",
-      "summary": "CDU leaders agree on Bavaria's parliament president Ilse Aigner (CSU) to succeed Steinmeier, dpa reports; the Union presidium decides Monday. SPD chief Klingbeil says his party would back her.",
-      "headline_hi": "जर्मन राष्ट्रपति पद: यूनियन की पसंद इल्ज़े आइग्नर",
-      "summary_hi": "dpa के अनुसार सीडीयू नेतृत्व बवेरिया की संसद अध्यक्ष इल्ज़े आइग्नर (सीएसयू) को श्टाइनमायर का उत्तराधिकारी बनाने पर सहमत है; सोमवार को औपचारिक फैसला। एसपीडी प्रमुख क्लिंगबाइल ने समर्थन जताया।",
-      "headline_de": "Union will Ilse Aigner als Bundespräsidentin aufstellen",
-      "summary_de": "Die CDU-Spitze ist sich laut dpa einig, Bayerns Landtagspräsidentin Ilse Aigner (CSU) als Nachfolgerin Steinmeiers zu nominieren; das Präsidium entscheidet Montag. SPD-Chef Klingbeil sagt Unterstützung zu.",
-      "source": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101517178/bundespraesidenten-wahl-gemischte-reaktionen-auf-aigner-entscheidung.html"
+      "headline": "Söder and Pistorius clash over return of conscription",
+      "summary": "CSU leader Söder wants compulsory military service back, saying Germany is under threat. Defence Minister Pistorius says volunteering works, with about 190,000 soldiers.",
+      "headline_hi": "ज़ोडर और पिस्टोरियस अनिवार्य सैन्य सेवा पर भिड़े",
+      "summary_hi": "CSU नेता ज़ोडर अनिवार्य सैन्य सेवा वापस चाहते हैं, उनका कहना है जर्मनी खतरे में है। रक्षा मंत्री पिस्टोरियस बोले, स्वैच्छिक मॉडल काम कर रहा है, करीब 1,90,000 सैनिक हैं।",
+      "headline_de": "Söder und Pistorius streiten über Rückkehr der Wehrpflicht",
+      "summary_de": "CSU-Chef Söder will die Wehrpflicht zurück, Deutschland sei bedroht. Verteidigungsminister Pistorius sagt, die Freiwilligkeit funktioniere – rund 190.000 Soldaten.",
+      "source": "https://www.t-online.de/nachrichten/deutschland/militaer-verteidigung/id_101518154/soeder-widerspricht-pistorius-bei-wehrpflicht.html"
     },
     {
       "region": "World",
-      "headline": "Trump says Iran war decision coming soon",
-      "summary": "After meeting his security team, Trump said he will decide soon whether to resume strikes on Iran or seek a deal. Tehran says it sent a nuclear proposal via Qatar tied to its seven demands; unverified.",
-      "headline_hi": "ट्रंप: ईरान युद्ध पर फैसला जल्द",
-      "summary_hi": "सुरक्षा टीम से मिलने के बाद ट्रंप ने कहा कि वे जल्द तय करेंगे कि ईरान पर हमले फिर शुरू हों या समझौता हो। ईरान का दावा है कि उसने क़तर के ज़रिए परमाणु प्रस्ताव भेजा, जो उसकी सात शर्तों से जुड़ा है; पुष्टि नहीं।",
-      "headline_de": "Trump: Entscheidung zum Iran-Krieg kommt bald",
-      "summary_de": "Nach einem Treffen mit seinem Sicherheitsteam sagte Trump, er entscheide bald über neue Angriffe auf Iran oder einen Deal. Iran spricht von einem Atomvorschlag über Katar, geknüpft an sieben Forderungen; unbestätigt.",
-      "source": "https://www.thenationalnews.com/news/mena/2026/11/06/youll-know-soon-enough-trump-considers-iran-options/"
+      "headline": "US sets up task force to cut Iran's land supply routes",
+      "summary": "CENTCOM launched Task Force Iron Gate to block weapons and sanctioned goods over Iran's land borders, widening its sea blockade. Iran reports blasts on Qeshm Island (unverified).",
+      "headline_hi": "ईरान के ज़मीनी रास्ते रोकने के लिए अमेरिकी टास्क फ़ोर्स",
+      "summary_hi": "अमेरिकी सेना ने ईरान की ज़मीनी सीमाओं से हथियार और प्रतिबंधित सामान रोकने के लिए टास्क फ़ोर्स बनाई, समुद्री नाकेबंदी बढ़ाई। ईरान ने क़ेश्म द्वीप पर धमाकों की बात कही (अपुष्ट)।",
+      "headline_de": "USA bilden Task Force gegen Irans Nachschub über Land",
+      "summary_de": "Das US-Militär will mit der Task Force Iron Gate Waffen und sanktionierte Güter über Irans Landgrenzen stoppen und weitet so die Seeblockade aus. Iran meldet Explosionen auf Qeschm (unbestätigt).",
+      "source": "https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes"
     }
   ]
 }
