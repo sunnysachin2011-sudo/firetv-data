@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-09",
-  "generated": "2026-11-09T06:53:08+01:00",
+  "date": "2026-11-10",
+  "generated": "2026-11-10T07:05:20+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Modi spends Diwali with troops in Bastar",
-      "summary": "PM Modi marked Diwali at a CRPF camp in Bastar, once a Maoist stronghold. He said armed Maoists are gone but their ideological backers still stir people against the Constitution.",
-      "headline_hi": "मोदी ने बस्तर में जवानों के साथ दिवाली मनाई",
-      "summary_hi": "प्रधानमंत्री मोदी ने बस्तर के CRPF कैंप में दिवाली मनाई, जो कभी माओवादियों का गढ़ था। उन्होंने कहा कि हथियारबंद माओवादी खत्म हो गए, पर उनके वैचारिक समर्थक लोगों को संविधान के खिलाफ भड़का रहे हैं।",
-      "headline_de": "Modi feiert Diwali mit Sicherheitskräften in Bastar",
-      "summary_de": "Premier Modi beging Diwali in einem CRPF-Lager in Bastar, einst Hochburg der Maoisten. Bewaffnete Maoisten gebe es nicht mehr, doch ihre ideologischen Unterstützer hetzten gegen die Verfassung, sagte er.",
-      "source": "https://www.tribuneindia.com/news/india/pm-modi-to-celebrate-diwali-with-security-personnel-in-bastar-once-a-naxal-stronghold/"
+      "headline": "Delhi chokes on post-Diwali smog, 15 stations 'severe'",
+      "summary": "Delhi's air quality stayed 'very poor' on Monday after Diwali fireworks, with 15 stations in the 'severe' band. GRAP Stage III curbs are in force as parties trade blame over missing data.",
+      "headline_hi": "दिवाली के बाद दिल्ली में ज़हरीली धुंध, 15 स्टेशन 'गंभीर'",
+      "summary_hi": "दिवाली की आतिशबाज़ी के बाद सोमवार को दिल्ली की हवा 'बहुत खराब' रही, 15 स्टेशनों पर 'गंभीर' स्तर। ग्रैप-3 की पाबंदियाँ लागू हैं और दल आँकड़ों पर एक-दूसरे को घेर रहे हैं।",
+      "headline_de": "Delhi erstickt im Smog nach Diwali, 15 Stationen „schwer“",
+      "summary_de": "Nach dem Diwali-Feuerwerk blieb Delhis Luft am Montag „sehr schlecht“, 15 Messstationen meldeten „schwere“ Werte. GRAP-Stufe III gilt, Parteien streiten über fehlende Messdaten.",
+      "source": "https://www.outlookindia.com/national/delhi-air-pollution-after-diwali-thick-smog-chokes-capital-delhi-aqi-severe-air-quality-firecracker-smoke-grap-stage-3"
     },
     {
       "region": "Germany",
-      "headline": "Merz picks Ilse Aigner for German president",
-      "summary": "Chancellor Merz will propose CSU politician Ilse Aigner, 61, as the next federal president. The vote is on 30 January; she would be the first woman in the office.",
-      "headline_hi": "मेर्त्स ने राष्ट्रपति पद के लिए इल्ज़े आइग्नर को चुना",
-      "summary_hi": "चांसलर मेर्त्स CSU नेता इल्ज़े आइग्नर (61) को जर्मनी के अगले राष्ट्रपति के लिए प्रस्तावित करेंगे। चुनाव 30 जनवरी को है; वे इस पद पर पहली महिला होंगी।",
-      "headline_de": "Merz will Ilse Aigner als Bundespräsidentin",
-      "summary_de": "Kanzler Merz will die CSU-Politikerin Ilse Aigner (61) als nächste Bundespräsidentin vorschlagen. Gewählt wird am 30. Januar; sie wäre die erste Frau im Amt.",
-      "source": "https://www.t-online.de/nachrichten/deutschland/id_101518922/merz-aigner-soll-bundespraesidentin-werden.html"
+      "headline": "CDU nominates Ilse Aigner for German presidency",
+      "summary": "On Chancellor Merz's proposal, the CDU executive named Bavaria's parliament president Ilse Aigner (CSU) as candidate for the 30 January vote. The SPD backs her; she would be the first woman in the office.",
+      "headline_hi": "सीडीयू ने इल्से आइग्नर को राष्ट्रपति पद की उम्मीदवार बनाया",
+      "summary_hi": "चांसलर मेर्ज़ के प्रस्ताव पर सीडीयू ने बवेरिया की संसद अध्यक्ष इल्से आइग्नर (सीएसयू) को 30 जनवरी के चुनाव के लिए उम्मीदवार बनाया। एसपीडी समर्थन में है; वे पहली महिला राष्ट्रपति होंगी।",
+      "headline_de": "CDU nominiert Ilse Aigner für das Bundespräsidentenamt",
+      "summary_de": "Auf Vorschlag von Kanzler Merz nominierte der CDU-Vorstand Landtagspräsidentin Ilse Aigner (CSU) für die Wahl am 30. Januar. Die SPD unterstützt sie; sie wäre die erste Frau im Amt.",
+      "source": "https://www.tagesspiegel.de/politik/dpa-wahl-am-30-januar-merz-schlagt-aigner-offiziell-als-bundesprasidentin-vor-16259352.html"
     },
     {
       "region": "World",
-      "headline": "Trump: new Iran strikes unlikely if talks progress",
-      "summary": "Trump told CNN fresh US strikes are \"highly unlikely\" if talks bring a strong deal. Iran says its offer to reopen the Strait of Hormuz within two days stands if the US ends the war.",
-      "headline_hi": "ट्रंप: बातचीत आगे बढ़ी तो ईरान पर नए हमले मुश्किल",
-      "summary_hi": "ट्रंप ने CNN से कहा कि बातचीत से मज़बूत समझौता हुआ तो नए अमेरिकी हमलों की संभावना बहुत कम है। ईरान ने कहा कि अमेरिका युद्ध खत्म करे तो वह दो दिन में होर्मुज़ जलडमरूमध्य खोल देगा।",
-      "headline_de": "Trump: Neue Iran-Angriffe bei Fortschritt unwahrscheinlich",
-      "summary_de": "Trump sagte CNN, neue US-Angriffe seien „höchst unwahrscheinlich“, wenn die Gespräche ein starkes Abkommen bringen. Iran will die Straße von Hormus in zwei Tagen öffnen, wenn die USA den Krieg beenden.",
-      "source": "https://www.aljazeera.com/news/2026/11/9/rubio-says-war-on-iran-unpopular-but-necessary-to-stop-nuclear-threat"
+      "headline": "US-brokered Russia-Ukraine talks open in Abu Dhabi",
+      "summary": "US, Russian and Ukrainian envoys begin two days of talks in Abu Dhabi on Tuesday, the first three-way round since February. Security guarantees top the agenda after both sides traded heavy strikes.",
+      "headline_hi": "अबू धाबी में अमेरिका की मध्यस्थता से रूस-यूक्रेन वार्ता शुरू",
+      "summary_hi": "अमेरिका, रूस और यूक्रेन के दूत मंगलवार से अबू धाबी में दो दिन की वार्ता कर रहे हैं, फ़रवरी के बाद पहली त्रिपक्षीय बैठक। भारी हमलों के बाद सुरक्षा गारंटी मुख्य मुद्दा है।",
+      "headline_de": "Russland-Ukraine-Gespräche unter US-Vermittlung in Abu Dhabi",
+      "summary_de": "Gesandte der USA, Russlands und der Ukraine beginnen am Dienstag zwei Verhandlungstage in Abu Dhabi, die erste Dreierrunde seit Februar. Nach schweren Angriffen stehen Sicherheitsgarantien im Mittelpunkt.",
+      "source": "https://abcnews.com/International/wireStory/day-us-brokered-talks-russia-ukraine-batter-long-137968428"
     }
   ]
 }
