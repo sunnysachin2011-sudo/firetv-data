@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-10",
-  "generated": "2026-11-10T07:05:20+01:00",
+  "date": "2026-11-11",
+  "generated": "2026-11-11T06:54:44+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Delhi chokes on post-Diwali smog, 15 stations 'severe'",
-      "summary": "Delhi's air quality stayed 'very poor' on Monday after Diwali fireworks, with 15 stations in the 'severe' band. GRAP Stage III curbs are in force as parties trade blame over missing data.",
-      "headline_hi": "दिवाली के बाद दिल्ली में ज़हरीली धुंध, 15 स्टेशन 'गंभीर'",
-      "summary_hi": "दिवाली की आतिशबाज़ी के बाद सोमवार को दिल्ली की हवा 'बहुत खराब' रही, 15 स्टेशनों पर 'गंभीर' स्तर। ग्रैप-3 की पाबंदियाँ लागू हैं और दल आँकड़ों पर एक-दूसरे को घेर रहे हैं।",
-      "headline_de": "Delhi erstickt im Smog nach Diwali, 15 Stationen „schwer“",
-      "summary_de": "Nach dem Diwali-Feuerwerk blieb Delhis Luft am Montag „sehr schlecht“, 15 Messstationen meldeten „schwere“ Werte. GRAP-Stufe III gilt, Parteien streiten über fehlende Messdaten.",
-      "source": "https://www.outlookindia.com/national/delhi-air-pollution-after-diwali-thick-smog-chokes-capital-delhi-aqi-severe-air-quality-firecracker-smoke-grap-stage-3"
+      "headline": "Hasina seeks new passport; Dhaka says no, wants extradition",
+      "summary": "Ousted Bangladesh PM Sheikh Hasina asked Dhaka's mission in New Delhi for a new passport, saying she plans to return in December. Bangladesh refused, called her a fugitive and again asked India to extradite her.",
+      "headline_hi": "हसीना ने पासपोर्ट माँगा, ढाका का इनकार, प्रत्यर्पण की माँग",
+      "summary_hi": "बांग्लादेश की पूर्व पीएम शेख हसीना ने दिल्ली में ढाका के मिशन से नया पासपोर्ट माँगा और दिसंबर में वापसी की बात कही। बांग्लादेश ने इनकार कर उन्हें भगोड़ा बताया और भारत से फिर प्रत्यर्पण माँगा।",
+      "headline_de": "Hasina will neuen Pass – Dhaka lehnt ab, will Auslieferung",
+      "summary_de": "Bangladeschs gestürzte Premierministerin Sheikh Hasina beantragte in Neu-Delhi einen neuen Pass und will im Dezember zurückkehren. Dhaka lehnte ab, nannte sie flüchtig und verlangt erneut ihre Auslieferung aus Indien.",
+      "source": "https://www.newsgram.com/bangladesh/2026/11/09/sheikh-hasina-return-update"
     },
     {
       "region": "Germany",
-      "headline": "CDU nominates Ilse Aigner for German presidency",
-      "summary": "On Chancellor Merz's proposal, the CDU executive named Bavaria's parliament president Ilse Aigner (CSU) as candidate for the 30 January vote. The SPD backs her; she would be the first woman in the office.",
-      "headline_hi": "सीडीयू ने इल्से आइग्नर को राष्ट्रपति पद की उम्मीदवार बनाया",
-      "summary_hi": "चांसलर मेर्ज़ के प्रस्ताव पर सीडीयू ने बवेरिया की संसद अध्यक्ष इल्से आइग्नर (सीएसयू) को 30 जनवरी के चुनाव के लिए उम्मीदवार बनाया। एसपीडी समर्थन में है; वे पहली महिला राष्ट्रपति होंगी।",
-      "headline_de": "CDU nominiert Ilse Aigner für das Bundespräsidentenamt",
-      "summary_de": "Auf Vorschlag von Kanzler Merz nominierte der CDU-Vorstand Landtagspräsidentin Ilse Aigner (CSU) für die Wahl am 30. Januar. Die SPD unterstützt sie; sie wäre die erste Frau im Amt.",
-      "source": "https://www.tagesspiegel.de/politik/dpa-wahl-am-30-januar-merz-schlagt-aigner-offiziell-als-bundesprasidentin-vor-16259352.html"
+      "headline": "CDU, SPD and Greens back Ilse Aigner for German president",
+      "summary": "Bavarian parliament president Ilse Aigner (CSU) is the joint CDU, CSU and SPD candidate for Federal President, and Green leaders back her too. The vote is on 30 January 2027; she would be the first woman in the post.",
+      "headline_hi": "इल्से आइग्नर को सीडीयू, एसपीडी और ग्रीन्स का समर्थन",
+      "summary_hi": "बवेरिया की संसद अध्यक्ष इल्से आइग्नर (सीएसयू) जर्मन राष्ट्रपति पद के लिए सीडीयू, सीएसयू और एसपीडी की साझा उम्मीदवार हैं, ग्रीन नेता भी साथ हैं। चुनाव 30 जनवरी 2027 को है; वे इस पद पर पहली महिला होंगी।",
+      "headline_de": "CDU, SPD und Grüne stellen sich hinter Ilse Aigner",
+      "summary_de": "Bayerns Landtagspräsidentin Ilse Aigner (CSU) ist gemeinsame Kandidatin von CDU, CSU und SPD fürs Bundespräsidentenamt, auch die Grünen-Spitze ist dafür. Die Wahl ist am 30. Januar 2027; sie wäre die erste Frau im Amt.",
+      "source": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101519494/ilse-aigner-spd-praesidium-unterstuetzt-kandidatur-als-bundespraesidentin.html"
     },
     {
       "region": "World",
-      "headline": "US-brokered Russia-Ukraine talks open in Abu Dhabi",
-      "summary": "US, Russian and Ukrainian envoys begin two days of talks in Abu Dhabi on Tuesday, the first three-way round since February. Security guarantees top the agenda after both sides traded heavy strikes.",
-      "headline_hi": "अबू धाबी में अमेरिका की मध्यस्थता से रूस-यूक्रेन वार्ता शुरू",
-      "summary_hi": "अमेरिका, रूस और यूक्रेन के दूत मंगलवार से अबू धाबी में दो दिन की वार्ता कर रहे हैं, फ़रवरी के बाद पहली त्रिपक्षीय बैठक। भारी हमलों के बाद सुरक्षा गारंटी मुख्य मुद्दा है।",
-      "headline_de": "Russland-Ukraine-Gespräche unter US-Vermittlung in Abu Dhabi",
-      "summary_de": "Gesandte der USA, Russlands und der Ukraine beginnen am Dienstag zwei Verhandlungstage in Abu Dhabi, die erste Dreierrunde seit Februar. Nach schweren Angriffen stehen Sicherheitsgarantien im Mittelpunkt.",
-      "source": "https://abcnews.com/International/wireStory/day-us-brokered-talks-russia-ukraine-batter-long-137968428"
+      "headline": "Trump: Iran war 'effectively over', no new strikes planned",
+      "summary": "Trump said the conflict with Iran is effectively over and the US plans no new strikes for now, while the naval blockade stays. Tehran denied any talks are on and set seven conditions, including lifting the blockade.",
+      "headline_hi": "ट्रंप: ईरान युद्ध 'असल में खत्म', नए हमलों की योजना नहीं",
+      "summary_hi": "ट्रंप ने कहा कि ईरान से संघर्ष असल में खत्म है और अभी नए हमलों की योजना नहीं, पर समुद्री नाकेबंदी जारी रहेगी। तेहरान ने बातचीत की खबरें नकारीं और नाकेबंदी हटाने समेत सात शर्तें रखीं।",
+      "headline_de": "Trump: Iran-Krieg „praktisch vorbei“, keine neuen Angriffe",
+      "summary_de": "Trump erklärte den Konflikt mit dem Iran für praktisch beendet, neue Angriffe seien derzeit nicht geplant, die Seeblockade bleibt. Teheran bestritt Gespräche und nannte sieben Bedingungen, darunter das Ende der Blockade.",
+      "source": "https://www.theweek.in/news/middle-east/2026/11/10/us-iran-conflict-effectively-over-trump.html"
     }
   ]
 }

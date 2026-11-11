@@ -1,25 +1,6 @@
 {
-  "generated": "2026-11-10T07:05:20+01:00",
-  "date": "2026-11-10",
+  "generated": "2026-11-11T06:54:44+01:00",
+  "date": "2026-11-11",
   "timezone": "Europe/Berlin",
-  "matches": [
-    {
-      "sport": "cricket",
-      "kickoff": "2026-11-10T03:00:00+01:00",
-      "duration_min": 480,
-      "home": "New Zealand",
-      "away": "India",
-      "competition": "3rd ODI, India tour of New Zealand",
-      "home_hi": "न्यूज़ीलैंड",
-      "away_hi": "भारत",
-      "competition_hi": "तीसरा वनडे, भारत का न्यूज़ीलैंड दौरा",
-      "home_de": "Neuseeland",
-      "away_de": "Indien",
-      "competition_de": "3. ODI, Indiens Neuseeland-Tour",
-      "app": "Sony LIV",
-      "package": "com.onemainstream.sonyliv.android",
-      "big": true,
-      "source": "https://www.indiatvnews.com/sports/cricket/when-and-where-to-watch-india-vs-new-zealand-3rd-odi-live-on-tv-for-free-and-stream-online-2026-11-09-1059023"
-    }
-  ]
+  "matches": []
 }
