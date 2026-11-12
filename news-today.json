@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-11",
-  "generated": "2026-11-11T06:56:17+01:00",
+  "date": "2026-11-12",
+  "generated": "2026-11-12T06:59:39+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Hasina seeks new passport; Dhaka says no, wants extradition",
-      "summary": "Ousted Bangladesh PM Sheikh Hasina asked Dhaka's mission in New Delhi for a new passport, saying she plans to return in December. Bangladesh refused, called her a fugitive and again asked India to extradite her.",
-      "headline_hi": "हसीना ने पासपोर्ट माँगा, ढाका का इनकार, प्रत्यर्पण की माँग",
-      "summary_hi": "बांग्लादेश की पूर्व पीएम शेख हसीना ने दिल्ली में ढाका के मिशन से नया पासपोर्ट माँगा और दिसंबर में वापसी की बात कही। बांग्लादेश ने इनकार कर उन्हें भगोड़ा बताया और भारत से फिर प्रत्यर्पण माँगा।",
-      "headline_de": "Hasina will neuen Pass – Dhaka lehnt ab, will Auslieferung",
-      "summary_de": "Bangladeschs gestürzte Premierministerin Sheikh Hasina beantragte in Neu-Delhi einen neuen Pass und will im Dezember zurückkehren. Dhaka lehnte ab, nannte sie flüchtig und verlangt erneut ihre Auslieferung aus Indien.",
-      "source": "https://www.newsgram.com/bangladesh/2026/11/09/sheikh-hasina-return-update"
+      "headline": "India simplifies visas: nine categories instead of 13",
+      "summary": "The Home Ministry has cut main visa types from 13 to nine and sub-types from 49 to 23. Forms lose up to 70% of their fields; the tourist visa becomes a visitor visa.",
+      "headline_hi": "भारत ने वीज़ा आसान किया: 13 की जगह 9 श्रेणियाँ",
+      "summary_hi": "गृह मंत्रालय ने मुख्य वीज़ा श्रेणियाँ 13 से 9 और उप-श्रेणियाँ 49 से 23 कर दीं। फ़ॉर्म 70% तक छोटे होंगे; टूरिस्ट वीज़ा अब विज़िटर वीज़ा कहलाएगा।",
+      "headline_de": "Indien vereinfacht Visa: neun statt 13 Kategorien",
+      "summary_de": "Das Innenministerium kürzt die Haupt-Visakategorien von 13 auf neun und die Unterkategorien von 49 auf 23. Formulare verlieren bis zu 70% der Felder; aus dem Touristenvisum wird ein Besuchervisum.",
+      "source": "https://ddnews.gov.in/en/government-rationalises-indian-visa-regime-reduces-main-categories-from-13-to-nine/"
     },
     {
       "region": "Germany",
-      "headline": "German pension contribution set to jump to 19.7% in 2028",
-      "summary": "Germany's pension contribution rate is expected to rise from 18.6% to 19.7% in 2028, the first increase in over 20 years, as the reserve nears its legal minimum. Pensions should still rise about 4% in 2027.",
-      "headline_hi": "जर्मनी में पेंशन अंशदान 2028 में बढ़कर 19.7% होने की संभावना",
-      "summary_hi": "जर्मनी में पेंशन अंशदान दर 2028 में 18.6% से बढ़कर 19.7% होने का अनुमान है, 20 साल से ज़्यादा में पहली बढ़त, क्योंकि रिज़र्व कानूनी न्यूनतम के पास है। 2027 में पेंशन फिर भी करीब 4% बढ़ेगी।",
-      "headline_de": "Rentenbeitrag soll 2028 auf 19,7 Prozent steigen",
-      "summary_de": "Der Rentenbeitrag soll 2028 von 18,6 auf 19,7 Prozent steigen, die erste Erhöhung seit über 20 Jahren, weil die Rücklage fast auf das gesetzliche Minimum sinkt. Die Renten steigen 2027 trotzdem um rund 4 Prozent.",
-      "source": "https://www.wiwo.de/politik/deutschland/rentenbeitrag-2028-warum-der-beitragssatz-auf-197-prozent-springt/100268783.html"
+      "headline": "Bundestag committee settles record 555 billion euro budget",
+      "summary": "The budget committee holds its final marathon session on the 2027 budget, with 118.7 billion euros of core borrowing. Merz's electricity tax cut is still unfunded.",
+      "headline_hi": "बुंडेस्टाग समिति 555 अरब यूरो के रिकॉर्ड बजट पर अंतिम बैठक",
+      "summary_hi": "बजट समिति आज 2027 के बजट पर अंतिम लंबी बैठक कर रही है, जिसमें 118.7 अरब यूरो का मुख्य कर्ज़ है। मर्त्स की बिजली-कर कटौती के लिए अभी पैसा नहीं है।",
+      "headline_de": "Haushaltsausschuss berät Rekordetat von 555 Milliarden",
+      "summary_de": "Der Ausschuss berät in der Bereinigungssitzung den Etat 2027 mit 555 Milliarden Euro Ausgaben und 118,7 Milliarden Kernkredit. Die Stromsteuersenkung von Merz bleibt unfinanziert.",
+      "source": "https://www.handelsblatt.com/politik/deutschland/haushaltsberatung-die-nacht-der-milliarden-im-bundestag/100269269.html"
     },
     {
       "region": "World",
-      "headline": "Trump: Iran war 'effectively over', no new strikes planned",
-      "summary": "Trump said the conflict with Iran is effectively over and the US plans no new strikes for now, while the naval blockade stays. Tehran denied any talks are on and set seven conditions, including lifting the blockade.",
-      "headline_hi": "ट्रंप: ईरान युद्ध 'असल में खत्म', नए हमलों की योजना नहीं",
-      "summary_hi": "ट्रंप ने कहा कि ईरान से संघर्ष असल में खत्म है और अभी नए हमलों की योजना नहीं, पर समुद्री नाकेबंदी जारी रहेगी। तेहरान ने बातचीत की खबरें नकारीं और नाकेबंदी हटाने समेत सात शर्तें रखीं।",
-      "headline_de": "Trump: Iran-Krieg „praktisch vorbei“, keine neuen Angriffe",
-      "summary_de": "Trump erklärte den Konflikt mit dem Iran für praktisch beendet, neue Angriffe seien derzeit nicht geplant, die Seeblockade bleibt. Teheran bestritt Gespräche und nannte sieben Bedingungen, darunter das Ende der Blockade.",
-      "source": "https://www.theweek.in/news/middle-east/2026/11/10/us-iran-conflict-effectively-over-trump.html"
+      "headline": "Russia and Ukraine agree big prisoner swap in Abu Dhabi",
+      "summary": "Two days of US-mediated talks ended with a large prisoner exchange agreed in principle but no peace breakthrough. US envoys travel to Moscow to meet Putin on Thursday.",
+      "headline_hi": "रूस-यूक्रेन में अबू धाबी में बड़े कैदी अदला-बदली पर सहमति",
+      "summary_hi": "अमेरिका की मध्यस्थता में दो दिन की बातचीत के बाद बड़ी कैदी अदला-बदली पर सैद्धांतिक सहमति बनी, पर शांति पर कोई बड़ी प्रगति नहीं। अमेरिकी दूत गुरुवार को मॉस्को में पुतिन से मिलेंगे।",
+      "headline_de": "Russland und Ukraine einig über großen Gefangenentausch",
+      "summary_de": "Zwei Tage US-vermittelte Gespräche endeten mit einem grundsätzlich vereinbarten großen Gefangenenaustausch, aber ohne Durchbruch. US-Gesandte treffen am Donnerstag Putin in Moskau.",
+      "source": "https://www.pbs.org/newshour/world/russia-and-ukraine-agree-to-a-large-prisoner-exchange-as-talks-end-with-no-major-breakthrough"
     }
   ]
 }

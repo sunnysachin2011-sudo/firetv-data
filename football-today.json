@@ -1,6 +1,41 @@
 {
-  "generated": "2026-11-11T06:56:17+01:00",
-  "date": "2026-11-11",
+  "generated": "2026-11-12T06:59:39+01:00",
+  "date": "2026-11-12",
   "timezone": "Europe/Berlin",
-  "matches": []
+  "matches": [
+    {
+      "sport": "football",
+      "kickoff": "2026-11-12T20:45:00+01:00",
+      "home": "England",
+      "away": "Croatia",
+      "competition": "UEFA Nations League",
+      "home_hi": "इंग्लैंड",
+      "away_hi": "क्रोएशिया",
+      "competition_hi": "यूईएफ़ए नेशंस लीग",
+      "home_de": "England",
+      "away_de": "Kroatien",
+      "competition_de": "UEFA Nations League",
+      "app": "Sony LIV",
+      "package": "com.onemainstream.sonyliv.android",
+      "big": false,
+      "source": "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/"
+    },
+    {
+      "sport": "football",
+      "kickoff": "2026-11-12T20:45:00+01:00",
+      "home": "Czechia",
+      "away": "Spain",
+      "competition": "UEFA Nations League",
+      "home_hi": "चेक गणराज्य",
+      "away_hi": "स्पेन",
+      "competition_hi": "यूईएफ़ए नेशंस लीग",
+      "home_de": "Tschechien",
+      "away_de": "Spanien",
+      "competition_de": "UEFA Nations League",
+      "app": "Sony LIV",
+      "package": "com.onemainstream.sonyliv.android",
+      "big": false,
+      "source": "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/"
+    }
+  ]
 }
