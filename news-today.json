@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-12",
-  "generated": "2026-11-12T06:59:39+01:00",
+  "date": "2026-11-13",
+  "generated": "2026-11-13T07:04:53+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "India simplifies visas: nine categories instead of 13",
-      "summary": "The Home Ministry has cut main visa types from 13 to nine and sub-types from 49 to 23. Forms lose up to 70% of their fields; the tourist visa becomes a visitor visa.",
-      "headline_hi": "भारत ने वीज़ा आसान किया: 13 की जगह 9 श्रेणियाँ",
-      "summary_hi": "गृह मंत्रालय ने मुख्य वीज़ा श्रेणियाँ 13 से 9 और उप-श्रेणियाँ 49 से 23 कर दीं। फ़ॉर्म 70% तक छोटे होंगे; टूरिस्ट वीज़ा अब विज़िटर वीज़ा कहलाएगा।",
-      "headline_de": "Indien vereinfacht Visa: neun statt 13 Kategorien",
-      "summary_de": "Das Innenministerium kürzt die Haupt-Visakategorien von 13 auf neun und die Unterkategorien von 49 auf 23. Formulare verlieren bis zu 70% der Felder; aus dem Touristenvisum wird ein Besuchervisum.",
-      "source": "https://ddnews.gov.in/en/government-rationalises-indian-visa-regime-reduces-main-categories-from-13-to-nine/"
+      "headline": "India inflation hits 6.09%, above RBI limit",
+      "summary": "Retail inflation rose to 6.09% in October from 5.54% in September, the first breach of the RBI's 6% ceiling in two years. Food prices, led by onions, drove the rise.",
+      "headline_hi": "भारत में महँगाई 6.09%, RBI की सीमा से ऊपर",
+      "summary_hi": "अक्टूबर में खुदरा महँगाई सितंबर के 5.54% से बढ़कर 6.09% हो गई, दो साल में पहली बार RBI की 6% सीमा से ऊपर। प्याज़ समेत खाने की चीज़ों के दाम बढ़े।",
+      "headline_de": "Inflation in Indien bei 6,09 %, über RBI-Grenze",
+      "summary_de": "Die Inflation stieg im Oktober von 5,54 % auf 6,09 % und lag erstmals seit zwei Jahren über der 6-%-Grenze der Zentralbank RBI. Treiber waren Lebensmittel, vor allem Zwiebeln.",
+      "source": "https://www.business-standard.com/economy/news/retail-inflation-at-6-09-in-october-breaches-rbi-s-upper-band-after-2-yrs-126111201088_1.html"
     },
     {
       "region": "Germany",
-      "headline": "Bundestag committee settles record 555 billion euro budget",
-      "summary": "The budget committee holds its final marathon session on the 2027 budget, with 118.7 billion euros of core borrowing. Merz's electricity tax cut is still unfunded.",
-      "headline_hi": "बुंडेस्टाग समिति 555 अरब यूरो के रिकॉर्ड बजट पर अंतिम बैठक",
-      "summary_hi": "बजट समिति आज 2027 के बजट पर अंतिम लंबी बैठक कर रही है, जिसमें 118.7 अरब यूरो का मुख्य कर्ज़ है। मर्त्स की बिजली-कर कटौती के लिए अभी पैसा नहीं है।",
-      "headline_de": "Haushaltsausschuss berät Rekordetat von 555 Milliarden",
-      "summary_de": "Der Ausschuss berät in der Bereinigungssitzung den Etat 2027 mit 555 Milliarden Euro Ausgaben und 118,7 Milliarden Kernkredit. Die Stromsteuersenkung von Merz bleibt unfinanziert.",
-      "source": "https://www.handelsblatt.com/politik/deutschland/haushaltsberatung-die-nacht-der-milliarden-im-bundestag/100269269.html"
+      "headline": "Budget committee approves 2027 budget overnight",
+      "summary": "The Bundestag budget committee passed a record €560.9bn budget for 2027 early Friday with about €123bn in new core borrowing. A promised electricity tax cut is still unfunded; the Bundestag votes 24–27 Nov.",
+      "headline_hi": "जर्मन बजट समिति ने 2027 का बजट रात भर में पास किया",
+      "summary_hi": "समिति ने शुक्रवार सुबह 560.9 अरब यूरो का रिकॉर्ड बजट पास किया, जिसमें करीब 123 अरब यूरो का नया कर्ज़ है। बिजली कर में कटौती के लिए अभी पैसा नहीं है; संसद 24–27 नवंबर को वोट करेगी।",
+      "headline_de": "Haushaltsausschuss billigt Etat 2027 in Nachtsitzung",
+      "summary_de": "Der Ausschuss beschloss am frühen Freitag einen Rekordhaushalt von 560,9 Mrd. Euro mit rund 123 Mrd. neuen Schulden im Kernhaushalt. Die Stromsteuersenkung ist noch offen; der Bundestag stimmt am 24.–27. November ab.",
+      "source": "https://de.nachrichten.yahoo.com/bundeshaushalt-f%C3%BCr-2027-steht-zumindest-051008671.html"
     },
     {
       "region": "World",
-      "headline": "Russia and Ukraine agree big prisoner swap in Abu Dhabi",
-      "summary": "Two days of US-mediated talks ended with a large prisoner exchange agreed in principle but no peace breakthrough. US envoys travel to Moscow to meet Putin on Thursday.",
-      "headline_hi": "रूस-यूक्रेन में अबू धाबी में बड़े कैदी अदला-बदली पर सहमति",
-      "summary_hi": "अमेरिका की मध्यस्थता में दो दिन की बातचीत के बाद बड़ी कैदी अदला-बदली पर सैद्धांतिक सहमति बनी, पर शांति पर कोई बड़ी प्रगति नहीं। अमेरिकी दूत गुरुवार को मॉस्को में पुतिन से मिलेंगे।",
-      "headline_de": "Russland und Ukraine einig über großen Gefangenentausch",
-      "summary_de": "Zwei Tage US-vermittelte Gespräche endeten mit einem grundsätzlich vereinbarten großen Gefangenenaustausch, aber ohne Durchbruch. US-Gesandte treffen am Donnerstag Putin in Moskau.",
-      "source": "https://www.pbs.org/newshour/world/russia-and-ukraine-agree-to-a-large-prisoner-exchange-as-talks-end-with-no-major-breakthrough"
+      "headline": "Nvidia CEO Jensen Huang resigns after scandal",
+      "summary": "Huang quit as Nvidia CEO and board member on Thursday after admitting an affair; CFO Colette Kress is interim CEO. Reports linking a second woman to Chinese intelligence are unverified; shares fell sharply.",
+      "headline_hi": "Nvidia के CEO जेन्सन हुआंग ने विवाद के बाद इस्तीफ़ा दिया",
+      "summary_hi": "हुआंग ने एक अफ़ेयर कबूलने के बाद गुरुवार को CEO और बोर्ड पद छोड़ा; CFO कोलेट क्रेस अंतरिम CEO बनीं। एक महिला के चीनी जासूस होने की ख़बरें अपुष्ट हैं; शेयर तेज़ी से गिरे।",
+      "headline_de": "Nvidia-Chef Jensen Huang tritt nach Skandal zurück",
+      "summary_de": "Huang gab am Donnerstag nach dem Eingeständnis einer Affäre CEO-Posten und Vorstandssitz ab; Finanzchefin Colette Kress führt vorerst. Berichte über eine chinesische Spionin sind unbestätigt; die Aktie fiel stark.",
+      "source": "https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress"
     }
   ]
 }
