@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-13",
-  "generated": "2026-11-13T07:04:53+01:00",
+  "date": "2026-11-14",
+  "generated": "2026-11-14T07:03:49+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "India inflation hits 6.09%, above RBI limit",
-      "summary": "Retail inflation rose to 6.09% in October from 5.54% in September, the first breach of the RBI's 6% ceiling in two years. Food prices, led by onions, drove the rise.",
-      "headline_hi": "भारत में महँगाई 6.09%, RBI की सीमा से ऊपर",
-      "summary_hi": "अक्टूबर में खुदरा महँगाई सितंबर के 5.54% से बढ़कर 6.09% हो गई, दो साल में पहली बार RBI की 6% सीमा से ऊपर। प्याज़ समेत खाने की चीज़ों के दाम बढ़े।",
-      "headline_de": "Inflation in Indien bei 6,09 %, über RBI-Grenze",
-      "summary_de": "Die Inflation stieg im Oktober von 5,54 % auf 6,09 % und lag erstmals seit zwei Jahren über der 6-%-Grenze der Zentralbank RBI. Treiber waren Lebensmittel, vor allem Zwiebeln.",
-      "source": "https://www.business-standard.com/economy/news/retail-inflation-at-6-09-in-october-breaches-rbi-s-upper-band-after-2-yrs-126111201088_1.html"
+      "headline": "Assam bus-truck crash near Kaziranga kills 26",
+      "summary": "A speeding minibus hit a container truck head-on on NH-715 in Golaghat district on Friday, killing at least 26 people, many of them students. About 20 were injured and an inquiry has begun.",
+      "headline_hi": "असम में काज़ीरंगा के पास बस-ट्रक टक्कर, 26 की मौत",
+      "summary_hi": "शुक्रवार को गोलाघाट ज़िले में NH-715 पर तेज़ रफ़्तार मिनीबस की कंटेनर ट्रक से सीधी टक्कर में कम से कम 26 लोग मारे गए, जिनमें कई छात्र थे। करीब 20 घायल हैं, जाँच शुरू हो गई है।",
+      "headline_de": "Bus-Lkw-Unfall bei Kaziranga in Assam: 26 Tote",
+      "summary_de": "Ein zu schneller Minibus stieß am Freitag auf der NH-715 im Distrikt Golaghat frontal mit einem Container-Lkw zusammen. Mindestens 26 Menschen starben, viele davon Studenten; rund 20 wurden verletzt.",
+      "source": "https://theprint.in/india/assam-26-die-in-bus-truck-collision-in-kaziranga-20-others-injured/3098261/"
     },
     {
       "region": "Germany",
-      "headline": "Budget committee approves 2027 budget overnight",
-      "summary": "The Bundestag budget committee passed a record €560.9bn budget for 2027 early Friday with about €123bn in new core borrowing. A promised electricity tax cut is still unfunded; the Bundestag votes 24–27 Nov.",
-      "headline_hi": "जर्मन बजट समिति ने 2027 का बजट रात भर में पास किया",
-      "summary_hi": "समिति ने शुक्रवार सुबह 560.9 अरब यूरो का रिकॉर्ड बजट पास किया, जिसमें करीब 123 अरब यूरो का नया कर्ज़ है। बिजली कर में कटौती के लिए अभी पैसा नहीं है; संसद 24–27 नवंबर को वोट करेगी।",
-      "headline_de": "Haushaltsausschuss billigt Etat 2027 in Nachtsitzung",
-      "summary_de": "Der Ausschuss beschloss am frühen Freitag einen Rekordhaushalt von 560,9 Mrd. Euro mit rund 123 Mrd. neuen Schulden im Kernhaushalt. Die Stromsteuersenkung ist noch offen; der Bundestag stimmt am 24.–27. November ab.",
-      "source": "https://de.nachrichten.yahoo.com/bundeshaushalt-f%C3%BCr-2027-steht-zumindest-051008671.html"
+      "headline": "Bundestag gives spy agencies power to hack back",
+      "summary": "Parliament passed Interior Minister Dobrindt's intelligence reform 308-190. The BND and BfV may now disrupt hostile servers and use AI on bulk data; the Left party warns of a 'secret police'.",
+      "headline_hi": "जर्मन संसद ने खुफिया एजेंसियों को हैकिंग की ताक़त दी",
+      "summary_hi": "संसद ने गृह मंत्री डोब्रिंट का खुफिया सुधार 308-190 से पास किया। BND और BfV अब दुश्मन सर्वर बाधित कर सकेंगी और बड़े डेटा पर AI चला सकेंगी; वाम दल ने 'गुप्त पुलिस' की चेतावनी दी।",
+      "headline_de": "Bundestag beschließt Geheimdienstreform mit Hackbefugnis",
+      "summary_de": "Das Parlament nahm Innenminister Dobrindts Reform mit 308 zu 190 Stimmen an. BND und Verfassungsschutz dürfen künftig feindliche Server stören und KI auf Massendaten anwenden; die Linke warnt vor einer „Geheimpolizei“.",
+      "source": "https://www.zdfheute.de/politik/deutschland/nachrichtendienst-reform-bundestag-bnd-gesetz-100.html"
     },
     {
       "region": "World",
-      "headline": "Nvidia CEO Jensen Huang resigns after scandal",
-      "summary": "Huang quit as Nvidia CEO and board member on Thursday after admitting an affair; CFO Colette Kress is interim CEO. Reports linking a second woman to Chinese intelligence are unverified; shares fell sharply.",
-      "headline_hi": "Nvidia के CEO जेन्सन हुआंग ने विवाद के बाद इस्तीफ़ा दिया",
-      "summary_hi": "हुआंग ने एक अफ़ेयर कबूलने के बाद गुरुवार को CEO और बोर्ड पद छोड़ा; CFO कोलेट क्रेस अंतरिम CEO बनीं। एक महिला के चीनी जासूस होने की ख़बरें अपुष्ट हैं; शेयर तेज़ी से गिरे।",
-      "headline_de": "Nvidia-Chef Jensen Huang tritt nach Skandal zurück",
-      "summary_de": "Huang gab am Donnerstag nach dem Eingeständnis einer Affäre CEO-Posten und Vorstandssitz ab; Finanzchefin Colette Kress führt vorerst. Berichte über eine chinesische Spionin sind unbestätigt; die Aktie fiel stark.",
-      "source": "https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress"
+      "headline": "US grounds all flights for four hours after outage",
+      "summary": "The FAA halted departures nationwide on Friday after a telecoms failure at air traffic control centres. Over 4,700 flights were cancelled; officials say there was no cyberattack and blame overloaded old equipment.",
+      "headline_hi": "अमेरिका में ख़राबी के बाद चार घंटे सभी उड़ानें रुकीं",
+      "summary_hi": "शुक्रवार को एयर ट्रैफ़िक कंट्रोल सेंटरों में दूरसंचार ख़राबी के बाद FAA ने देश भर में उड़ानें रोक दीं। 4,700 से ज़्यादा उड़ानें रद्द हुईं; अधिकारियों ने साइबर हमले से इनकार कर पुराने उपकरणों को ज़िम्मेदार बताया।",
+      "headline_de": "USA stoppen alle Flüge vier Stunden nach Störung",
+      "summary_de": "Die FAA stoppte am Freitag landesweit alle Abflüge, nachdem die Telekommunikation der Flugsicherungszentren ausfiel. Über 4.700 Flüge fielen aus; Behörden schließen einen Cyberangriff aus und nennen alte Technik.",
+      "source": "https://www.aljazeera.com/news/2026/11/14/faa-ground-stop-lifted-why-were-us-flights-grounded-and-whats-next"
     }
   ]
 }
