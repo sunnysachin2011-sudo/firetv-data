@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-14",
-  "generated": "2026-11-14T07:03:49+01:00",
+  "date": "2026-11-15",
+  "generated": "2026-11-15T06:52:02+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Assam bus-truck crash near Kaziranga kills 26",
-      "summary": "A speeding minibus hit a container truck head-on on NH-715 in Golaghat district on Friday, killing at least 26 people, many of them students. About 20 were injured and an inquiry has begun.",
-      "headline_hi": "असम में काज़ीरंगा के पास बस-ट्रक टक्कर, 26 की मौत",
-      "summary_hi": "शुक्रवार को गोलाघाट ज़िले में NH-715 पर तेज़ रफ़्तार मिनीबस की कंटेनर ट्रक से सीधी टक्कर में कम से कम 26 लोग मारे गए, जिनमें कई छात्र थे। करीब 20 घायल हैं, जाँच शुरू हो गई है।",
-      "headline_de": "Bus-Lkw-Unfall bei Kaziranga in Assam: 26 Tote",
-      "summary_de": "Ein zu schneller Minibus stieß am Freitag auf der NH-715 im Distrikt Golaghat frontal mit einem Container-Lkw zusammen. Mindestens 26 Menschen starben, viele davon Studenten; rund 20 wurden verletzt.",
-      "source": "https://theprint.in/india/assam-26-die-in-bus-truck-collision-in-kaziranga-20-others-injured/3098261/"
+      "headline": "India's goods exports hit record $49.5 billion in October",
+      "summary": "Merchandise exports reached a record $49.47 billion in October, the commerce ministry said, while the trade deficit widened to $39.88 billion on costlier oil. Officials also say the US has promised India a tariff edge.",
+      "headline_hi": "अक्टूबर में भारत का निर्यात रिकॉर्ड 49.5 अरब डॉलर",
+      "summary_hi": "वाणिज्य मंत्रालय के अनुसार अक्टूबर में माल निर्यात रिकॉर्ड 49.47 अरब डॉलर रहा, पर महँगे तेल से व्यापार घाटा बढ़कर 39.88 अरब डॉलर हुआ। अधिकारियों का कहना है कि अमेरिका ने भारत को टैरिफ़ में बढ़त का भरोसा दिया है।",
+      "headline_de": "Indiens Warenexporte im Oktober auf Rekord von 49,5 Mrd. $",
+      "summary_de": "Die Warenexporte erreichten im Oktober laut Handelsministerium rekordhohe 49,47 Mrd. Dollar, das Handelsdefizit wuchs wegen teuren Öls auf 39,88 Mrd. Zudem sollen die USA Indien einen Zollvorteil zugesagt haben.",
+      "source": "https://www.thehansindia.com/news/cities/new-delhi/indias-merchandise-exports-rise-to-record-high-of-4947-billion-in-oct-despite-global-shocks-1141764"
     },
     {
       "region": "Germany",
-      "headline": "Bundestag gives spy agencies power to hack back",
-      "summary": "Parliament passed Interior Minister Dobrindt's intelligence reform 308-190. The BND and BfV may now disrupt hostile servers and use AI on bulk data; the Left party warns of a 'secret police'.",
-      "headline_hi": "जर्मन संसद ने खुफिया एजेंसियों को हैकिंग की ताक़त दी",
-      "summary_hi": "संसद ने गृह मंत्री डोब्रिंट का खुफिया सुधार 308-190 से पास किया। BND और BfV अब दुश्मन सर्वर बाधित कर सकेंगी और बड़े डेटा पर AI चला सकेंगी; वाम दल ने 'गुप्त पुलिस' की चेतावनी दी।",
-      "headline_de": "Bundestag beschließt Geheimdienstreform mit Hackbefugnis",
-      "summary_de": "Das Parlament nahm Innenminister Dobrindts Reform mit 308 zu 190 Stimmen an. BND und Verfassungsschutz dürfen künftig feindliche Server stören und KI auf Massendaten anwenden; die Linke warnt vor einer „Geheimpolizei“.",
-      "source": "https://www.zdfheute.de/politik/deutschland/nachrichtendienst-reform-bundestag-bnd-gesetz-100.html"
+      "headline": "Coalition at odds over electricity tax cut for everyone",
+      "summary": "Chancellor Merz has promised to cut the electricity tax for all, but the roughly 5.4 billion euro cost is not in the 2027 budget. SPD leader Klingbeil wants it funded first; coalition leaders meet on Tuesday.",
+      "headline_hi": "बिजली टैक्स में सबके लिए कटौती पर जर्मन गठबंधन में मतभेद",
+      "summary_hi": "चांसलर मर्ज़ ने सबके लिए बिजली टैक्स घटाने का वादा किया है, पर इसकी करीब 5.4 अरब यूरो की लागत 2027 के बजट में नहीं है। SPD नेता क्लिंगबाइल पहले पैसे का इंतज़ाम चाहते हैं; मंगलवार को गठबंधन की बैठक है।",
+      "headline_de": "Koalition streitet über Stromsteuersenkung für alle",
+      "summary_de": "Kanzler Merz hat eine Stromsteuersenkung für alle versprochen, doch die rund 5,4 Milliarden Euro fehlen im Haushalt 2027. SPD-Chef Klingbeil will erst die Finanzierung klären; der Koalitionsausschuss tagt am Dienstag.",
+      "source": "https://www.tagesspiegel.de/politik/dpa-knackpunkt-stromsteuersenkung-klingbeil-sieht-keine-vorschlage-die-bei-der-union-auf-applaus-stossen-16285538.html"
     },
     {
       "region": "World",
-      "headline": "US grounds all flights for four hours after outage",
-      "summary": "The FAA halted departures nationwide on Friday after a telecoms failure at air traffic control centres. Over 4,700 flights were cancelled; officials say there was no cyberattack and blame overloaded old equipment.",
-      "headline_hi": "अमेरिका में ख़राबी के बाद चार घंटे सभी उड़ानें रुकीं",
-      "summary_hi": "शुक्रवार को एयर ट्रैफ़िक कंट्रोल सेंटरों में दूरसंचार ख़राबी के बाद FAA ने देश भर में उड़ानें रोक दीं। 4,700 से ज़्यादा उड़ानें रद्द हुईं; अधिकारियों ने साइबर हमले से इनकार कर पुराने उपकरणों को ज़िम्मेदार बताया।",
-      "headline_de": "USA stoppen alle Flüge vier Stunden nach Störung",
-      "summary_de": "Die FAA stoppte am Freitag landesweit alle Abflüge, nachdem die Telekommunikation der Flugsicherungszentren ausfiel. Über 4.700 Flüge fielen aus; Behörden schließen einen Cyberangriff aus und nennen alte Technik.",
-      "source": "https://www.aljazeera.com/news/2026/11/14/faa-ground-stop-lifted-why-were-us-flights-grounded-and-whats-next"
+      "headline": "US air travel in chaos after nationwide ground stop",
+      "summary": "A communications failure at US air traffic control halted all departures for over four hours on Friday, delaying 10,000 flights and cancelling at least 4,000. Officials see no sign of an attack; the cause is unclear.",
+      "headline_hi": "पूरे अमेरिका में उड़ानें रुकीं, हवाई यात्रा में अफ़रा-तफ़री",
+      "summary_hi": "अमेरिकी हवाई यातायात नियंत्रण में संचार खराबी से शुक्रवार को चार घंटे से ज़्यादा उड़ानें रुकीं; 10,000 से अधिक देर हुईं, कम से कम 4,000 रद्द। अधिकारियों के अनुसार हमले के संकेत नहीं, जाँच जारी है।",
+      "headline_de": "Chaos im US-Flugverkehr nach landesweitem Startverbot",
+      "summary_de": "Eine Kommunikationspanne der US-Flugsicherung stoppte am Freitag über vier Stunden alle Abflüge; über 10.000 Flüge verspätet, mindestens 4.000 gestrichen. Laut Behörden kein Hinweis auf einen Angriff; Ursache unklar.",
+      "source": "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue"
     }
   ]
 }
