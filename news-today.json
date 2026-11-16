@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-15",
-  "generated": "2026-11-15T06:52:02+01:00",
+  "date": "2026-11-16",
+  "generated": "2026-11-16T07:12:21+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "India's goods exports hit record $49.5 billion in October",
-      "summary": "Merchandise exports reached a record $49.47 billion in October, the commerce ministry said, while the trade deficit widened to $39.88 billion on costlier oil. Officials also say the US has promised India a tariff edge.",
-      "headline_hi": "अक्टूबर में भारत का निर्यात रिकॉर्ड 49.5 अरब डॉलर",
-      "summary_hi": "वाणिज्य मंत्रालय के अनुसार अक्टूबर में माल निर्यात रिकॉर्ड 49.47 अरब डॉलर रहा, पर महँगे तेल से व्यापार घाटा बढ़कर 39.88 अरब डॉलर हुआ। अधिकारियों का कहना है कि अमेरिका ने भारत को टैरिफ़ में बढ़त का भरोसा दिया है।",
-      "headline_de": "Indiens Warenexporte im Oktober auf Rekord von 49,5 Mrd. $",
-      "summary_de": "Die Warenexporte erreichten im Oktober laut Handelsministerium rekordhohe 49,47 Mrd. Dollar, das Handelsdefizit wuchs wegen teuren Öls auf 39,88 Mrd. Zudem sollen die USA Indien einen Zollvorteil zugesagt haben.",
-      "source": "https://www.thehansindia.com/news/cities/new-delhi/indias-merchandise-exports-rise-to-record-high-of-4947-billion-in-oct-despite-global-shocks-1141764"
+      "headline": "Modi heads to Manila for ASEAN-India and East Asia summits",
+      "summary": "PM Modi is in the Philippines from 16 to 18 November for the ASEAN-India and East Asia summits. Trade talks and Indo-Pacific maritime security are on the agenda.",
+      "headline_hi": "आसियान और पूर्वी एशिया शिखर सम्मेलन के लिए मोदी मनीला में",
+      "summary_hi": "प्रधानमंत्री मोदी 16 से 18 नवंबर तक फिलीपींस में आसियान-भारत और पूर्वी एशिया शिखर सम्मेलन में हिस्सा लेंगे। व्यापार और समुद्री सुरक्षा पर बात होगी।",
+      "headline_de": "Modi reist zu ASEAN-Indien- und Ostasien-Gipfel nach Manila",
+      "summary_de": "Premier Modi ist vom 16. bis 18. November auf den Philippinen beim ASEAN-Indien- und beim Ostasien-Gipfel. Es geht um Handel und maritime Sicherheit im Indopazifik.",
+      "source": "https://aninews.in/news/world/asia/pm-modi-set-to-visit-manila-for-high-stake-asean-summit-as-world-leaders-converge-to-shape-indo-pacifics-security-economic-future20261116064203/"
     },
     {
       "region": "Germany",
-      "headline": "Coalition at odds over electricity tax cut for everyone",
-      "summary": "Chancellor Merz has promised to cut the electricity tax for all, but the roughly 5.4 billion euro cost is not in the 2027 budget. SPD leader Klingbeil wants it funded first; coalition leaders meet on Tuesday.",
-      "headline_hi": "बिजली टैक्स में सबके लिए कटौती पर जर्मन गठबंधन में मतभेद",
-      "summary_hi": "चांसलर मर्ज़ ने सबके लिए बिजली टैक्स घटाने का वादा किया है, पर इसकी करीब 5.4 अरब यूरो की लागत 2027 के बजट में नहीं है। SPD नेता क्लिंगबाइल पहले पैसे का इंतज़ाम चाहते हैं; मंगलवार को गठबंधन की बैठक है।",
-      "headline_de": "Koalition streitet über Stromsteuersenkung für alle",
-      "summary_de": "Kanzler Merz hat eine Stromsteuersenkung für alle versprochen, doch die rund 5,4 Milliarden Euro fehlen im Haushalt 2027. SPD-Chef Klingbeil will erst die Finanzierung klären; der Koalitionsausschuss tagt am Dienstag.",
-      "source": "https://www.tagesspiegel.de/politik/dpa-knackpunkt-stromsteuersenkung-klingbeil-sieht-keine-vorschlage-die-bei-der-union-auf-applaus-stossen-16285538.html"
+      "headline": "Hubertus Heil challenges Klingbeil for SPD leadership",
+      "summary": "Ex-labour minister Hubertus Heil will run for SPD chair at the January party congress in Bremen. Chair Lars Klingbeil has not yet said whether he will stand again.",
+      "headline_hi": "SPD अध्यक्ष पद: हाइल ने क्लिंगबाइल को चुनौती दी",
+      "summary_hi": "पूर्व श्रम मंत्री हुबर्टुस हाइल जनवरी में ब्रेमेन पार्टी सम्मेलन में SPD अध्यक्ष पद के लिए खड़े होंगे। अध्यक्ष लार्स क्लिंगबाइल ने अभी फैसला नहीं बताया है।",
+      "headline_de": "Hubertus Heil fordert Klingbeil um den SPD-Vorsitz heraus",
+      "summary_de": "Ex-Arbeitsminister Hubertus Heil kandidiert beim Parteitag im Januar in Bremen für den SPD-Vorsitz. Parteichef Lars Klingbeil hat noch offen gelassen, ob er erneut antritt.",
+      "source": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101529262/hubertus-heil-bewirbt-sich-auf-spd-parteivorsitz.html"
     },
     {
       "region": "World",
-      "headline": "US air travel in chaos after nationwide ground stop",
-      "summary": "A communications failure at US air traffic control halted all departures for over four hours on Friday, delaying 10,000 flights and cancelling at least 4,000. Officials see no sign of an attack; the cause is unclear.",
-      "headline_hi": "पूरे अमेरिका में उड़ानें रुकीं, हवाई यात्रा में अफ़रा-तफ़री",
-      "summary_hi": "अमेरिकी हवाई यातायात नियंत्रण में संचार खराबी से शुक्रवार को चार घंटे से ज़्यादा उड़ानें रुकीं; 10,000 से अधिक देर हुईं, कम से कम 4,000 रद्द। अधिकारियों के अनुसार हमले के संकेत नहीं, जाँच जारी है।",
-      "headline_de": "Chaos im US-Flugverkehr nach landesweitem Startverbot",
-      "summary_de": "Eine Kommunikationspanne der US-Flugsicherung stoppte am Freitag über vier Stunden alle Abflüge; über 10.000 Flüge verspätet, mindestens 4.000 gestrichen. Laut Behörden kein Hinweis auf einen Angriff; Ursache unklar.",
-      "source": "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue"
+      "headline": "Iran drones target Bahrain as Gulf truce efforts falter",
+      "summary": "Bahrain says it shot down several Iranian drones on Sunday; Iran says it aimed at a US radar at Riffa air base. No casualties were reported and Qatar called it a dangerous escalation.",
+      "headline_hi": "ईरान के ड्रोन बहरीन पर, खाड़ी में शांति की कोशिशें कमज़ोर",
+      "summary_hi": "बहरीन का कहना है कि उसने रविवार को कई ईरानी ड्रोन मार गिराए; ईरान के मुताबिक निशाना रिफ़ा एयरबेस का अमेरिकी रडार था। कोई हताहत नहीं, क़तर ने इसे खतरनाक बढ़ोतरी कहा।",
+      "headline_de": "Iranische Drohnen auf Bahrain, Friedensgespräche stocken",
+      "summary_de": "Bahrain meldet, am Sonntag mehrere iranische Drohnen abgefangen zu haben; Iran spricht von einem US-Radar auf der Basis Riffa als Ziel. Keine Opfer gemeldet, Katar warnt vor Eskalation.",
+      "source": "https://www.thenationalnews.com/news/mena/2026/11/15/iran-attacks-bahrain-in-blatant-challenge-to-peace-push/"
     }
   ]
 }
