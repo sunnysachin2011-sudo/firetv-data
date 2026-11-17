@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-16",
-  "generated": "2026-11-16T07:12:21+01:00",
+  "date": "2026-11-17",
+  "generated": "2026-11-17T07:02:59+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Modi heads to Manila for ASEAN-India and East Asia summits",
-      "summary": "PM Modi is in the Philippines from 16 to 18 November for the ASEAN-India and East Asia summits. Trade talks and Indo-Pacific maritime security are on the agenda.",
-      "headline_hi": "आसियान और पूर्वी एशिया शिखर सम्मेलन के लिए मोदी मनीला में",
-      "summary_hi": "प्रधानमंत्री मोदी 16 से 18 नवंबर तक फिलीपींस में आसियान-भारत और पूर्वी एशिया शिखर सम्मेलन में हिस्सा लेंगे। व्यापार और समुद्री सुरक्षा पर बात होगी।",
-      "headline_de": "Modi reist zu ASEAN-Indien- und Ostasien-Gipfel nach Manila",
-      "summary_de": "Premier Modi ist vom 16. bis 18. November auf den Philippinen beim ASEAN-Indien- und beim Ostasien-Gipfel. Es geht um Handel und maritime Sicherheit im Indopazifik.",
-      "source": "https://aninews.in/news/world/asia/pm-modi-set-to-visit-manila-for-high-stake-asean-summit-as-world-leaders-converge-to-shape-indo-pacifics-security-economic-future20261116064203/"
+      "headline": "Opposition asks top court to quiz EC on voter roll revision",
+      "summary": "The INDIA bloc wants the Supreme Court to let it put 48 questions to the Election Commission on the nationwide voter roll revision and Form 6 changes. The court hears the case on 17 November.",
+      "headline_hi": "विपक्ष सुप्रीम कोर्ट में चुनाव आयोग से पूछेगा 48 सवाल",
+      "summary_hi": "INDIA गठबंधन ने सुप्रीम कोर्ट से माँग की है कि वोटर लिस्ट की विशेष जाँच (SIR) और फॉर्म 6 में बदलाव पर चुनाव आयोग से 48 सवाल पूछने की इजाज़त मिले। सुनवाई 17 नवंबर को है।",
+      "headline_de": "Opposition will Wahlkommission vor Gericht befragen",
+      "summary_de": "Das INDIA-Bündnis bittet den Supreme Court, der Wahlkommission 48 Fragen zur landesweiten Wählerlisten-Revision und zu Formular 6 stellen zu dürfen. Die Anhörung ist am 17. November.",
+      "source": "https://www.business-standard.com/amp/india-news/india-alliance-eci-election-commission-sir-supreme-court-vote-theft-126111601278_1.html"
     },
     {
       "region": "Germany",
-      "headline": "Hubertus Heil challenges Klingbeil for SPD leadership",
-      "summary": "Ex-labour minister Hubertus Heil will run for SPD chair at the January party congress in Bremen. Chair Lars Klingbeil has not yet said whether he will stand again.",
-      "headline_hi": "SPD अध्यक्ष पद: हाइल ने क्लिंगबाइल को चुनौती दी",
-      "summary_hi": "पूर्व श्रम मंत्री हुबर्टुस हाइल जनवरी में ब्रेमेन पार्टी सम्मेलन में SPD अध्यक्ष पद के लिए खड़े होंगे। अध्यक्ष लार्स क्लिंगबाइल ने अभी फैसला नहीं बताया है।",
-      "headline_de": "Hubertus Heil fordert Klingbeil um den SPD-Vorsitz heraus",
-      "summary_de": "Ex-Arbeitsminister Hubertus Heil kandidiert beim Parteitag im Januar in Bremen für den SPD-Vorsitz. Parteichef Lars Klingbeil hat noch offen gelassen, ob er erneut antritt.",
-      "source": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101529262/hubertus-heil-bewirbt-sich-auf-spd-parteivorsitz.html"
+      "headline": "Coalition hunts for cash to fund Merz's power tax cut",
+      "summary": "Union and SPD leaders meet tonight to find about 5.4 billion euros so the electricity tax can fall to the EU minimum for all households and firms. Merz has promised a deal, but the budget has no room yet.",
+      "headline_hi": "मर्ज़ के बिजली टैक्स कटौती के लिए गठबंधन पैसे की तलाश में",
+      "summary_hi": "यूनियन और SPD के नेता आज रात मिलकर करीब 5.4 अरब यूरो जुटाने का रास्ता खोजेंगे, ताकि सबके लिए बिजली टैक्स EU के न्यूनतम स्तर पर आए। मर्ज़ ने समझौते का वादा किया है।",
+      "headline_de": "Koalition sucht Geld für Merz' Stromsteuersenkung",
+      "summary_de": "Die Spitzen von Union und SPD beraten heute Abend, wie rund 5,4 Milliarden Euro für die Stromsteuersenkung auf das EU-Minimum für alle zusammenkommen. Merz verspricht eine Einigung, im Haushalt fehlt das Geld noch.",
+      "source": "https://www.ariva.de/news/koalitionsausschuss-sucht-geld-fuer-stromsteuer-senkung-12209453"
     },
     {
       "region": "World",
-      "headline": "Iran drones target Bahrain as Gulf truce efforts falter",
-      "summary": "Bahrain says it shot down several Iranian drones on Sunday; Iran says it aimed at a US radar at Riffa air base. No casualties were reported and Qatar called it a dangerous escalation.",
-      "headline_hi": "ईरान के ड्रोन बहरीन पर, खाड़ी में शांति की कोशिशें कमज़ोर",
-      "summary_hi": "बहरीन का कहना है कि उसने रविवार को कई ईरानी ड्रोन मार गिराए; ईरान के मुताबिक निशाना रिफ़ा एयरबेस का अमेरिकी रडार था। कोई हताहत नहीं, क़तर ने इसे खतरनाक बढ़ोतरी कहा।",
-      "headline_de": "Iranische Drohnen auf Bahrain, Friedensgespräche stocken",
-      "summary_de": "Bahrain meldet, am Sonntag mehrere iranische Drohnen abgefangen zu haben; Iran spricht von einem US-Radar auf der Basis Riffa als Ziel. Keine Opfer gemeldet, Katar warnt vor Eskalation.",
-      "source": "https://www.thenationalnews.com/news/mena/2026/11/15/iran-attacks-bahrain-in-blatant-challenge-to-peace-push/"
+      "headline": "Ukraine hits Crimea bridge in record drone attack",
+      "summary": "Russia says it downed 2,049 Ukrainian drones in 24 hours, the most of the war, and that the Kerch bridge was struck with traffic briefly halted. The figures are unverified; the Kremlin calls the damage minor.",
+      "headline_hi": "यूक्रेन का सबसे बड़ा ड्रोन हमला, क्रीमिया पुल को निशाना",
+      "summary_hi": "रूस का कहना है कि उसने 24 घंटे में 2,049 यूक्रेनी ड्रोन गिराए, जो युद्ध में सबसे ज़्यादा है, और केर्च पुल पर हमला हुआ। यह दावे अपुष्ट हैं; क्रेमलिन नुकसान को मामूली बताता है।",
+      "headline_de": "Ukraine trifft Krim-Brücke bei größtem Drohnenangriff",
+      "summary_de": "Russland meldet 2.049 abgeschossene ukrainische Drohnen in 24 Stunden, so viele wie nie im Krieg, und einen Treffer auf der Kertsch-Brücke. Die Angaben sind unbestätigt; der Kreml nennt den Schaden gering.",
+      "source": "https://www.irishtimes.com/world/europe/2026/11/16/ukraine-strikes-crimean-bridge-in-record-drone-attack/"
     }
   ]
 }

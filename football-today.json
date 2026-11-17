@@ -1,60 +1,43 @@
 {
-  "generated": "2026-11-16T07:12:21+01:00",
-  "date": "2026-11-16",
+  "generated": "2026-11-17T07:02:59+01:00",
+  "date": "2026-11-17",
   "timezone": "Europe/Berlin",
   "matches": [
     {
       "sport": "cricket",
-      "kickoff": "2026-11-16T07:00:00+01:00",
+      "kickoff": "2026-11-17T07:00:00+01:00",
       "duration_min": 420,
       "home": "Afghanistan",
       "away": "Zimbabwe",
-      "competition": "2nd Test, day 4",
+      "competition": "2nd Test, day 5",
       "home_hi": "अफ़ग़ानिस्तान",
       "away_hi": "ज़िम्बाब्वे",
-      "competition_hi": "दूसरा टेस्ट, चौथा दिन",
+      "competition_hi": "दूसरा टेस्ट, पाँचवाँ दिन",
       "home_de": "Afghanistan",
       "away_de": "Simbabwe",
-      "competition_de": "2. Test, 4. Tag",
+      "competition_de": "2. Test, 5. Tag",
       "app": "FanCode",
       "package": "com.fancode.tv",
       "big": false,
-      "source": "https://www.newsbytesapp.com/news/sports/afg-vs-zim-2nd-test-day-3-report/story"
+      "source": "https://sundayguardianlive.com/sports/afghanistan-vs-zimbabwe-2nd-test-live-streaming-2026-where-to-watch-afg-vs-zim-live-in-india-tv-telecast-details-321503/"
     },
     {
       "sport": "cricket",
-      "kickoff": "2026-11-16T09:00:00+01:00",
+      "kickoff": "2026-11-17T09:00:00+01:00",
       "duration_min": 420,
       "home": "South Africa",
       "away": "Bangladesh",
-      "competition": "1st Test, day 2",
-      "home_hi": "साउथ अफ़्रीका",
+      "competition": "1st Test, day 3",
+      "home_hi": "दक्षिण अफ़्रीका",
       "away_hi": "बांग्लादेश",
-      "competition_hi": "पहला टेस्ट, दूसरा दिन",
+      "competition_hi": "पहला टेस्ट, तीसरा दिन",
       "home_de": "Südafrika",
       "away_de": "Bangladesch",
-      "competition_de": "1. Test, 2. Tag",
+      "competition_de": "1. Test, 3. Tag",
       "app": "FanCode",
       "package": "com.fancode.tv",
       "big": false,
-      "source": "https://www.sportsontv.co.uk/home/match/5421/2026/11/16/south-africa-bangladesh-cricket-test-match-on-tv"
-    },
-    {
-      "sport": "football",
-      "kickoff": "2026-11-16T20:45:00+01:00",
-      "home": "Germany",
-      "away": "Netherlands",
-      "competition": "UEFA Nations League",
-      "home_hi": "जर्मनी",
-      "away_hi": "नीदरलैंड्स",
-      "competition_hi": "यूईएफ़ए नेशंस लीग",
-      "home_de": "Deutschland",
-      "away_de": "Niederlande",
-      "competition_de": "UEFA Nations League",
-      "app": "Sony LIV",
-      "package": "com.onemainstream.sonyliv.android",
-      "big": true,
-      "source": "https://www.uefa.com/uefanationsleague/news/02ab-221287e5a66c-f9855de4b857-1000--uefa-nations-league-matchday-6-preview-germany-welcome-nethe/"
+      "source": "https://www.wisden.com/cricket-news/sa-vs-ban-tests-2026-live-streaming-tv-channels"
     }
   ]
 }
