@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-17",
-  "generated": "2026-11-17T07:02:59+01:00",
+  "date": "2026-11-18",
+  "generated": "2026-11-18T07:05:30+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Opposition asks top court to quiz EC on voter roll revision",
-      "summary": "The INDIA bloc wants the Supreme Court to let it put 48 questions to the Election Commission on the nationwide voter roll revision and Form 6 changes. The court hears the case on 17 November.",
-      "headline_hi": "विपक्ष सुप्रीम कोर्ट में चुनाव आयोग से पूछेगा 48 सवाल",
-      "summary_hi": "INDIA गठबंधन ने सुप्रीम कोर्ट से माँग की है कि वोटर लिस्ट की विशेष जाँच (SIR) और फॉर्म 6 में बदलाव पर चुनाव आयोग से 48 सवाल पूछने की इजाज़त मिले। सुनवाई 17 नवंबर को है।",
-      "headline_de": "Opposition will Wahlkommission vor Gericht befragen",
-      "summary_de": "Das INDIA-Bündnis bittet den Supreme Court, der Wahlkommission 48 Fragen zur landesweiten Wählerlisten-Revision und zu Formular 6 stellen zu dürfen. Die Anhörung ist am 17. November.",
-      "source": "https://www.business-standard.com/amp/india-news/india-alliance-eci-election-commission-sir-supreme-court-vote-theft-126111601278_1.html"
+      "headline": "Modi joins Trump at Quad leaders' meeting in Manila",
+      "summary": "PM Modi met US President Trump, Japan's Takaichi and Australia's Albanese at the Quad summit in Manila on Tuesday. Modi called the Quad a trusted partnership; no new deals were announced.",
+      "headline_hi": "मोदी मनीला में क्वाड बैठक में ट्रंप से मिले",
+      "summary_hi": "पीएम मोदी ने मंगलवार को मनीला में क्वाड शिखर बैठक में अमेरिकी राष्ट्रपति ट्रंप, जापान की ताकाइची और ऑस्ट्रेलिया के अल्बनीज़ से मुलाकात की। कोई नया समझौता घोषित नहीं हुआ।",
+      "headline_de": "Modi trifft Trump beim Quad-Gipfel in Manila",
+      "summary_de": "Premier Modi traf am Dienstag beim Quad-Gipfel in Manila US-Präsident Trump, Japans Takaichi und Australiens Albanese. Modi nannte den Quad eine verlässliche Partnerschaft; neue Abkommen gab es nicht.",
+      "source": "https://www.etvbharat.com/en/international/modi-trump-share-stage-in-quad-leaders-meeting-in-manila-us-prez-calls-pm-very-tough-man-enn26111704973"
     },
     {
       "region": "Germany",
-      "headline": "Coalition hunts for cash to fund Merz's power tax cut",
-      "summary": "Union and SPD leaders meet tonight to find about 5.4 billion euros so the electricity tax can fall to the EU minimum for all households and firms. Merz has promised a deal, but the budget has no room yet.",
-      "headline_hi": "मर्ज़ के बिजली टैक्स कटौती के लिए गठबंधन पैसे की तलाश में",
-      "summary_hi": "यूनियन और SPD के नेता आज रात मिलकर करीब 5.4 अरब यूरो जुटाने का रास्ता खोजेंगे, ताकि सबके लिए बिजली टैक्स EU के न्यूनतम स्तर पर आए। मर्ज़ ने समझौते का वादा किया है।",
-      "headline_de": "Koalition sucht Geld für Merz' Stromsteuersenkung",
-      "summary_de": "Die Spitzen von Union und SPD beraten heute Abend, wie rund 5,4 Milliarden Euro für die Stromsteuersenkung auf das EU-Minimum für alle zusammenkommen. Merz verspricht eine Einigung, im Haushalt fehlt das Geld noch.",
-      "source": "https://www.ariva.de/news/koalitionsausschuss-sucht-geld-fuer-stromsteuer-senkung-12209453"
+      "headline": "Coalition talks run past 2am over electricity tax cut",
+      "summary": "CDU/CSU and SPD leaders talked for over eight hours on cutting the electricity tax for all, pensions and a fuel price cap. Results are due Wednesday morning; funding of about 5 billion euros is the sticking point.",
+      "headline_hi": "बिजली कर में कटौती पर जर्मन गठबंधन की रात भर बातचीत",
+      "summary_hi": "सीडीयू/सीएसयू और एसपीडी के नेताओं ने बिजली कर में कटौती, पेंशन और पेट्रोल मूल्य सीमा पर आठ घंटे से ज़्यादा बात की। नतीजे बुधवार सुबह आएंगे; करीब 5 अरब यूरो का खर्च मुख्य अड़चन है।",
+      "headline_de": "Koalition ringt bis 2 Uhr nachts um die Stromsteuer",
+      "summary_de": "Union und SPD verhandelten über acht Stunden über eine Stromsteuersenkung für alle, die Rente und einen Spritpreisdeckel. Ergebnisse folgen am Mittwochvormittag; die Finanzierung von rund 5 Mrd. Euro ist der Knackpunkt.",
+      "source": "https://www.tagesspiegel.de/politik/streit-um-stromsteuer-im-koalitionsausschussregierungsspitzen-verhandeln-acht-stunden--ergebnis-zum-morgen-unklar-16296823.html"
     },
     {
       "region": "World",
-      "headline": "Ukraine hits Crimea bridge in record drone attack",
-      "summary": "Russia says it downed 2,049 Ukrainian drones in 24 hours, the most of the war, and that the Kerch bridge was struck with traffic briefly halted. The figures are unverified; the Kremlin calls the damage minor.",
-      "headline_hi": "यूक्रेन का सबसे बड़ा ड्रोन हमला, क्रीमिया पुल को निशाना",
-      "summary_hi": "रूस का कहना है कि उसने 24 घंटे में 2,049 यूक्रेनी ड्रोन गिराए, जो युद्ध में सबसे ज़्यादा है, और केर्च पुल पर हमला हुआ। यह दावे अपुष्ट हैं; क्रेमलिन नुकसान को मामूली बताता है।",
-      "headline_de": "Ukraine trifft Krim-Brücke bei größtem Drohnenangriff",
-      "summary_de": "Russland meldet 2.049 abgeschossene ukrainische Drohnen in 24 Stunden, so viele wie nie im Krieg, und einen Treffer auf der Kertsch-Brücke. Die Angaben sind unbestätigt; der Kreml nennt den Schaden gering.",
-      "source": "https://www.irishtimes.com/world/europe/2026/11/16/ukraine-strikes-crimean-bridge-in-record-drone-attack/"
+      "headline": "Trump, Xi and Putin set for first three-way summit",
+      "summary": "Trump heads to Shenzhen for a Thursday summit with Xi Jinping and Vladimir Putin, the first such three-way meeting. Ukraine and nuclear arms are expected topics; Xi and Putin meet separately on Wednesday.",
+      "headline_hi": "ट्रंप, शी और पुतिन की पहली त्रिपक्षीय बैठक गुरुवार को",
+      "summary_hi": "ट्रंप गुरुवार को शेनझेन में शी जिनपिंग और व्लादिमीर पुतिन से मिलेंगे, यह ऐसी पहली तीन-देशों की बैठक है। यूक्रेन और परमाणु हथियारों पर बात होने की उम्मीद है; शी और पुतिन बुधवार को अलग से मिलेंगे।",
+      "headline_de": "Trump, Xi und Putin vor erstem Dreiergipfel",
+      "summary_de": "Trump reist nach Shenzhen zu einem Gipfel mit Xi Jinping und Wladimir Putin am Donnerstag, dem ersten Treffen dieser Art zu dritt. Ukraine und Atomwaffen dürften Themen sein; Xi und Putin treffen sich schon am Mittwoch.",
+      "source": "https://www.yahoo.com/news/politics/articles/xi-putin-huddle-ahead-historic-021802789.html"
     }
   ]
 }
