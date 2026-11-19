@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-18",
-  "generated": "2026-11-18T07:05:30+01:00",
+  "date": "2026-11-19",
+  "generated": "2026-11-19T06:52:19+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Modi joins Trump at Quad leaders' meeting in Manila",
-      "summary": "PM Modi met US President Trump, Japan's Takaichi and Australia's Albanese at the Quad summit in Manila on Tuesday. Modi called the Quad a trusted partnership; no new deals were announced.",
-      "headline_hi": "मोदी मनीला में क्वाड बैठक में ट्रंप से मिले",
-      "summary_hi": "पीएम मोदी ने मंगलवार को मनीला में क्वाड शिखर बैठक में अमेरिकी राष्ट्रपति ट्रंप, जापान की ताकाइची और ऑस्ट्रेलिया के अल्बनीज़ से मुलाकात की। कोई नया समझौता घोषित नहीं हुआ।",
-      "headline_de": "Modi trifft Trump beim Quad-Gipfel in Manila",
-      "summary_de": "Premier Modi traf am Dienstag beim Quad-Gipfel in Manila US-Präsident Trump, Japans Takaichi und Australiens Albanese. Modi nannte den Quad eine verlässliche Partnerschaft; neue Abkommen gab es nicht.",
-      "source": "https://www.etvbharat.com/en/international/modi-trump-share-stage-in-quad-leaders-meeting-in-manila-us-prez-calls-pm-very-tough-man-enn26111704973"
+      "headline": "Cyclone Akvan nears Odisha coast, landfall due Friday",
+      "summary": "Severe cyclonic storm Akvan is set to cross the coast between Narsapur and Puri around noon on Friday with gusts up to 110 km/h. Odisha has shut schools in 11 districts and moved about 50,000 people to shelters.",
+      "headline_hi": "अकवान तूफान ओडिशा तट के पास, शुक्रवार को लैंडफॉल",
+      "summary_hi": "गंभीर चक्रवाती तूफान अकवान शुक्रवार दोपहर नरसापुर और पुरी के बीच तट से टकरा सकता है, हवा 110 किमी/घंटा तक। ओडिशा ने 11 ज़िलों में स्कूल बंद किए और करीब 50,000 लोग राहत शिविरों में भेजे।",
+      "headline_de": "Zyklon Akvan vor Odisha, Landfall am Freitag erwartet",
+      "summary_de": "Der schwere Wirbelsturm Akvan soll am Freitagmittag zwischen Narsapur und Puri auf die Küste treffen, mit Böen bis 110 km/h. Odisha schloss Schulen in 11 Bezirken und brachte rund 50.000 Menschen in Sicherheit.",
+      "source": "https://www.downtoearth.org.in/climate-change/daily-weather-tracker-cyclone-akvan-to-make-landfall-between-andhra-pradesh-and-odisha-on-november-20"
     },
     {
       "region": "Germany",
-      "headline": "Coalition talks run past 2am over electricity tax cut",
-      "summary": "CDU/CSU and SPD leaders talked for over eight hours on cutting the electricity tax for all, pensions and a fuel price cap. Results are due Wednesday morning; funding of about 5 billion euros is the sticking point.",
-      "headline_hi": "बिजली कर में कटौती पर जर्मन गठबंधन की रात भर बातचीत",
-      "summary_hi": "सीडीयू/सीएसयू और एसपीडी के नेताओं ने बिजली कर में कटौती, पेंशन और पेट्रोल मूल्य सीमा पर आठ घंटे से ज़्यादा बात की। नतीजे बुधवार सुबह आएंगे; करीब 5 अरब यूरो का खर्च मुख्य अड़चन है।",
-      "headline_de": "Koalition ringt bis 2 Uhr nachts um die Stromsteuer",
-      "summary_de": "Union und SPD verhandelten über acht Stunden über eine Stromsteuersenkung für alle, die Rente und einen Spritpreisdeckel. Ergebnisse folgen am Mittwochvormittag; die Finanzierung von rund 5 Mrd. Euro ist der Knackpunkt.",
-      "source": "https://www.tagesspiegel.de/politik/streit-um-stromsteuer-im-koalitionsausschussregierungsspitzen-verhandeln-acht-stunden--ergebnis-zum-morgen-unklar-16296823.html"
+      "headline": "Merz hosts 30 leaders in Berlin for Ukraine summit",
+      "summary": "Around 30 leaders of the Coalition of the Willing, including Zelensky and US envoys, meet at the Chancellery on Thursday. They want to coordinate on peace talks and security guarantees for Ukraine.",
+      "headline_hi": "मर्ज़ ने यूक्रेन सम्मेलन के लिए बर्लिन में 30 नेता बुलाए",
+      "summary_hi": "यूक्रेन समर्थक देशों के करीब 30 नेता, ज़ेलेंस्की और अमेरिकी दूत गुरुवार को चांसलर कार्यालय में मिल रहे हैं। मक़सद शांति वार्ता और यूक्रेन की सुरक्षा गारंटी पर एक राय बनाना है।",
+      "headline_de": "Ukraine-Gipfel: Merz empfängt rund 30 Staatschefs in Berlin",
+      "summary_de": "Rund 30 Staats- und Regierungschefs der Koalition der Willigen, darunter Selenskyj und US-Unterhändler, treffen sich am Donnerstag im Kanzleramt. Es geht um Friedensgespräche und Sicherheitsgarantien.",
+      "source": "https://www.wiwo.de/politik/europa/koalition-der-willigen-merz-empfaengt-selenskyj-und-ukraine-verbuendete-in-berlin/100271053.html"
     },
     {
       "region": "World",
-      "headline": "Trump, Xi and Putin set for first three-way summit",
-      "summary": "Trump heads to Shenzhen for a Thursday summit with Xi Jinping and Vladimir Putin, the first such three-way meeting. Ukraine and nuclear arms are expected topics; Xi and Putin meet separately on Wednesday.",
-      "headline_hi": "ट्रंप, शी और पुतिन की पहली त्रिपक्षीय बैठक गुरुवार को",
-      "summary_hi": "ट्रंप गुरुवार को शेनझेन में शी जिनपिंग और व्लादिमीर पुतिन से मिलेंगे, यह ऐसी पहली तीन-देशों की बैठक है। यूक्रेन और परमाणु हथियारों पर बात होने की उम्मीद है; शी और पुतिन बुधवार को अलग से मिलेंगे।",
-      "headline_de": "Trump, Xi und Putin vor erstem Dreiergipfel",
-      "summary_de": "Trump reist nach Shenzhen zu einem Gipfel mit Xi Jinping und Wladimir Putin am Donnerstag, dem ersten Treffen dieser Art zu dritt. Ukraine und Atomwaffen dürften Themen sein; Xi und Putin treffen sich schon am Mittwoch.",
-      "source": "https://www.yahoo.com/news/politics/articles/xi-putin-huddle-ahead-historic-021802789.html"
+      "headline": "Trump, Xi and Putin hold first three-way summit in Shenzhen",
+      "summary": "The three leaders meet on Thursday on the sidelines of the APEC summit in China. Talks are expected to cover the Iran war, Ukraine, nuclear weapons and trade.",
+      "headline_hi": "ट्रंप, शी और पुतिन की शेनझेन में पहली त्रिपक्षीय बैठक",
+      "summary_hi": "तीनों नेता गुरुवार को चीन में APEC शिखर सम्मेलन के दौरान मिल रहे हैं। बातचीत में ईरान युद्ध, यूक्रेन, परमाणु हथियार और व्यापार शामिल होने की उम्मीद है।",
+      "headline_de": "Trump, Xi und Putin: erster Dreiergipfel in Shenzhen",
+      "summary_de": "Die drei Staatschefs treffen sich am Donnerstag am Rande des APEC-Gipfels in China. Themen sollen der Iran-Krieg, die Ukraine, Atomwaffen und Handel sein.",
+      "source": "https://www.aljazeera.com/news/liveblog/2026/11/19/apec-live-trump-xi-and-putin-to-meet-in-historic-three-way-china-summit"
     }
   ]
 }
