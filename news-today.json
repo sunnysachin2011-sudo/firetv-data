@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-20",
-  "generated": "2026-11-20T07:00:25+01:00",
+  "date": "2026-11-21",
+  "generated": "2026-11-21T07:02:13+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Cyclone Akvan crosses Odisha coast near Gopalpur",
-      "summary": "Severe cyclonic storm Akvan hit the coast near Gopalpur on Friday morning with gusts up to 90 km/h, the IMD said. It is weakening; over one lakh people were moved to shelters and no major damage is expected so far.",
-      "headline_hi": "चक्रवात अकवान गोपालपुर के पास ओडिशा तट से टकराया",
-      "summary_hi": "IMD के अनुसार गंभीर चक्रवाती तूफान अकवान शुक्रवार सुबह गोपालपुर के पास तट से टकराया, हवा 90 किमी/घंटा तक। तूफान कमज़ोर पड़ रहा है; एक लाख से ज़्यादा लोग शेल्टर में, बड़े नुकसान की आशंका नहीं।",
-      "headline_de": "Zyklon Akvan trifft bei Gopalpur auf Odishas Küste",
-      "summary_de": "Zyklon Akvan traf am Freitagmorgen bei Gopalpur mit Böen bis 90 km/h auf die Küste, so der Wetterdienst IMD. Er schwächt sich ab; über 100.000 Menschen sind in Notunterkünften, große Schäden werden nicht erwartet.",
-      "source": "https://newsable.asianetnews.com/india/severe-cyclonic-storm-akvan-weakens-after-making-landfall-in-odisha-articleshow-mh1akbp"
+      "headline": "Supreme Court rejects Tamil Nadu's Cauvery water pleas",
+      "summary": "The Supreme Court on Friday dismissed Tamil Nadu's pleas asking Karnataka to release 11 TMC of Cauvery water. Karnataka had argued it faces drought and must keep water for drinking.",
+      "headline_hi": "सुप्रीम कोर्ट ने तमिलनाडु की कावेरी याचिकाएँ खारिज कीं",
+      "summary_hi": "सुप्रीम कोर्ट ने शुक्रवार को तमिलनाडु की याचिकाएँ खारिज कर दीं, जिनमें कर्नाटक से 11 टीएमसी कावेरी पानी छोड़ने की मांग थी। कर्नाटक ने कहा था कि वह सूखे से जूझ रहा है और पीने का पानी बचाना है।",
+      "headline_de": "Oberstes Gericht weist Tamil Nadus Kaveri-Klagen ab",
+      "summary_de": "Indiens Oberster Gerichtshof wies am Freitag Anträge Tamil Nadus ab, die Karnataka zur Freigabe von 11 TMC Kaveri-Wasser zwingen sollten. Karnataka verwies auf Dürre und Trinkwasserbedarf.",
+      "source": "https://theprint.in/india/cauvery-dispute-sc-dismisses-tamil-nadus-pleas-for-additional-water-release-from-karnataka/3104029/"
     },
     {
       "region": "Germany",
-      "headline": "IG Metall stages full-day strikes across Germany",
-      "summary": "Metal workers at shipyards, suppliers and BMW and Audi plants stop work for a whole day on Friday. The union wants 5% more pay; employers offer a one-off payment and 1.3% in 2028, and no new talks are scheduled.",
-      "headline_hi": "IG Metall की जर्मनी भर में पूरे दिन की हड़ताल",
-      "summary_hi": "शिपयार्ड, सप्लायर कंपनियों और BMW-Audi के प्लांट में मज़दूर शुक्रवार को पूरे दिन काम बंद रखेंगे। यूनियन 5% ज़्यादा वेतन चाहती है; मालिक एक बार का भुगतान और 2028 में 1.3% दे रहे हैं, नई बातचीत तय नहीं।",
-      "headline_de": "IG Metall startet ganztägige Warnstreiks bundesweit",
-      "summary_de": "Werften, Zulieferer sowie BMW- und Audi-Werke stehen am Freitag ganztägig still. Die IG Metall fordert 5 % mehr Lohn; die Arbeitgeber bieten eine Einmalzahlung und 1,3 % ab 2028, ein neuer Verhandlungstermin fehlt.",
-      "source": "https://www.wnoz.de/nachrichten/deutschland-und-die-welt/topmeldungen/ig-metall-laesst-ganztaegige-warnstreiks-rollen-1185173.html"
+      "headline": "Qatar pledges 15 billion euros of investment in Germany",
+      "summary": "Emir Tamim met Chancellor Merz in Berlin on Friday and both countries signed cooperation deals. Merz said Qatar promised 15 billion euros more for AI, chips and aviation; the figure is unverified by Qatar.",
+      "headline_hi": "कतर ने जर्मनी में 15 अरब यूरो निवेश का वादा किया",
+      "summary_hi": "कतर के अमीर तमीम ने शुक्रवार को बर्लिन में चांसलर मेर्ज़ से मुलाकात की और दोनों देशों ने सहयोग समझौते किए। मेर्ज़ के अनुसार कतर एआई, चिप्स और विमानन में 15 अरब यूरो और लगाएगा; यह आँकड़ा एक पक्ष का है।",
+      "headline_de": "Katar sagt Deutschland 15 Milliarden Euro Investitionen zu",
+      "summary_de": "Emir Tamim traf am Freitag Kanzler Merz in Berlin, beide Länder unterzeichneten Kooperationsabkommen. Laut Merz will Katar 15 Milliarden Euro mehr in KI, Chips und Luftfahrt stecken; Katar hat die Zahl nicht bestätigt.",
+      "source": "https://www.aljazeera.com/news/2026/11/20/qatar-and-germany-deepen-strategic-ties-during-emirs-berlin-visit"
     },
     {
       "region": "World",
-      "headline": "UN court finds Myanmar guilty of Rohingya genocide",
-      "summary": "The ICJ ruled on Thursday that Myanmar committed genocide against the Rohingya in 2017, the first such finding against a state. It ordered compensation, with the amount to be set later; Myanmar's junta has not responded.",
-      "headline_hi": "UN अदालत: म्यांमार ने रोहिंग्या का जनसंहार किया",
-      "summary_hi": "ICJ ने गुरुवार को कहा कि म्यांमार ने 2017 में रोहिंग्या के खिलाफ जनसंहार किया; किसी देश के विरुद्ध ऐसा पहला फैसला है। अदालत ने मुआवज़े का आदेश दिया, रकम बाद में तय होगी; म्यांमार की सेना ने जवाब नहीं दिया।",
-      "headline_de": "UN-Gericht: Myanmar beging Genozid an den Rohingya",
-      "summary_de": "Der IGH urteilte am Donnerstag, dass Myanmar 2017 Genozid an den Rohingya begangen hat, das erste solche Urteil gegen einen Staat. Er ordnete Entschädigung an, die Höhe folgt später; Myanmars Junta hat nicht reagiert.",
-      "source": "https://www.aljazeera.com/news/2026/11/19/world-reacts-to-icj-finding-myanmar-guilty-of-genocide-against-rohingya"
+      "headline": "COP31 climate talks run into overtime over fossil fuels",
+      "summary": "The UN climate summit in Antalya missed its Friday deadline as nearly 200 countries stayed split over a draft that no longer mentions fossil fuels. A new text is expected on Saturday.",
+      "headline_hi": "जीवाश्म ईंधन पर विवाद, COP31 जलवायु वार्ता समय से आगे",
+      "summary_hi": "अंताल्या में संयुक्त राष्ट्र जलवायु सम्मेलन शुक्रवार की समय सीमा पार कर गया, क्योंकि करीब 200 देश ऐसे मसौदे पर बँटे हैं जिसमें जीवाश्म ईंधन का ज़िक्र नहीं है। शनिवार को नया मसौदा आने की उम्मीद है।",
+      "headline_de": "COP31: Streit um fossile Energien verlängert Klimagipfel",
+      "summary_de": "Der UN-Klimagipfel in Antalya verpasste die Frist am Freitag, weil fast 200 Länder über einen Entwurf streiten, der fossile Energien nicht mehr nennt. Ein neuer Text wird am Samstag erwartet.",
+      "source": "https://www.aljazeera.com/news/2026/11/20/fossil-fuel-talks-deadlock-pushes-cop31-climate-summit-into-overtime"
     }
   ]
 }
