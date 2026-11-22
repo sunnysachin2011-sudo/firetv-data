@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-21",
-  "generated": "2026-11-21T07:02:13+01:00",
+  "date": "2026-11-22",
+  "generated": "2026-11-22T07:04:27+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Supreme Court rejects Tamil Nadu's Cauvery water pleas",
-      "summary": "The Supreme Court on Friday dismissed Tamil Nadu's pleas asking Karnataka to release 11 TMC of Cauvery water. Karnataka had argued it faces drought and must keep water for drinking.",
-      "headline_hi": "सुप्रीम कोर्ट ने तमिलनाडु की कावेरी याचिकाएँ खारिज कीं",
-      "summary_hi": "सुप्रीम कोर्ट ने शुक्रवार को तमिलनाडु की याचिकाएँ खारिज कर दीं, जिनमें कर्नाटक से 11 टीएमसी कावेरी पानी छोड़ने की मांग थी। कर्नाटक ने कहा था कि वह सूखे से जूझ रहा है और पीने का पानी बचाना है।",
-      "headline_de": "Oberstes Gericht weist Tamil Nadus Kaveri-Klagen ab",
-      "summary_de": "Indiens Oberster Gerichtshof wies am Freitag Anträge Tamil Nadus ab, die Karnataka zur Freigabe von 11 TMC Kaveri-Wasser zwingen sollten. Karnataka verwies auf Dürre und Trinkwasserbedarf.",
-      "source": "https://theprint.in/india/cauvery-dispute-sc-dismisses-tamil-nadus-pleas-for-additional-water-release-from-karnataka/3104029/"
+      "headline": "Modi opens Nitish Setu bridge over Ganga in Bihar",
+      "summary": "PM Modi inaugurated the Nitish Setu, a six-lane bridge over the Ganga linking Vaishali with Patna, on Saturday. The 19.7 km project cost about Rs 4,280 crore.",
+      "headline_hi": "मोदी ने बिहार में गंगा पर नीतीश सेतु का उद्घाटन किया",
+      "summary_hi": "पीएम मोदी ने शनिवार को वैशाली को पटना से जोड़ने वाले छह लेन के नीतीश सेतु का उद्घाटन किया। 19.7 किमी लंबे इस पुल पर करीब 4,280 करोड़ रुपये खर्च हुए।",
+      "headline_de": "Modi eröffnet Nitish-Setu-Brücke über den Ganges",
+      "summary_de": "Premier Modi hat am Samstag in Bihar die sechsspurige Nitish-Setu-Brücke über den Ganges eröffnet, die Vaishali mit Patna verbindet. Das 19,7 km lange Projekt kostete rund 4.280 Crore Rupien.",
+      "source": "https://www.india.com/news/india/pm-modi-inaugurates-nitish-setu-over-ganga-in-bihars-vaishali-8546860/"
     },
     {
       "region": "Germany",
-      "headline": "Qatar pledges 15 billion euros of investment in Germany",
-      "summary": "Emir Tamim met Chancellor Merz in Berlin on Friday and both countries signed cooperation deals. Merz said Qatar promised 15 billion euros more for AI, chips and aviation; the figure is unverified by Qatar.",
-      "headline_hi": "कतर ने जर्मनी में 15 अरब यूरो निवेश का वादा किया",
-      "summary_hi": "कतर के अमीर तमीम ने शुक्रवार को बर्लिन में चांसलर मेर्ज़ से मुलाकात की और दोनों देशों ने सहयोग समझौते किए। मेर्ज़ के अनुसार कतर एआई, चिप्स और विमानन में 15 अरब यूरो और लगाएगा; यह आँकड़ा एक पक्ष का है।",
-      "headline_de": "Katar sagt Deutschland 15 Milliarden Euro Investitionen zu",
-      "summary_de": "Emir Tamim traf am Freitag Kanzler Merz in Berlin, beide Länder unterzeichneten Kooperationsabkommen. Laut Merz will Katar 15 Milliarden Euro mehr in KI, Chips und Luftfahrt stecken; Katar hat die Zahl nicht bestätigt.",
-      "source": "https://www.aljazeera.com/news/2026/11/20/qatar-and-germany-deepen-strategic-ties-during-emirs-berlin-visit"
+      "headline": "Merz rejects EU budget compromise as too large",
+      "summary": "Chancellor Merz said on Saturday the compromise plan for the EU's 2028-34 budget is not acceptable to Germany, as its volume is still too high. He wants cuts of several hundred billion euros.",
+      "headline_hi": "मर्ज़ ने ईयू बजट समझौते को बहुत बड़ा बताकर नकारा",
+      "summary_hi": "चांसलर मर्ज़ ने शनिवार को कहा कि ईयू के 2028-34 बजट का समझौता प्रस्ताव जर्मनी को मंज़ूर नहीं है, क्योंकि इसका आकार अभी भी बहुत बड़ा है। वे कई सौ अरब यूरो की कटौती चाहते हैं।",
+      "headline_de": "Merz lehnt EU-Haushaltskompromiss als zu groß ab",
+      "summary_de": "Kanzler Merz nannte den Kompromissvorschlag für den EU-Haushalt 2028-34 am Samstag nicht zustimmungsfähig, das Volumen sei weiter zu hoch. Er fordert Kürzungen um mehrere hundert Milliarden Euro.",
+      "source": "https://www.ariva.de/news/merz-volumen-im-eu-budgetvorschlag-weiter-zu-hoch-12216024"
     },
     {
       "region": "World",
-      "headline": "COP31 climate talks run into overtime over fossil fuels",
-      "summary": "The UN climate summit in Antalya missed its Friday deadline as nearly 200 countries stayed split over a draft that no longer mentions fossil fuels. A new text is expected on Saturday.",
-      "headline_hi": "जीवाश्म ईंधन पर विवाद, COP31 जलवायु वार्ता समय से आगे",
-      "summary_hi": "अंताल्या में संयुक्त राष्ट्र जलवायु सम्मेलन शुक्रवार की समय सीमा पार कर गया, क्योंकि करीब 200 देश ऐसे मसौदे पर बँटे हैं जिसमें जीवाश्म ईंधन का ज़िक्र नहीं है। शनिवार को नया मसौदा आने की उम्मीद है।",
-      "headline_de": "COP31: Streit um fossile Energien verlängert Klimagipfel",
-      "summary_de": "Der UN-Klimagipfel in Antalya verpasste die Frist am Freitag, weil fast 200 Länder über einen Entwurf streiten, der fossile Energien nicht mehr nennt. Ein neuer Text wird am Samstag erwartet.",
-      "source": "https://www.aljazeera.com/news/2026/11/20/fossil-fuel-talks-deadlock-pushes-cop31-climate-summit-into-overtime"
+      "headline": "Tankers hit near Oman as Gulf war drags on",
+      "summary": "Two tankers were hit off Oman on Saturday, with no casualties reported; Iran's claim of a mine strike is unverified. Saudi forces said they shot down three Houthi missiles aimed at Riyadh.",
+      "headline_hi": "ओमान के पास टैंकरों पर हमला, खाड़ी युद्ध जारी",
+      "summary_hi": "शनिवार को ओमान के पास दो टैंकर हमले की चपेट में आए, कोई हताहत नहीं; ईरान का माइन वाला दावा अपुष्ट है। सऊदी सेना ने रियाद की ओर दागी तीन हूती मिसाइलें गिराने की बात कही।",
+      "headline_de": "Tanker vor Oman getroffen, Golfkrieg geht weiter",
+      "summary_de": "Zwei Tanker wurden am Samstag vor Oman getroffen, Opfer wurden nicht gemeldet; Irans Angabe eines Minentreffers ist unbestätigt. Saudi-Arabien meldet den Abschuss dreier Huthi-Raketen auf Riad.",
+      "source": "https://gulfnews.com/uae/middle-east-war-8-things-uae-residents-need-to-know-tonight-november-21-1.500756425"
     }
   ]
 }
