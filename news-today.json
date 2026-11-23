@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-22",
-  "generated": "2026-11-22T07:04:27+01:00",
+  "date": "2026-11-23",
+  "generated": "2026-11-23T07:00:30+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Modi opens Nitish Setu bridge over Ganga in Bihar",
-      "summary": "PM Modi inaugurated the Nitish Setu, a six-lane bridge over the Ganga linking Vaishali with Patna, on Saturday. The 19.7 km project cost about Rs 4,280 crore.",
-      "headline_hi": "मोदी ने बिहार में गंगा पर नीतीश सेतु का उद्घाटन किया",
-      "summary_hi": "पीएम मोदी ने शनिवार को वैशाली को पटना से जोड़ने वाले छह लेन के नीतीश सेतु का उद्घाटन किया। 19.7 किमी लंबे इस पुल पर करीब 4,280 करोड़ रुपये खर्च हुए।",
-      "headline_de": "Modi eröffnet Nitish-Setu-Brücke über den Ganges",
-      "summary_de": "Premier Modi hat am Samstag in Bihar die sechsspurige Nitish-Setu-Brücke über den Ganges eröffnet, die Vaishali mit Patna verbindet. Das 19,7 km lange Projekt kostete rund 4.280 Crore Rupien.",
-      "source": "https://www.india.com/news/india/pm-modi-inaugurates-nitish-setu-over-ganga-in-bihars-vaishali-8546860/"
+      "headline": "Nepal PM Balen Shah holds talks with Modi in Delhi",
+      "summary": "Nepal's PM Balendra Shah got a ceremonial welcome in Delhi on Monday on his first foreign visit. Talks with Modi cover energy, trade, rail links and flood rebuilding; a $2 billion package is under discussion.",
+      "headline_hi": "नेपाल के पीएम बालेन शाह की दिल्ली में मोदी से बातचीत",
+      "summary_hi": "नेपाल के पीएम बालेंद्र शाह का पहली विदेश यात्रा पर सोमवार को दिल्ली में औपचारिक स्वागत हुआ। मोदी से बातचीत में ऊर्जा, व्यापार, रेल संपर्क और बाढ़ पुनर्निर्माण पर चर्चा; 2 अरब डॉलर के पैकेज पर विचार।",
+      "headline_de": "Nepals Premier Balen Shah spricht in Delhi mit Modi",
+      "summary_de": "Nepals Premier Balendra Shah wurde am Montag auf seiner ersten Auslandsreise in Delhi feierlich empfangen. Mit Modi geht es um Energie, Handel, Bahnverbindungen und Flutaufbau; ein 2-Mrd.-Dollar-Paket ist im Gespräch.",
+      "source": "https://www.business-standard.com/amp/external-affairs-defence-security/news/pm-modi-balen-shah-meeting-nepal-india-new-delhi-visit-agenda-energy-trade-126112300284_1.html"
     },
     {
       "region": "Germany",
-      "headline": "Merz rejects EU budget compromise as too large",
-      "summary": "Chancellor Merz said on Saturday the compromise plan for the EU's 2028-34 budget is not acceptable to Germany, as its volume is still too high. He wants cuts of several hundred billion euros.",
-      "headline_hi": "मर्ज़ ने ईयू बजट समझौते को बहुत बड़ा बताकर नकारा",
-      "summary_hi": "चांसलर मर्ज़ ने शनिवार को कहा कि ईयू के 2028-34 बजट का समझौता प्रस्ताव जर्मनी को मंज़ूर नहीं है, क्योंकि इसका आकार अभी भी बहुत बड़ा है। वे कई सौ अरब यूरो की कटौती चाहते हैं।",
-      "headline_de": "Merz lehnt EU-Haushaltskompromiss als zu groß ab",
-      "summary_de": "Kanzler Merz nannte den Kompromissvorschlag für den EU-Haushalt 2028-34 am Samstag nicht zustimmungsfähig, das Volumen sei weiter zu hoch. Er fordert Kürzungen um mehrere hundert Milliarden Euro.",
-      "source": "https://www.ariva.de/news/merz-volumen-im-eu-budgetvorschlag-weiter-zu-hoch-12216024"
+      "headline": "IG Metall keeps up strikes before new wage talks",
+      "summary": "Union chief Christiane Benner says 24-hour strikes by about 150,000 metal workers continue Monday and Tuesday. IG Metall wants 5% more pay; employers offer far less, and talks resume Wednesday.",
+      "headline_hi": "नई वेतन वार्ता से पहले आईजी मेटाल की हड़ताल जारी",
+      "summary_hi": "यूनियन प्रमुख क्रिस्टियाने बेनर ने कहा कि करीब 1.5 लाख धातु कर्मचारियों की 24 घंटे की हड़ताल सोमवार और मंगलवार को जारी रहेगी। आईजी मेटाल 5% वेतन वृद्धि चाहती है; बातचीत बुधवार को फिर होगी।",
+      "headline_de": "IG Metall streikt weiter vor neuer Tarifrunde",
+      "summary_de": "Gewerkschaftschefin Christiane Benner kündigt an, dass die 24-Stunden-Streiks von rund 150.000 Metallern am Montag und Dienstag weitergehen. Die IG Metall fordert 5 Prozent mehr Lohn; am Mittwoch wird weiterverhandelt.",
+      "source": "https://www.zdfheute.de/wirtschaft/ig-metall-chefin-christiane-benner-heute-journal-interview-100.html"
     },
     {
       "region": "World",
-      "headline": "Tankers hit near Oman as Gulf war drags on",
-      "summary": "Two tankers were hit off Oman on Saturday, with no casualties reported; Iran's claim of a mine strike is unverified. Saudi forces said they shot down three Houthi missiles aimed at Riyadh.",
-      "headline_hi": "ओमान के पास टैंकरों पर हमला, खाड़ी युद्ध जारी",
-      "summary_hi": "शनिवार को ओमान के पास दो टैंकर हमले की चपेट में आए, कोई हताहत नहीं; ईरान का माइन वाला दावा अपुष्ट है। सऊदी सेना ने रियाद की ओर दागी तीन हूती मिसाइलें गिराने की बात कही।",
-      "headline_de": "Tanker vor Oman getroffen, Golfkrieg geht weiter",
-      "summary_de": "Zwei Tanker wurden am Samstag vor Oman getroffen, Opfer wurden nicht gemeldet; Irans Angabe eines Minentreffers ist unbestätigt. Saudi-Arabien meldet den Abschuss dreier Huthi-Raketen auf Riad.",
-      "source": "https://gulfnews.com/uae/middle-east-war-8-things-uae-residents-need-to-know-tonight-november-21-1.500756425"
+      "headline": "Iran strikes Bahrain as tankers burn near Hormuz",
+      "summary": "Iran says it hit US positions in Bahrain after a US strike on Hengam Island; Bahrain reports a fire at an industrial site in Sitra. Two tankers were hit near Oman; Iran's damage claims are unverified.",
+      "headline_hi": "ईरान का बहरीन पर हमला, होर्मुज़ के पास टैंकरों में आग",
+      "summary_hi": "ईरान का कहना है कि हेंगाम द्वीप पर अमेरिकी हमले के जवाब में उसने बहरीन में अमेरिकी ठिकानों पर हमला किया; बहरीन ने सितरा में आग की सूचना दी। ओमान के पास दो टैंकरों पर हमला हुआ; ईरान के दावे अपुष्ट हैं।",
+      "headline_de": "Iran greift Bahrain an, Tanker brennen nahe Hormus",
+      "summary_de": "Iran erklärt, nach einem US-Angriff auf die Insel Hengam US-Stellungen in Bahrain getroffen zu haben; Bahrain meldet ein Feuer in Sitra. Zwei Tanker wurden nahe Oman getroffen; Irans Angaben sind unbestätigt.",
+      "source": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-iran-targets-us-military-in-bahrain-houthi-strikes-continue"
     }
   ]
 }
