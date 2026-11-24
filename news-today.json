@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-23",
-  "generated": "2026-11-23T07:00:30+01:00",
+  "date": "2026-11-24",
+  "generated": "2026-11-24T06:59:59+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Nepal PM Balen Shah holds talks with Modi in Delhi",
-      "summary": "Nepal's PM Balendra Shah got a ceremonial welcome in Delhi on Monday on his first foreign visit. Talks with Modi cover energy, trade, rail links and flood rebuilding; a $2 billion package is under discussion.",
-      "headline_hi": "नेपाल के पीएम बालेन शाह की दिल्ली में मोदी से बातचीत",
-      "summary_hi": "नेपाल के पीएम बालेंद्र शाह का पहली विदेश यात्रा पर सोमवार को दिल्ली में औपचारिक स्वागत हुआ। मोदी से बातचीत में ऊर्जा, व्यापार, रेल संपर्क और बाढ़ पुनर्निर्माण पर चर्चा; 2 अरब डॉलर के पैकेज पर विचार।",
-      "headline_de": "Nepals Premier Balen Shah spricht in Delhi mit Modi",
-      "summary_de": "Nepals Premier Balendra Shah wurde am Montag auf seiner ersten Auslandsreise in Delhi feierlich empfangen. Mit Modi geht es um Energie, Handel, Bahnverbindungen und Flutaufbau; ein 2-Mrd.-Dollar-Paket ist im Gespräch.",
-      "source": "https://www.business-standard.com/amp/external-affairs-defence-security/news/pm-modi-balen-shah-meeting-nepal-india-new-delhi-visit-agenda-energy-trade-126112300284_1.html"
+      "headline": "India, Nepal sign 8 pacts, launch Ayodhya-Janakpur train",
+      "summary": "PM Modi and Nepal PM Balen Shah flagged off the weekly Saryu-Kamala Express and signed eight MoUs on health, space and policing. India also pledged a 24,000 crore Nepali rupee aid package.",
+      "headline_hi": "भारत-नेपाल में 8 समझौते, अयोध्या-जनकपुर ट्रेन शुरू",
+      "summary_hi": "पीएम मोदी और नेपाल के पीएम बालेन शाह ने साप्ताहिक सरयू-कमला एक्सप्रेस को हरी झंडी दी और स्वास्थ्य, अंतरिक्ष व पुलिस सहयोग पर 8 समझौते किए। भारत ने 24,000 करोड़ नेपाली रुपये की मदद का ऐलान किया।",
+      "headline_de": "Indien und Nepal: 8 Abkommen, neuer Zug Ayodhya-Janakpur",
+      "summary_de": "Modi und Nepals Premier Balen Shah starteten den wöchentlichen Saryu-Kamala-Express und unterzeichneten acht Abkommen, u. a. zu Gesundheit und Raumfahrt. Indien sagte 24.000 Crore Nepal-Rupien Hilfe zu.",
+      "source": "https://indiapost.com/india-nepal-sign-8-mous-launch-ayodhya-janakpur-train-as-pm-balen-shah-concludes-two-day-state-visit/"
     },
     {
       "region": "Germany",
-      "headline": "IG Metall keeps up strikes before new wage talks",
-      "summary": "Union chief Christiane Benner says 24-hour strikes by about 150,000 metal workers continue Monday and Tuesday. IG Metall wants 5% more pay; employers offer far less, and talks resume Wednesday.",
-      "headline_hi": "नई वेतन वार्ता से पहले आईजी मेटाल की हड़ताल जारी",
-      "summary_hi": "यूनियन प्रमुख क्रिस्टियाने बेनर ने कहा कि करीब 1.5 लाख धातु कर्मचारियों की 24 घंटे की हड़ताल सोमवार और मंगलवार को जारी रहेगी। आईजी मेटाल 5% वेतन वृद्धि चाहती है; बातचीत बुधवार को फिर होगी।",
-      "headline_de": "IG Metall streikt weiter vor neuer Tarifrunde",
-      "summary_de": "Gewerkschaftschefin Christiane Benner kündigt an, dass die 24-Stunden-Streiks von rund 150.000 Metallern am Montag und Dienstag weitergehen. Die IG Metall fordert 5 Prozent mehr Lohn; am Mittwoch wird weiterverhandelt.",
-      "source": "https://www.zdfheute.de/wirtschaft/ig-metall-chefin-christiane-benner-heute-journal-interview-100.html"
+      "headline": "Bundestag starts final week on record 560bn euro budget",
+      "summary": "Finance Minister Klingbeil opens four days of debate on the 2027 budget; the vote is Friday. Spending is about 560bn euros with roughly 123bn in new core borrowing, and a one-year power tax cut is still being added.",
+      "headline_hi": "बुंडेसटाग में 2027 के रिकॉर्ड 560 अरब यूरो बजट पर अंतिम बहस",
+      "summary_hi": "वित्त मंत्री क्लिंगबाइल ने चार दिन की बहस शुरू की, शुक्रवार को वोट होगा। खर्च करीब 560 अरब यूरो और नया कर्ज़ करीब 123 अरब यूरो है; एक साल की बिजली टैक्स कटौती अभी जोड़ी जा रही है।",
+      "headline_de": "Bundestag berät Rekordhaushalt 2027 von rund 560 Mrd. Euro",
+      "summary_de": "Finanzminister Klingbeil eröffnet die viertägige Debatte, die Abstimmung ist am Freitag. Geplant sind rund 560 Mrd. Euro Ausgaben und etwa 123 Mrd. neue Schulden; die Stromsteuersenkung wird noch eingefügt.",
+      "source": "https://www.handelsblatt.com/politik/deutschland/etat-2027-was-an-dieser-bundestagswoche-besonders-ist/100272229.html"
     },
     {
       "region": "World",
-      "headline": "Iran strikes Bahrain as tankers burn near Hormuz",
-      "summary": "Iran says it hit US positions in Bahrain after a US strike on Hengam Island; Bahrain reports a fire at an industrial site in Sitra. Two tankers were hit near Oman; Iran's damage claims are unverified.",
-      "headline_hi": "ईरान का बहरीन पर हमला, होर्मुज़ के पास टैंकरों में आग",
-      "summary_hi": "ईरान का कहना है कि हेंगाम द्वीप पर अमेरिकी हमले के जवाब में उसने बहरीन में अमेरिकी ठिकानों पर हमला किया; बहरीन ने सितरा में आग की सूचना दी। ओमान के पास दो टैंकरों पर हमला हुआ; ईरान के दावे अपुष्ट हैं।",
-      "headline_de": "Iran greift Bahrain an, Tanker brennen nahe Hormus",
-      "summary_de": "Iran erklärt, nach einem US-Angriff auf die Insel Hengam US-Stellungen in Bahrain getroffen zu haben; Bahrain meldet ein Feuer in Sitra. Zwei Tanker wurden nahe Oman getroffen; Irans Angaben sind unbestätigt.",
-      "source": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-iran-targets-us-military-in-bahrain-houthi-strikes-continue"
+      "headline": "Nvidia brings back Jensen Huang as CEO; shares surge",
+      "summary": "The board reinstated Huang on Monday, 11 days after he quit over reports of affairs, one allegedly with a Chinese spy. Shares jumped over 30%; Trump's claim that he swayed the board is unverified.",
+      "headline_hi": "एनवीडिया ने जेन्सन हुआंग को फिर सीईओ बनाया, शेयर उछले",
+      "summary_hi": "बोर्ड ने सोमवार को हुआंग को वापस बुलाया, 11 दिन पहले उन्होंने अफेयर की खबरों के बाद इस्तीफ़ा दिया था। शेयर 30% से ज़्यादा चढ़े; बोर्ड पर दबाव का ट्रंप का दावा अपुष्ट है।",
+      "headline_de": "Nvidia holt Jensen Huang als CEO zurück, Aktie springt",
+      "summary_de": "Der Verwaltungsrat setzte Huang am Montag wieder ein, elf Tage nach seinem Rücktritt wegen Affären-Berichten. Die Aktie stieg über 30 %; Trumps Behauptung, er habe den Rat beeinflusst, ist unbestätigt.",
+      "source": "https://www.aljazeera.com/economy/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo"
     }
   ]
 }
