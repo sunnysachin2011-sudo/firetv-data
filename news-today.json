@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-24",
-  "generated": "2026-11-24T06:59:59+01:00",
+  "date": "2026-11-25",
+  "generated": "2026-11-25T06:58:17+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "India, Nepal sign 8 pacts, launch Ayodhya-Janakpur train",
-      "summary": "PM Modi and Nepal PM Balen Shah flagged off the weekly Saryu-Kamala Express and signed eight MoUs on health, space and policing. India also pledged a 24,000 crore Nepali rupee aid package.",
-      "headline_hi": "भारत-नेपाल में 8 समझौते, अयोध्या-जनकपुर ट्रेन शुरू",
-      "summary_hi": "पीएम मोदी और नेपाल के पीएम बालेन शाह ने साप्ताहिक सरयू-कमला एक्सप्रेस को हरी झंडी दी और स्वास्थ्य, अंतरिक्ष व पुलिस सहयोग पर 8 समझौते किए। भारत ने 24,000 करोड़ नेपाली रुपये की मदद का ऐलान किया।",
-      "headline_de": "Indien und Nepal: 8 Abkommen, neuer Zug Ayodhya-Janakpur",
-      "summary_de": "Modi und Nepals Premier Balen Shah starteten den wöchentlichen Saryu-Kamala-Express und unterzeichneten acht Abkommen, u. a. zu Gesundheit und Raumfahrt. Indien sagte 24.000 Crore Nepal-Rupien Hilfe zu.",
-      "source": "https://indiapost.com/india-nepal-sign-8-mous-launch-ayodhya-janakpur-train-as-pm-balen-shah-concludes-two-day-state-visit/"
+      "headline": "Pakistan spies in defence WhatsApp groups, audit ordered",
+      "summary": "Agencies say Pakistan-based operatives sat silently in about a dozen private chat groups of defence and CAPF staff; a full audit was ordered. The claims come from unnamed officials and are unverified.",
+      "headline_hi": "रक्षा व्हाट्सऐप ग्रुपों में पाकिस्तानी जासूस, ऑडिट के आदेश",
+      "summary_hi": "एजेंसियों के मुताबिक पाकिस्तान के एजेंट रक्षा और CAPF कर्मियों के करीब एक दर्जन निजी ग्रुपों में चुपचाप जुड़े थे; पूरा ऑडिट करने के आदेश दिए गए। दावे अनाम अधिकारियों के हैं, पुष्टि नहीं हुई।",
+      "headline_de": "Pakistanische Spione in Armee-Chatgruppen, Prüfung läuft",
+      "summary_de": "Laut Behörden saßen Agenten aus Pakistan still in rund einem Dutzend privater Chatgruppen von Militär- und Polizeikräften; eine volle Prüfung wurde angeordnet. Die Angaben ungenannter Beamter sind unbestätigt.",
+      "source": "https://www.deccanherald.com/india/agencies-detect-pakistani-operatives-in-defence-capfs-whatsapp-groups-audit-ordered-4228667"
     },
     {
       "region": "Germany",
-      "headline": "Bundestag starts final week on record 560bn euro budget",
-      "summary": "Finance Minister Klingbeil opens four days of debate on the 2027 budget; the vote is Friday. Spending is about 560bn euros with roughly 123bn in new core borrowing, and a one-year power tax cut is still being added.",
-      "headline_hi": "बुंडेसटाग में 2027 के रिकॉर्ड 560 अरब यूरो बजट पर अंतिम बहस",
-      "summary_hi": "वित्त मंत्री क्लिंगबाइल ने चार दिन की बहस शुरू की, शुक्रवार को वोट होगा। खर्च करीब 560 अरब यूरो और नया कर्ज़ करीब 123 अरब यूरो है; एक साल की बिजली टैक्स कटौती अभी जोड़ी जा रही है।",
-      "headline_de": "Bundestag berät Rekordhaushalt 2027 von rund 560 Mrd. Euro",
-      "summary_de": "Finanzminister Klingbeil eröffnet die viertägige Debatte, die Abstimmung ist am Freitag. Geplant sind rund 560 Mrd. Euro Ausgaben und etwa 123 Mrd. neue Schulden; die Stromsteuersenkung wird noch eingefügt.",
-      "source": "https://www.handelsblatt.com/politik/deutschland/etat-2027-was-an-dieser-bundestagswoche-besonders-ist/100272229.html"
+      "headline": "Merz faces Bundestag debate on record 560bn euro budget",
+      "summary": "Budget week peaks today with a four-hour general debate led by Chancellor Merz, opened by the AfD. The 2027 budget is the largest ever and is due for a final vote on Friday.",
+      "headline_hi": "रिकॉर्ड 560 अरब यूरो के बजट पर मर्ज़ की बुंडेस्टाग में बहस",
+      "summary_hi": "बजट सप्ताह का मुख्य दिन आज है: चांसलर मर्ज़ के साथ चार घंटे की आम बहस, जिसकी शुरुआत AfD करेगी। 2027 का बजट अब तक का सबसे बड़ा है और शुक्रवार को अंतिम वोट होना है।",
+      "headline_de": "Merz in der Generaldebatte zum Rekordhaushalt von 560 Mrd.",
+      "summary_de": "Höhepunkt der Haushaltswoche ist heute die vierstündige Generaldebatte mit Kanzler Merz, eröffnet von der AfD. Der Etat 2027 ist der größte aller Zeiten und soll am Freitag beschlossen werden.",
+      "source": "https://www.finanzen.at/nachrichten/aktien/hoehepunkt-der-haushaltswoche-generaldebatte-mit-merz-1036798121"
     },
     {
       "region": "World",
-      "headline": "Nvidia brings back Jensen Huang as CEO; shares surge",
-      "summary": "The board reinstated Huang on Monday, 11 days after he quit over reports of affairs, one allegedly with a Chinese spy. Shares jumped over 30%; Trump's claim that he swayed the board is unverified.",
-      "headline_hi": "एनवीडिया ने जेन्सन हुआंग को फिर सीईओ बनाया, शेयर उछले",
-      "summary_hi": "बोर्ड ने सोमवार को हुआंग को वापस बुलाया, 11 दिन पहले उन्होंने अफेयर की खबरों के बाद इस्तीफ़ा दिया था। शेयर 30% से ज़्यादा चढ़े; बोर्ड पर दबाव का ट्रंप का दावा अपुष्ट है।",
-      "headline_de": "Nvidia holt Jensen Huang als CEO zurück, Aktie springt",
-      "summary_de": "Der Verwaltungsrat setzte Huang am Montag wieder ein, elf Tage nach seinem Rücktritt wegen Affären-Berichten. Die Aktie stieg über 30 %; Trumps Behauptung, er habe den Rat beeinflusst, ist unbestätigt.",
-      "source": "https://www.aljazeera.com/economy/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo"
+      "headline": "US jury convicts Huawei on 10 of 12 counts",
+      "summary": "A federal jury in Brooklyn found Huawei guilty of bank fraud, sanctions breaches and trade-secret theft linked to its Iran business, but cleared it of racketeering. Huawei says it will fight the verdict.",
+      "headline_hi": "अमेरिकी जूरी ने हुआवेई को 12 में से 10 आरोपों में दोषी माना",
+      "summary_hi": "ब्रुकलिन की संघीय जूरी ने हुआवेई को ईरान कारोबार से जुड़े बैंक धोखाधड़ी, प्रतिबंध उल्लंघन और व्यापार रहस्य चोरी का दोषी पाया, पर रैकेटियरिंग से बरी किया। हुआवेई फैसले को चुनौती देगी।",
+      "headline_de": "US-Jury spricht Huawei in 10 von 12 Punkten schuldig",
+      "summary_de": "Eine Bundesjury in Brooklyn befand Huawei des Bankbetrugs, Sanktionsbruchs und Diebstahls von Geschäftsgeheimnissen im Iran-Geschäft schuldig, sprach es aber vom Vorwurf der Bandenkriminalität frei. Huawei wehrt sich.",
+      "source": "https://theprint.in/world/chinas-huawei-convicted-in-sprawling-us-criminal-trial-over-iran-business/3108097/"
     }
   ]
 }
