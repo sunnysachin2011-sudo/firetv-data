@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-25",
-  "generated": "2026-11-25T06:58:17+01:00",
+  "date": "2026-11-26",
+  "generated": "2026-11-26T07:04:33+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Pakistan spies in defence WhatsApp groups, audit ordered",
-      "summary": "Agencies say Pakistan-based operatives sat silently in about a dozen private chat groups of defence and CAPF staff; a full audit was ordered. The claims come from unnamed officials and are unverified.",
-      "headline_hi": "रक्षा व्हाट्सऐप ग्रुपों में पाकिस्तानी जासूस, ऑडिट के आदेश",
-      "summary_hi": "एजेंसियों के मुताबिक पाकिस्तान के एजेंट रक्षा और CAPF कर्मियों के करीब एक दर्जन निजी ग्रुपों में चुपचाप जुड़े थे; पूरा ऑडिट करने के आदेश दिए गए। दावे अनाम अधिकारियों के हैं, पुष्टि नहीं हुई।",
-      "headline_de": "Pakistanische Spione in Armee-Chatgruppen, Prüfung läuft",
-      "summary_de": "Laut Behörden saßen Agenten aus Pakistan still in rund einem Dutzend privater Chatgruppen von Militär- und Polizeikräften; eine volle Prüfung wurde angeordnet. Die Angaben ungenannter Beamter sind unbestätigt.",
-      "source": "https://www.deccanherald.com/india/agencies-detect-pakistani-operatives-in-defence-capfs-whatsapp-groups-audit-ordered-4228667"
+      "headline": "India rejects US 'overcapacity' charge amid tariff threat",
+      "summary": "The commerce ministry said India has no surplus production in any sector after the US listed it among 14 economies facing duties of up to 25%. Delhi wants the issue settled in trade-deal talks.",
+      "headline_hi": "भारत ने अमेरिका का 'अतिरिक्त क्षमता' आरोप ठुकराया",
+      "summary_hi": "वाणिज्य मंत्रालय ने कहा कि भारत के किसी भी क्षेत्र में अतिरिक्त उत्पादन नहीं है। अमेरिका ने 14 देशों पर 25% तक शुल्क की बात कही है; भारत मामला व्यापार समझौते की बातचीत में सुलझाना चाहता है।",
+      "headline_de": "Indien weist US-Vorwurf der Überkapazität zurück",
+      "summary_de": "Das Handelsministerium erklärte, kein Sektor Indiens produziere zu viel, nachdem die USA es unter 14 Partnern mit Zöllen bis 25 % nannten. Delhi will die Frage in den Handelsgesprächen klären.",
+      "source": "https://www.indiatvnews.com/news/india/india-refutes-us-notice-on-excess-capacity-claims-says-fresh-tariffs-notice-under-examination-2026-11-25-1060393"
     },
     {
       "region": "Germany",
-      "headline": "Merz faces Bundestag debate on record 560bn euro budget",
-      "summary": "Budget week peaks today with a four-hour general debate led by Chancellor Merz, opened by the AfD. The 2027 budget is the largest ever and is due for a final vote on Friday.",
-      "headline_hi": "रिकॉर्ड 560 अरब यूरो के बजट पर मर्ज़ की बुंडेस्टाग में बहस",
-      "summary_hi": "बजट सप्ताह का मुख्य दिन आज है: चांसलर मर्ज़ के साथ चार घंटे की आम बहस, जिसकी शुरुआत AfD करेगी। 2027 का बजट अब तक का सबसे बड़ा है और शुक्रवार को अंतिम वोट होना है।",
-      "headline_de": "Merz in der Generaldebatte zum Rekordhaushalt von 560 Mrd.",
-      "summary_de": "Höhepunkt der Haushaltswoche ist heute die vierstündige Generaldebatte mit Kanzler Merz, eröffnet von der AfD. Der Etat 2027 ist der größte aller Zeiten und soll am Freitag beschlossen werden.",
-      "source": "https://www.finanzen.at/nachrichten/aktien/hoehepunkt-der-haushaltswoche-generaldebatte-mit-merz-1036798121"
+      "headline": "Merz: Russia wants more than Ukraine, defends Kyiv aid",
+      "summary": "In the Bundestag budget debate the chancellor said Russia is escalating in the Baltic, Poland and the Black Sea and Europe must set limits. AfD and the Left criticised the cost of aid to Kyiv.",
+      "headline_hi": "मर्ज़: रूस को यूक्रेन से ज़्यादा चाहिए, कीव की मदद जारी",
+      "summary_hi": "बुंडेस्टाग में बजट बहस के दौरान चांसलर ने कहा कि रूस बाल्टिक, पोलैंड और काला सागर में तनाव बढ़ा रहा है और यूरोप को सीमा तय करनी होगी। AfD और लेफ़्ट ने कीव की मदद के खर्च की आलोचना की।",
+      "headline_de": "Merz: Russland will mehr als die Ukraine, verteidigt Hilfe",
+      "summary_de": "In der Haushaltsdebatte im Bundestag sagte der Kanzler, Russland eskaliere im Baltikum, in Polen und im Schwarzen Meer; Europa müsse Grenzen setzen. AfD und Linke kritisierten die Kosten der Ukraine-Hilfe.",
+      "source": "https://www.yahoo.com/news/world/articles/merz-defends-ukraine-support-opposition-101838315.html"
     },
     {
       "region": "World",
-      "headline": "US jury convicts Huawei on 10 of 12 counts",
-      "summary": "A federal jury in Brooklyn found Huawei guilty of bank fraud, sanctions breaches and trade-secret theft linked to its Iran business, but cleared it of racketeering. Huawei says it will fight the verdict.",
-      "headline_hi": "अमेरिकी जूरी ने हुआवेई को 12 में से 10 आरोपों में दोषी माना",
-      "summary_hi": "ब्रुकलिन की संघीय जूरी ने हुआवेई को ईरान कारोबार से जुड़े बैंक धोखाधड़ी, प्रतिबंध उल्लंघन और व्यापार रहस्य चोरी का दोषी पाया, पर रैकेटियरिंग से बरी किया। हुआवेई फैसले को चुनौती देगी।",
-      "headline_de": "US-Jury spricht Huawei in 10 von 12 Punkten schuldig",
-      "summary_de": "Eine Bundesjury in Brooklyn befand Huawei des Bankbetrugs, Sanktionsbruchs und Diebstahls von Geschäftsgeheimnissen im Iran-Geschäft schuldig, sprach es aber vom Vorwurf der Bandenkriminalität frei. Huawei wehrt sich.",
-      "source": "https://theprint.in/world/chinas-huawei-convicted-in-sprawling-us-criminal-trial-over-iran-business/3108097/"
+      "headline": "US proposes new tariffs on 14 trading partners",
+      "summary": "After a probe into 'excess capacity', Washington named China, the EU, India, Japan and others; China faces up to 20% extra. China and the EU reject the premise; US stocks slipped.",
+      "headline_hi": "अमेरिका ने 14 व्यापार साझेदारों पर नए टैरिफ का प्रस्ताव रखा",
+      "summary_hi": "'अतिरिक्त क्षमता' की जाँच के बाद वॉशिंगटन ने चीन, यूरोपीय संघ, भारत, जापान समेत 14 देशों के नाम लिए; चीन पर 20% तक अतिरिक्त शुल्क। चीन और ईयू ने आरोप नकारा, अमेरिकी शेयर गिरे।",
+      "headline_de": "USA schlagen neue Zölle gegen 14 Handelspartner vor",
+      "summary_de": "Nach einer Prüfung zu „Überkapazitäten“ nannte Washington China, die EU, Indien, Japan und andere; China drohen bis zu 20 % Aufschlag. China und EU weisen den Vorwurf zurück, US-Aktien gaben nach.",
+      "source": "https://www.aljazeera.com/economy/2026/11/25/world-reacts-to-trumps-new-tariffs-as-us-stocks-tumble"
     }
   ]
 }
