@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-26",
-  "generated": "2026-11-26T07:04:33+01:00",
+  "date": "2026-11-27",
+  "generated": "2026-11-27T06:59:35+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "India rejects US 'overcapacity' charge amid tariff threat",
-      "summary": "The commerce ministry said India has no surplus production in any sector after the US listed it among 14 economies facing duties of up to 25%. Delhi wants the issue settled in trade-deal talks.",
-      "headline_hi": "भारत ने अमेरिका का 'अतिरिक्त क्षमता' आरोप ठुकराया",
-      "summary_hi": "वाणिज्य मंत्रालय ने कहा कि भारत के किसी भी क्षेत्र में अतिरिक्त उत्पादन नहीं है। अमेरिका ने 14 देशों पर 25% तक शुल्क की बात कही है; भारत मामला व्यापार समझौते की बातचीत में सुलझाना चाहता है।",
-      "headline_de": "Indien weist US-Vorwurf der Überkapazität zurück",
-      "summary_de": "Das Handelsministerium erklärte, kein Sektor Indiens produziere zu viel, nachdem die USA es unter 14 Partnern mit Zöllen bis 25 % nannten. Delhi will die Frage in den Handelsgesprächen klären.",
-      "source": "https://www.indiatvnews.com/news/india/india-refutes-us-notice-on-excess-capacity-claims-says-fresh-tariffs-notice-under-examination-2026-11-25-1060393"
+      "headline": "Special Parliament session from Nov 30 angers opposition",
+      "summary": "The government recalled the Lok Sabha for Nov 30 and the Rajya Sabha for Dec 2, reportedly to pass women's quota and delimitation bills. Congress MPs called it a mockery of Parliament.",
+      "headline_hi": "30 नवंबर से संसद का विशेष सत्र, विपक्ष नाराज़",
+      "summary_hi": "सरकार ने लोकसभा 30 नवंबर और राज्यसभा 2 दिसंबर को बुलाई है; बताया जा रहा है कि महिला आरक्षण और परिसीमन बिल पास कराने हैं। कांग्रेस सांसदों ने इसे संसद का मज़ाक बताया।",
+      "headline_de": "Sondersitzung des Parlaments ab 30. Nov. empört Opposition",
+      "summary_de": "Die Regierung beruft die Lok Sabha zum 30. Nov. und die Rajya Sabha zum 2. Dez. ein, wohl für Frauenquoten- und Wahlkreisgesetze. Kongress-Abgeordnete nennen das eine Verhöhnung des Parlaments.",
+      "source": "https://www.theweek.in/news/india/2026/11/26/parliament-special-session-november-opposition.html"
     },
     {
       "region": "Germany",
-      "headline": "Merz: Russia wants more than Ukraine, defends Kyiv aid",
-      "summary": "In the Bundestag budget debate the chancellor said Russia is escalating in the Baltic, Poland and the Black Sea and Europe must set limits. AfD and the Left criticised the cost of aid to Kyiv.",
-      "headline_hi": "मर्ज़: रूस को यूक्रेन से ज़्यादा चाहिए, कीव की मदद जारी",
-      "summary_hi": "बुंडेस्टाग में बजट बहस के दौरान चांसलर ने कहा कि रूस बाल्टिक, पोलैंड और काला सागर में तनाव बढ़ा रहा है और यूरोप को सीमा तय करनी होगी। AfD और लेफ़्ट ने कीव की मदद के खर्च की आलोचना की।",
-      "headline_de": "Merz: Russland will mehr als die Ukraine, verteidigt Hilfe",
-      "summary_de": "In der Haushaltsdebatte im Bundestag sagte der Kanzler, Russland eskaliere im Baltikum, in Polen und im Schwarzen Meer; Europa müsse Grenzen setzen. AfD und Linke kritisierten die Kosten der Ukraine-Hilfe.",
-      "source": "https://www.yahoo.com/news/world/articles/merz-defends-ukraine-support-opposition-101838315.html"
+      "headline": "Bundestag votes today on record 2027 budget",
+      "summary": "The 2027 budget carries about €123bn in new core borrowing; Merz told MPs tax revenue can no longer pay for everything. The Left calls the plan a cuts spree at the expense of the majority.",
+      "headline_hi": "बुंडेस्टाग आज रिकॉर्ड 2027 बजट पर वोट करेगा",
+      "summary_hi": "2027 के बजट में करीब 123 अरब यूरो का नया कर्ज़ है; मर्ज़ ने सांसदों से कहा कि टैक्स से अब सब कुछ नहीं चुकाया जा सकता। लेफ़्ट पार्टी इसे बहुमत की कीमत पर कटौती बताती है।",
+      "headline_de": "Bundestag stimmt heute über Rekordhaushalt 2027 ab",
+      "summary_de": "Der Etat 2027 sieht rund 123 Mrd. Euro neue Kredite vor; Merz sagte im Bundestag, Steuereinnahmen reichten nicht mehr für alles. Die Linke nennt den Plan eine Kürzungsorgie zulasten der Mehrheit.",
+      "source": "https://www.zdfheute.de/politik/deutschland/illner-haushaltsdebatte-frei-koalition-100.html"
     },
     {
       "region": "World",
-      "headline": "US proposes new tariffs on 14 trading partners",
-      "summary": "After a probe into 'excess capacity', Washington named China, the EU, India, Japan and others; China faces up to 20% extra. China and the EU reject the premise; US stocks slipped.",
-      "headline_hi": "अमेरिका ने 14 व्यापार साझेदारों पर नए टैरिफ का प्रस्ताव रखा",
-      "summary_hi": "'अतिरिक्त क्षमता' की जाँच के बाद वॉशिंगटन ने चीन, यूरोपीय संघ, भारत, जापान समेत 14 देशों के नाम लिए; चीन पर 20% तक अतिरिक्त शुल्क। चीन और ईयू ने आरोप नकारा, अमेरिकी शेयर गिरे।",
-      "headline_de": "USA schlagen neue Zölle gegen 14 Handelspartner vor",
-      "summary_de": "Nach einer Prüfung zu „Überkapazitäten“ nannte Washington China, die EU, Indien, Japan und andere; China drohen bis zu 20 % Aufschlag. China und EU weisen den Vorwurf zurück, US-Aktien gaben nach.",
-      "source": "https://www.aljazeera.com/economy/2026/11/25/world-reacts-to-trumps-new-tariffs-as-us-stocks-tumble"
+      "headline": "EU summit ends with no deal on budget or Ukraine loan",
+      "summary": "Leaders broke off the Brussels summit on the 2028-34 budget without agreement and cancelled day two. A €45bn Ukraine loan lacked support from Slovakia, Hungary and Czechia; talks resume on Dec 17.",
+      "headline_hi": "ईयू शिखर बैठक बजट और यूक्रेन लोन पर बिना समझौते खत्म",
+      "summary_hi": "ब्रसेल्स में 2028-34 बजट पर नेताओं की बैठक बिना सहमति टूटी और दूसरा दिन रद्द हुआ। यूक्रेन के 45 अरब यूरो लोन को स्लोवाकिया, हंगरी और चेकिया का समर्थन नहीं मिला; बात 17 दिसंबर को फिर होगी।",
+      "headline_de": "EU-Gipfel endet ohne Einigung zu Haushalt und Ukraine-Kredit",
+      "summary_de": "Der Brüsseler Gipfel zum Haushalt 2028–34 wurde ohne Einigung abgebrochen, der zweite Tag abgesagt. Ein 45-Mrd.-Euro-Kredit für die Ukraine scheiterte an Slowakei, Ungarn und Tschechien; weiter am 17. Dezember.",
+      "source": "https://www.euronews.com/2026/11/26/eu-summit-leaders-ready-to-spar-over-new-budget-and-ukraine-aid"
     }
   ]
 }
