@@ -1,36 +1,36 @@
 {
-  "date": "2026-11-27",
-  "generated": "2026-11-27T06:59:35+01:00",
+  "date": "2026-11-28",
+  "generated": "2026-11-28T06:53:11+01:00",
   "news": [
     {
       "region": "India",
-      "headline": "Special Parliament session from Nov 30 angers opposition",
-      "summary": "The government recalled the Lok Sabha for Nov 30 and the Rajya Sabha for Dec 2, reportedly to pass women's quota and delimitation bills. Congress MPs called it a mockery of Parliament.",
-      "headline_hi": "30 नवंबर से संसद का विशेष सत्र, विपक्ष नाराज़",
-      "summary_hi": "सरकार ने लोकसभा 30 नवंबर और राज्यसभा 2 दिसंबर को बुलाई है; बताया जा रहा है कि महिला आरक्षण और परिसीमन बिल पास कराने हैं। कांग्रेस सांसदों ने इसे संसद का मज़ाक बताया।",
-      "headline_de": "Sondersitzung des Parlaments ab 30. Nov. empört Opposition",
-      "summary_de": "Die Regierung beruft die Lok Sabha zum 30. Nov. und die Rajya Sabha zum 2. Dez. ein, wohl für Frauenquoten- und Wahlkreisgesetze. Kongress-Abgeordnete nennen das eine Verhöhnung des Parlaments.",
-      "source": "https://www.theweek.in/news/india/2026/11/26/parliament-special-session-november-opposition.html"
+      "headline": "Cabinet clears revised delimitation bill, reports say",
+      "summary": "Reports say the Cabinet approved a 50% rise in Lok Sabha seats for every state, with state shares frozen until 2051. The bill goes to a special sitting from Nov 30.",
+      "headline_hi": "कैबिनेट ने नया परिसीमन बिल मंज़ूर किया: रिपोर्ट",
+      "summary_hi": "रिपोर्टों के मुताबिक कैबिनेट ने हर राज्य की लोकसभा सीटें 50% बढ़ाने और 2051 तक राज्यों का हिस्सा स्थिर रखने को मंज़ूरी दी। बिल 30 नवंबर से विशेष सत्र में आएगा।",
+      "headline_de": "Kabinett billigt neues Wahlkreis-Gesetz, so Berichte",
+      "summary_de": "Laut Berichten billigte das Kabinett 50 % mehr Lok-Sabha-Sitze für jeden Bundesstaat, die Anteile der Staaten bleiben bis 2051 fest. Das Gesetz kommt ab 30. Nov. in eine Sondersitzung.",
+      "source": "https://www.greaterkashmir.com/national/union-cabinet-clears-revised-bills-on-delimitation-womens-quota-12847516"
     },
     {
       "region": "Germany",
-      "headline": "Bundestag votes today on record 2027 budget",
-      "summary": "The 2027 budget carries about €123bn in new core borrowing; Merz told MPs tax revenue can no longer pay for everything. The Left calls the plan a cuts spree at the expense of the majority.",
-      "headline_hi": "बुंडेस्टाग आज रिकॉर्ड 2027 बजट पर वोट करेगा",
-      "summary_hi": "2027 के बजट में करीब 123 अरब यूरो का नया कर्ज़ है; मर्ज़ ने सांसदों से कहा कि टैक्स से अब सब कुछ नहीं चुकाया जा सकता। लेफ़्ट पार्टी इसे बहुमत की कीमत पर कटौती बताती है।",
-      "headline_de": "Bundestag stimmt heute über Rekordhaushalt 2027 ab",
-      "summary_de": "Der Etat 2027 sieht rund 123 Mrd. Euro neue Kredite vor; Merz sagte im Bundestag, Steuereinnahmen reichten nicht mehr für alles. Die Linke nennt den Plan eine Kürzungsorgie zulasten der Mehrheit.",
-      "source": "https://www.zdfheute.de/politik/deutschland/illner-haushaltsdebatte-frei-koalition-100.html"
+      "headline": "Bundestag passes record 2027 budget with €210bn debt",
+      "summary": "MPs voted 317 to 260 for a €556bn budget with about €210bn of new borrowing, the second highest ever. Defence spending rises to nearly €110bn.",
+      "headline_hi": "बुंडेसटाग ने 210 अरब यूरो कर्ज़ वाला रिकॉर्ड बजट पास किया",
+      "summary_hi": "सांसदों ने 317 के मुकाबले 260 वोटों से 556 अरब यूरो का बजट पास किया, जिसमें करीब 210 अरब यूरो का नया कर्ज़ है। रक्षा खर्च बढ़कर लगभग 110 अरब यूरो होगा।",
+      "headline_de": "Bundestag beschließt Rekordetat 2027 mit 210 Mrd. Schulden",
+      "summary_de": "Mit 317 zu 260 Stimmen billigte der Bundestag einen Etat von 556 Mrd. Euro mit rund 210 Mrd. Euro neuen Schulden, dem zweithöchsten Wert je. Die Verteidigungsausgaben steigen auf fast 110 Mrd.",
+      "source": "https://www.euronews.com/2026/11/27/german-bundestag-approves-record-2027-budget-as-borrowing-hits-210bn"
     },
     {
       "region": "World",
-      "headline": "EU summit ends with no deal on budget or Ukraine loan",
-      "summary": "Leaders broke off the Brussels summit on the 2028-34 budget without agreement and cancelled day two. A €45bn Ukraine loan lacked support from Slovakia, Hungary and Czechia; talks resume on Dec 17.",
-      "headline_hi": "ईयू शिखर बैठक बजट और यूक्रेन लोन पर बिना समझौते खत्म",
-      "summary_hi": "ब्रसेल्स में 2028-34 बजट पर नेताओं की बैठक बिना सहमति टूटी और दूसरा दिन रद्द हुआ। यूक्रेन के 45 अरब यूरो लोन को स्लोवाकिया, हंगरी और चेकिया का समर्थन नहीं मिला; बात 17 दिसंबर को फिर होगी।",
-      "headline_de": "EU-Gipfel endet ohne Einigung zu Haushalt und Ukraine-Kredit",
-      "summary_de": "Der Brüsseler Gipfel zum Haushalt 2028–34 wurde ohne Einigung abgebrochen, der zweite Tag abgesagt. Ein 45-Mrd.-Euro-Kredit für die Ukraine scheiterte an Slowakei, Ungarn und Tschechien; weiter am 17. Dezember.",
-      "source": "https://www.euronews.com/2026/11/26/eu-summit-leaders-ready-to-spar-over-new-budget-and-ukraine-aid"
+      "headline": "Taiwan votes in local elections watched by Beijing",
+      "summary": "Voters pick mayors and councils in 22 cities and counties, a test for President Lai's DPP against the KMT. Results are expected Saturday evening.",
+      "headline_hi": "ताइवान में स्थानीय चुनाव, बीजिंग की नज़र",
+      "summary_hi": "22 शहरों और काउंटियों में मेयर और परिषदें चुनी जा रही हैं। यह राष्ट्रपति लाई की डीपीपी और विपक्षी केएमटी के बीच परीक्षा है। नतीजे शनिवार शाम आने की उम्मीद है।",
+      "headline_de": "Taiwan wählt Kommunen – Peking schaut genau hin",
+      "summary_de": "In 22 Städten und Landkreisen werden Bürgermeister und Räte gewählt, ein Test für Präsident Lais DPP gegen die KMT. Ergebnisse werden am Samstagabend erwartet.",
+      "source": "https://www.aljazeera.com/news/2026/11/28/taiwan-votes-in-local-elections-to-choose-mayors-other-leaders"
     }
   ]
 }
